@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Timeline · Lock Screen</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&amp;family=Outfit:wght@400..800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1C1C1E;text-decoration:none}a:hover{color:#1C1C1E}
+button{font:inherit;color:inherit;cursor:pointer}
+input,textarea{font:inherit;color:inherit}
+input::placeholder{color:#636366}
+@keyframes roll{from{transform:translateY(0)}}
+@keyframes r46{from{transform:translateY(-14em)}}
+@keyframes r38{from{transform:translateY(-13em)}}
+@keyframes r02{from{transform:translateY(-10em)}}
+@keyframes rise{0%{opacity:0;transform:translateY(16px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes pop{0%{opacity:0;transform:scale(0.8)}60%{opacity:1;transform:scale(1.03)}100%{opacity:1;transform:scale(1)}}
+@keyframes slideIn{0%{opacity:0;transform:translateX(-12px)}100%{opacity:1;transform:translateX(0)}}
+@keyframes railDown{0%{transform:scaleY(0)}100%{transform:scaleY(1)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes growUp{0%{transform:scaleY(0)}100%{transform:scaleY(1)}}
+@keyframes spring{0%{transform:scaleX(0)}55%{transform:scaleX(1.05)}75%{transform:scaleX(0.98)}100%{transform:scaleX(1)}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes sheetUp{0%{transform:translateY(105%)}70%{transform:translateY(-4px)}100%{transform:translateY(0)}}
+@keyframes dropIn{0%{opacity:0;transform:translateY(-24px) scale(0.96)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes ping{0%{transform:scale(1);opacity:0.55}100%{transform:scale(2.6);opacity:0}}
+@keyframes ripple{0%{transform:scale(0.9);opacity:0.5}100%{transform:scale(1.9);opacity:0}}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes glow{0%,100%{opacity:0.65}50%{opacity:1}}
+@keyframes wave{0%,100%{transform:scaleY(0.35)}50%{transform:scaleY(1)}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes knob{from{transform:translateX(157px)}}
+@keyframes scan{0%{transform:translateY(0);opacity:1}88%{opacity:1}100%{transform:translateY(184px);opacity:0}}
+@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: radial-gradient(90% 60% at 85% 100%, rgba(99,200,232,0.55) 0%, rgba(99,200,232,0) 70%), radial-gradient(80% 50% at 10% 10%, rgba(110,160,255,0.45) 0%, rgba(110,160,255,0) 70%), linear-gradient(180deg, #1F4FB8 0%, #2F67D0 45%, #3C86D9 100%); color: #1C1C1E; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', Inter, 'Helvetica Neue', sans-serif;">
+
+<span style="position: absolute; top: 92px; left: 0; right: 0; text-align: center; font-size: 19px; font-weight: 600; color: #FFFFFF;">Friday 18 September</span>
+<span style="position: absolute; top: 116px; left: 0; right: 0; text-align: center; font-family: ui-rounded, 'SF Pro Rounded', Outfit, -apple-system, sans-serif; font-size: 108px; line-height: 112px; font-weight: 700; letter-spacing: -0.02em; color: #FFFFFF; text-shadow: 0 2px 18px rgba(0,0,0,0.12);">7:46</span>
+<div style="position: absolute; top: 252px; left: 0; right: 0; display: flex; justify-content: center; gap: 12px;">
+<div style="position: relative; width: 72px; height: 72px; border-radius: 36px; background: linear-gradient(155deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0.22) 100%); -webkit-backdrop-filter: blur(20px) saturate(160%); backdrop-filter: blur(20px) saturate(160%); box-shadow: inset 0 0 0 0.5px rgba(0,0,0,0.18), inset 1.5px 1.5px 1px -0.5px rgba(255,255,255,0.7), inset -1px -1px 1px -0.5px rgba(255,255,255,0.35), 0 6px 20px rgba(0,0,0,0.14); color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center;"><svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true" style="position: absolute; inset: 0; transform: rotate(-90deg);"><circle cx="36" cy="36" r="30" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="5"></circle><circle cx="36" cy="36" r="30" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" pathLength="100" style="stroke-dasharray: 41 100; stroke-dashoffset: 0;"></circle></svg><span style="font-size: 16px; font-weight: 800; font-family: ui-rounded, 'SF Pro Rounded', Outfit, -apple-system, sans-serif; line-height: 18px;">41%</span><span style="font-size: 9px; font-weight: 600; opacity: 0.9;">spent</span></div>
+<div style="width: 158px; height: 72px; box-sizing: border-box; padding: 10px 14px; border-radius: 22px; background: linear-gradient(155deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0.22) 100%); -webkit-backdrop-filter: blur(20px) saturate(160%); backdrop-filter: blur(20px) saturate(160%); box-shadow: inset 0 0 0 0.5px rgba(0,0,0,0.18), inset 1.5px 1.5px 1px -0.5px rgba(255,255,255,0.7), inset -1px -1px 1px -0.5px rgba(255,255,255,0.35), 0 6px 20px rgba(0,0,0,0.14); color: #FFFFFF; display: flex; flex-direction: column; justify-content: center; gap: 1px;">
+<span style="font-size: 12px; font-weight: 600; opacity: 0.9;">Kira · Today</span><span style="font-size: 18px; font-weight: 800; font-family: ui-rounded, 'SF Pro Rounded', Outfit, -apple-system, sans-serif;">RM 46.10 spent</span><span style="font-size: 12px; opacity: 0.9;">Last: Burger, 5.00</span></div>
+<div style="position: relative; width: 72px; height: 72px; border-radius: 36px; background: linear-gradient(155deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0.22) 100%); -webkit-backdrop-filter: blur(20px) saturate(160%); backdrop-filter: blur(20px) saturate(160%); box-shadow: inset 0 0 0 0.5px rgba(0,0,0,0.18), inset 1.5px 1.5px 1px -0.5px rgba(255,255,255,0.7), inset -1px -1px 1px -0.5px rgba(255,255,255,0.35), 0 6px 20px rgba(0,0,0,0.14); color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center;"><svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true" style="position: absolute; inset: 0; transform: rotate(-90deg);"><circle cx="36" cy="36" r="30" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="5"></circle><circle cx="36" cy="36" r="30" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" pathLength="100" style="stroke-dasharray: 60 100; stroke-dashoffset: 0;"></circle></svg><span style="font-size: 16px; font-weight: 800; font-family: ui-rounded, 'SF Pro Rounded', Outfit, -apple-system, sans-serif; line-height: 18px;">254</span><span style="font-size: 9px; font-weight: 600; opacity: 0.9;">RM a day</span></div>
+</div>
+<div style="position: absolute; top: 520px; left: 12px; right: 12px; box-sizing: border-box; padding: 12px 14px; border-radius: 26px; background: linear-gradient(155deg, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0.42) 42%, rgba(255,255,255,0.3) 62%, rgba(255,255,255,0.56) 100%); -webkit-backdrop-filter: blur(16px) saturate(180%); backdrop-filter: blur(16px) saturate(180%); box-shadow: inset 0 0 0 0.5px rgba(0,0,0,0.2), inset 1.5px 1.5px 1px -0.5px rgba(255,255,255,1), inset -1px -1px 1px -0.5px rgba(255,255,255,0.75), 0 8px 24px rgba(0,0,0,0.10), 0 1px 3px rgba(0,0,0,0.08); display: flex; gap: 12px; animation: dropIn 0.6s cubic-bezier(.2,.8,.2,1) 0.4s both;">
+<span aria-hidden="true" style="flex-shrink: 0; width: 38px; height: 38px; border-radius: 9px; background: linear-gradient(160deg, #4C9BFF 0%, #005EEB 70%, #0047B8 100%); box-shadow: inset 0 0 0 0.5px rgba(255,255,255,0.35), inset 1px 1px 1px rgba(255,255,255,0.45); color: #FFFFFF; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6"></path><circle cx="12" cy="12" r="3"></circle><path d="M12 15v6"></path></svg></span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px;">
+<div style="display: flex; justify-content: space-between; font-size: 13px;"><b style="font-weight: 700;">Kira</b><span style="color: #636366;">now</span></div>
+<span style="font-size: 15px; font-weight: 700;">Saved 3 entries</span>
+<span style="font-size: 14px; line-height: 19px;">Lunch 12.00 · Grab 8.50 · Ali paid you back <b style="font-weight: 700; color: #1F7A35;">+20.00</b></span>
+</div>
+</div>
+<a href="TLListen.dc.html" aria-label="Log by voice" style="position: absolute; left: 44px; bottom: 54px; width: 52px; height: 52px; border-radius: 26px; background: linear-gradient(155deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0.22) 100%); -webkit-backdrop-filter: blur(20px) saturate(160%); backdrop-filter: blur(20px) saturate(160%); box-shadow: inset 0 0 0 0.5px rgba(0,0,0,0.18), inset 1.5px 1.5px 1px -0.5px rgba(255,255,255,0.7), inset -1px -1px 1px -0.5px rgba(255,255,255,0.35), 0 6px 20px rgba(0,0,0,0.14); color: #FFFFFF; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><path d="M12 19v3"></path></svg></a>
+<button type="button" aria-label="Camera" style="position: absolute; right: 44px; bottom: 54px; width: 52px; height: 52px; padding: 0; border: 0; border-radius: 26px; background: linear-gradient(155deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0.22) 100%); -webkit-backdrop-filter: blur(20px) saturate(160%); backdrop-filter: blur(20px) saturate(160%); box-shadow: inset 0 0 0 0.5px rgba(0,0,0,0.18), inset 1.5px 1.5px 1px -0.5px rgba(255,255,255,0.7), inset -1px -1px 1px -0.5px rgba(255,255,255,0.35), 0 6px 20px rgba(0,0,0,0.14); color: #FFFFFF; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg></button>
+<span style="position: absolute; left: 24px; bottom: 116px; height: 28px; padding: 0 12px; border-radius: 14px; background: rgba(0,0,0,0.28); color: #FFFFFF; display: flex; align-items: center; font-size: 12px; font-weight: 600;">Your Lock Screen control: hold to log</span>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

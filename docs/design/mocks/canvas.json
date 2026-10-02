@@ -68,7 +68,19 @@
     "TimelineEdit.dc.html": {"h": 844, "is_interactive": true, "title": "S3 · Timeline — Edit by hand", "w": 390, "x": 940, "y": 4960, "page": "round4"},
     "SheetHome.dc.html": {"h": 844, "is_interactive": true, "title": "T1 · Sheet — Home", "w": 390, "x": 0, "y": 6200, "page": "round4"},
     "SheetTalk.dc.html": {"h": 844, "is_interactive": true, "title": "T2 · Sheet — Listening", "w": 390, "x": 470, "y": 6200, "page": "round4"},
-    "SheetEdit.dc.html": {"h": 844, "is_interactive": true, "title": "T3 · Sheet — Edit by hand", "w": 390, "x": 940, "y": 6200, "page": "round4"}
+    "SheetEdit.dc.html": {"h": 844, "is_interactive": true, "title": "T3 · Sheet — Edit by hand", "w": 390, "x": 940, "y": 6200, "page": "round4"},
+    "TLNotes.dc.html": {"h": 900, "title": "What changed from S", "w": 1368, "x": 0, "y": 0, "page": "round5"},
+    "TLToday.dc.html": {"h": 844, "is_interactive": true, "title": "1 · Today", "w": 390, "x": 0, "y": 1240, "page": "round5"},
+    "TLAdd.dc.html": {"h": 844, "is_interactive": true, "title": "2 · Add", "w": 390, "x": 470, "y": 1240, "page": "round5"},
+    "TLListen.dc.html": {"h": 844, "is_interactive": true, "title": "3 · Listening", "w": 390, "x": 940, "y": 1240, "page": "round5"},
+    "TLReview.dc.html": {"h": 844, "is_interactive": true, "title": "4 · Review 3 entries", "w": 390, "x": 1410, "y": 1240, "page": "round5"},
+    "TLEdit.dc.html": {"h": 844, "is_interactive": true, "title": "5 · Edit entry", "w": 390, "x": 1880, "y": 1240, "page": "round5"},
+    "TLMonth.dc.html": {"h": 844, "is_interactive": true, "title": "6 · Month", "w": 390, "x": 0, "y": 2480, "page": "round5"},
+    "TLCategory.dc.html": {"h": 844, "is_interactive": true, "title": "7 · Category: Food", "w": 390, "x": 470, "y": 2480, "page": "round5"},
+    "TLSearch.dc.html": {"h": 844, "is_interactive": true, "title": "8 · Search", "w": 390, "x": 940, "y": 2480, "page": "round5"},
+    "TLScan.dc.html": {"h": 844, "is_interactive": true, "title": "9 · From a screenshot", "w": 390, "x": 1410, "y": 2480, "page": "round5"},
+    "TLLock.dc.html": {"h": 844, "is_interactive": true, "title": "10 · Lock Screen", "w": 390, "x": 0, "y": 3720, "page": "round5"},
+    "TLWidgets.dc.html": {"h": 844, "is_interactive": true, "title": "11 · Widgets, Control Center, Action button", "w": 390, "x": 470, "y": 3720, "page": "round5"}
   },
   "createdOnFiles": {
     "at": "2026-10-02T08:30:00Z",
@@ -77,7 +89,7 @@
   "designSystems": [],
   "launch": {
     "view": "canvas",
-    "page": "round4"
+    "page": "round5"
   },
   "notes": {
     "noteA": {
@@ -152,7 +164,14 @@
     "r4noteQ": {"x": 1410, "y": 2480, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: a grid of tiles, one answer per tile: spent, came in, left to spend, today, top category, days left.\n\nClear parts: the yellow tile is the headline number; white tiles hold the details; tiles that open show an arrow or ›.\n\nMotion: tiles pop in one by one, a highlighter marks the amounts it heard, and the days ring fills.\n\nColour & font: warm grey, white and one yellow. Bricolage Grotesque.\n\nTrade-off: the most glanceable; a fixed grid holds fewer list items."},
     "r4noteR": {"x": 1410, "y": 3720, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: a bank statement you can actually read: an In/Out box, filter pills, and a table grouped by day.\n\nClear parts: a line under every row, columns for time, item and amount, and labelled form fields when you edit.\n\nMotion: totals tick over, new rows flash yellow then fade, and a ‘What changes’ table shows before and after.\n\nColour & font: white and one cobalt. IBM Plex Sans, with Plex Mono for numbers.\n\nTrade-off: the most precise and scannable; also the most serious."},
     "r4noteS": {"x": 1410, "y": 4960, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: your day on a line, with a Now marker, cards at the time they happened, and dashed gaps for quiet hours.\n\nClear parts: summary card on top, entries as cards on the line, AI tips in a tinted box.\n\nSmart: new entries land at their time, and it asks when one looks like a repeat (‘Is this a second lunch?’).\n\nMotion: the line draws down, dots pop in, and the time knob slides to the guessed time.\n\nColour & font: off-white and one violet. Outfit.\n\nTrade-off: the best feel for a day; the month view needs its own design."},
-    "r4noteT": {"x": 1410, "y": 6200, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: the summary sits in a dark header, and everything else lives in a white sheet you can pull up.\n\nClear parts: dark is for reading numbers, white is for doing things; tabs switch Today, This month and Categories.\n\nMotion: the sheet springs up, the total rolls, and live captions fill the dark area while you talk.\n\nColour & font: navy, white and one coral; money in is mint on dark. Manrope.\n\nTrade-off: the clearest split between summary and detail; the header takes a third of the screen."}
+    "r4noteT": {"x": 1410, "y": 6200, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: the summary sits in a dark header, and everything else lives in a white sheet you can pull up.\n\nClear parts: dark is for reading numbers, white is for doing things; tabs switch Today, This month and Categories.\n\nMotion: the sheet springs up, the total rolls, and live captions fill the dark area while you talk.\n\nColour & font: navy, white and one coral; money in is mint on dark. Manrope.\n\nTrade-off: the clearest split between summary and detail; the header takes a third of the screen."},
+    "r5title": {"kind": "title1", "maxW": 2270, "text": "Round 5 — S, refined for iOS 27", "x": 0, "y": -260, "page": "round5"},
+    "r5row1": {"kind": "title1", "maxW": 2270, "text": "Today — calmer home, one Add button, glass sheets", "x": 0, "y": 980, "page": "round5"},
+    "r5row2": {"kind": "title1", "maxW": 1800, "text": "Month, categories, search and screenshots", "x": 0, "y": 2220, "page": "round5"},
+    "r5row3": {"kind": "title1", "maxW": 1330, "text": "Outside the app — Lock Screen, widgets, controls", "x": 0, "y": 3460, "page": "round5"},
+    "r5note1": {"x": 2350, "y": 1240, "w": 360, "fill": "gray", "page": "round5", "text": "Today shows three things: September’s Spent and Came in, today’s entries on the timeline, and one Add button.\n\nAdd is iOS 27’s ‘prominent tab’. It opens a glass sheet: hold to talk, type, screenshot, or log a regular again.\n\nListening shows words and entries appearing as you speak. Review places them on the timeline and asks if a lunch looks like a repeat.\n\nSheets use Apple’s × and ✓ buttons. Edit keeps the time ruler from S."},
+    "r5note2": {"x": 1880, "y": 2480, "w": 360, "fill": "gray", "page": "round5", "text": "Month holds what left Today: the 41% bar, a daily chart, the AI tip and categories.\n\nFood compares September with August, then lists entries by day.\n\nSearch answers questions (‘9 Grab rides, RM 146.60’) and keeps the search field at the bottom, the iOS way.\n\nScreenshots: it reads every row, skips one already logged, and leaves a wallet reload out of spending."},
+    "r5note3": {"x": 940, "y": 3720, "w": 360, "fill": "gray", "page": "round5", "text": "Log without opening the app: a Lock Screen control, Lock Screen widgets, Home Screen widgets with ‘Log again’ buttons, a Control Center control and the Action button.\n\nAll of them open the same listening screen. A notification confirms what was saved."}
   },
   "order": [
     "Main.dc.html",
@@ -220,13 +239,26 @@
     "TimelineEdit.dc.html",
     "SheetHome.dc.html",
     "SheetTalk.dc.html",
-    "SheetEdit.dc.html"
+    "SheetEdit.dc.html",
+    "TLNotes.dc.html",
+    "TLToday.dc.html",
+    "TLAdd.dc.html",
+    "TLListen.dc.html",
+    "TLReview.dc.html",
+    "TLEdit.dc.html",
+    "TLMonth.dc.html",
+    "TLCategory.dc.html",
+    "TLSearch.dc.html",
+    "TLScan.dc.html",
+    "TLLock.dc.html",
+    "TLWidgets.dc.html"
   ],
   "pages": [
     {"id": "round1", "name": "Round 1 · Calm"},
     {"id": "round2", "name": "Round 2 · Fun"},
     {"id": "round3", "name": "Round 3 · Type & motion"},
-    {"id": "round4", "name": "Round 4 · Clear & structured"}
+    {"id": "round4", "name": "Round 4 · Clear & structured"},
+    {"id": "round5", "name": "Round 5 · Timeline for iOS 27"}
   ],
   "title": "Spending App Mocks"
 }

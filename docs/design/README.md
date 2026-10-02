@@ -3,7 +3,7 @@
 Live canvas (all mocks; most screens can be clicked through in Play mode):
 https://claude.ai/artifact/5Z3BHZQokKGWBKkCog9HL4
 
-The canvas has four pages: **Round 1 · Calm** (directions A–E), **Round 2 · Fun** (directions F–J), **Round 3 · Type & motion** (directions K–O, plus a research board) and **Round 4 · Clear & structured** (directions P–T, plus a legend board). It opens on Round 4.
+The canvas has five pages: **Round 1 · Calm** (directions A–E), **Round 2 · Fun** (directions F–J), **Round 3 · Type & motion** (directions K–O, plus a research board), **Round 4 · Clear & structured** (directions P–T, plus a legend board) and **Round 5 · Timeline for iOS 27** (direction S built out into 11 screens, plus a notes board). It opens on Round 5.
 
 `mocks/` holds a snapshot of the canvas source. The canvas is the live version.
 
@@ -90,6 +90,33 @@ Feedback on Round 3: N (Roll) and O (Margin) were the favourites because the scr
 
 Every direction keeps the two essentials from Rounds 2 and 3: one sentence becoming three entries (with the AI's guesses marked) and a full edit screen. Motion still turns off under Reduce Motion, and accent colours used for text pass WCAG AA contrast.
 
+## Round 5 · Timeline for iOS 27 (S, refined)
+
+Feedback on Round 4: S (Timeline) is the direction to build on, with four changes. Lose the purple. Make buttons look like Apple's native Liquid Glass. Follow iOS 27. Make Today less overwhelming. It also asked for more screens.
+
+What changed:
+
+- **Accent.** Ocean blue (`#005EEB`) replaces purple, and green stays reserved for money in. The notes board on the canvas shows tangerine and deep teal as alternatives.
+- **Liquid Glass, iOS 27 style.** Glass is used only on controls (tab bar, toolbar buttons, sheets, chips, segmented controls). It follows iOS 27's refinements: a darker edge and a brighter highlight. Content stays on solid cards, as Apple recommends. Type is the system's SF Pro, with SF Pro Rounded for numbers; Inter and Outfit are web fallbacks.
+- **A calmer Today.** It now shows only September's spent and came in, today's entries on the timeline, and the tab bar. The progress bar, AI tips and categories moved to Month. The Day/Month switch, the quiet-hour labels and the three capture buttons are gone.
+- **iOS 27 tab bar.** The tabs are Today, Month and Search, plus Add as the one "prominent" tab, which is new in iOS 27.
+
+| # | Screen | What it shows |
+|---|---|---|
+| 1 | Today | The spent and came-in card, today's timeline, and yesterday continuing under the glass tab bar. |
+| 2 | Add | A glass sheet: hold to talk, type, screenshot, or "Log again" chips. |
+| 3 | Listening | Words and detected entries appear as you speak, with a blue edge glow. Let go to finish. |
+| 4 | Review | New entries placed on the timeline, a "second lunch?" check, and totals after saving. The sheet uses × and ✓. |
+| 5 | Edit entry | Spent or received, the amount with − and +, category chips, a time ruler showing the day's other entries, note, split and delete. |
+| 6 | Month | Spent vs came in with the 41% bar, a daily chart, an AI tip, and where it went. |
+| 7 | Category: Food | September vs August, then entries by day. |
+| 8 | Search | An AI answer ("9 Grab rides, RM 146.60"), filter chips, results, and the search field at the bottom. |
+| 9 | From a screenshot | Reads a wallet screenshot, skips a row already logged, and leaves a reload out of spending. |
+| 10 | Lock Screen | A Lock Screen control to log by voice, widgets, and a notification after saving. |
+| 11 | Widgets and controls | Home Screen widgets with "Log again" buttons, a Control Center control, and the Action button. |
+
+iOS 27 references: [How Liquid Glass is changing in iOS 27 (MacRumors)](https://www.macrumors.com/2026/06/10/how-liquid-glass-is-changing-in-ios-27/), [iOS 27 streamlines Liquid Glass (9to5Mac)](https://9to5mac.com/2026/05/12/ios-27-to-make-key-design-changes-to-streamline-liquid-glass-report/), [iOS 27 notable UIKit additions (prominent tab)](https://swiftjectivec.com/ios-27-notable-uikit-additions), [Build a SwiftUI app with the new design (WWDC25)](https://wwdcnotes.com/documentation/wwdc25-323-build-a-swiftui-app-with-the-new-design/).
+
 ## Capture methods
 
 All of them call one App Intent (`LogTransactionIntent`), so behaviour is identical everywhere.
@@ -143,6 +170,6 @@ The canvas board **How the AI works** shows this as a diagram.
 
 ## Next steps
 
-1. Pick a direction or a blend across the four rounds (e.g. P's titled cards with S's duplicate check, or T's sheet holding R's statement table).
+1. Review Round 5 (S refined for iOS 27): confirm the accent and the calmer Today, then design the gaps (onboarding, the full categories list, settings, dark mode).
 2. Prototype the parser on real utterances and screenshots (Manglish, DuitNow, e-wallet receipts) before polishing UI.
 3. Build the SwiftUI skeleton: SwiftData store, `LogTransactionIntent`, widget and control, then home + capture.
