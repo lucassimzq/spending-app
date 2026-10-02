@@ -122,7 +122,7 @@ iOS 27 references: [How Liquid Glass is changing in iOS 27 (MacRumors)](https://
 Feedback on Round 5: much cleaner, but the font felt too default, and the strong blue made it look like a stock iPhone app rather than its own product. Round 6 keeps all 11 screens, the calmer Today and the iOS 27 glass, and changes two things:
 
 - **Type with personality.** Titles, money amounts and the words you said use [Fraunces](https://fonts.google.com/specimen/Fraunces), a soft serif with a little wobble (its Soft and Wonky settings). Labels, lists and buttons use [Figtree](https://fonts.google.com/specimen/Figtree), which stays plain and readable at small sizes. The Lock Screen clock stays in Apple's font because it belongs to the system. The notes board also shows Bricolage Grotesque (playful) and Schibsted Grotesk (crisp, the font from N) as alternatives.
-- **Light tangerine.** `#FFA552` is the main colour, used for the Add tab, ✓ buttons, chips, the "Now" marker and progress bars, always with dark text on top. Small tangerine text and icons use a deeper `#A84A0C` so they stay readable. AI tips and guesses sit on a `#FFF1E4` tint. The background is warm paper (`#F7F3EE`) instead of iPhone grey, and money in stays green (`#1B6E30`). All text colours pass WCAG AA.
+- **Light tangerine.** `#FFA552` is the main colour, used for the Add tab, ✓ buttons, chips, the "Now" marker and progress bars, always with dark text on top. Small tangerine text and icons use a deeper `#A84A0C` so they stay readable. AI tips and guesses sit on a `#FFF1E4` tint. Backgrounds stay a neutral soft white (`#F5F4F1`, no orange glow), so tangerine only marks things you can tap or should check. Money in stays green (`#1B6E30`). All text colours pass WCAG AA.
 
 ## Capture methods
 
