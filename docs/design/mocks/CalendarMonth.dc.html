@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calendar · Month</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1B1F23;text-decoration:none}a:hover{color:#000000}
+button{font:inherit;color:inherit;cursor:pointer}
+input::placeholder{color:#B4B8BD}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FBFBF8; color: #1B1F23; font-family: 'Hanken Grotesk', -apple-system, 'Helvetica Neue', sans-serif;">
+<div style="display: flex; flex-direction: column; padding: 60px 24px 0 24px;">
+
+<div style="height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<span style="font-size: 26px; font-weight: 700; letter-spacing: -0.01em;">September <span style="font-weight: 400; color: #63666B;">2026</span></span>
+<div style="display: flex; gap: 8px;">
+<button type="button" aria-label="Previous month" style="width: 44px; height: 44px; padding: 0; border: 0; border-radius: 22px; background: #F0F0EB; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+<button type="button" aria-label="Next month" style="width: 44px; height: 44px; padding: 0; border: 0; border-radius: 22px; background: #F0F0EB; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+</div>
+</div>
+
+<div style="margin-top: 14px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px;">
+<div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 13px; color: #63666B;">In</span><span style="font-size: 21px; font-weight: 700; letter-spacing: -0.01em;">5,200.00</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 13px; color: #63666B;">Out</span><span style="font-size: 21px; font-weight: 700; letter-spacing: -0.01em;">2,146.30</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 13px; color: #63666B;">Net</span><span style="font-size: 21px; font-weight: 700; letter-spacing: -0.01em;">+3,053.70</span></div>
+</div>
+
+<div style="margin-top: 18px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; font-size: 12px; font-weight: 600; color: #63666B; text-align: center;">
+<span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+</div>
+
+<div style="margin-top: 8px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px;">
+<span></span>
+<button type="button" aria-label="1 Sep, income day" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #0D366B; color: #FFFFFF; position: relative; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">1<span aria-hidden="true" style="position: absolute; top: 5px; right: 5px; width: 14px; height: 14px; box-sizing: border-box; border-radius: 7px; border: 1.5px solid #1B1F23; background: #FFFFFF; color: #1B1F23; font-size: 11px; line-height: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center;">+</span></button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #3987E5; color: #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">2</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #86B6EF; color: #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">3</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #1C5CAB; color: #FFFFFF; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">4</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #0D366B; color: #FFFFFF; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">5</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #1C5CAB; color: #FFFFFF; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">6</button>
+
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #86B6EF; color: #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">7</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #3987E5; color: #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">8</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #86B6EF; color: #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">9</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #0D366B; color: #FFFFFF; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">10</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #3987E5; color: #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">11</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #1C5CAB; color: #FFFFFF; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">12</button>
+<a href="CalendarDay.dc.html" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border-radius: 12px; background: #0D366B; color: #FFFFFF; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">13</a>
+
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #86B6EF; color: #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">14</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #3987E5; color: #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">15</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #1C5CAB; color: #FFFFFF; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">16</button>
+<button type="button" aria-label="17 Sep, income day" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #1C5CAB; color: #FFFFFF; position: relative; display: flex; align-items: flex-start; font-size: 13px; font-weight: 600;">17<span aria-hidden="true" style="position: absolute; top: 5px; right: 5px; width: 14px; height: 14px; box-sizing: border-box; border-radius: 7px; border: 1.5px solid #1B1F23; background: #FFFFFF; color: #1B1F23; font-size: 11px; line-height: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center;">+</span></button>
+<button type="button" aria-current="date" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #3987E5; color: #1B1F23; box-shadow: 0 0 0 2px #FBFBF8, 0 0 0 4px #1B1F23; display: flex; align-items: flex-start; font-size: 13px; font-weight: 700;">18</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">19</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">20</button>
+
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">21</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">22</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">23</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">24</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">25</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">26</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">27</button>
+
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">28</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">29</button>
+<button type="button" style="height: 50px; box-sizing: border-box; padding: 6px 7px; border: 0; border-radius: 12px; background: #F0F0EB; color: #63666B; display: flex; align-items: flex-start; font-size: 13px; font-weight: 500;">30</button>
+<span></span><span></span><span></span><span></span>
+</div>
+
+<div style="margin-top: 14px; display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: #63666B;">
+<span style="display: flex; align-items: center; gap: 4px;">Less
+<span style="width: 14px; height: 14px; border-radius: 4px; background: #F0F0EB;"></span>
+<span style="width: 14px; height: 14px; border-radius: 4px; background: #86B6EF;"></span>
+<span style="width: 14px; height: 14px; border-radius: 4px; background: #3987E5;"></span>
+<span style="width: 14px; height: 14px; border-radius: 4px; background: #1C5CAB;"></span>
+<span style="width: 14px; height: 14px; border-radius: 4px; background: #0D366B;"></span>
+More spent</span>
+<span style="display: flex; align-items: center; gap: 6px;"><span style="width: 14px; height: 14px; box-sizing: border-box; border-radius: 7px; border: 1.5px solid #1B1F23; background: #FFFFFF; color: #1B1F23; font-size: 11px; line-height: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center;">+</span>Money in</span>
+</div>
+
+<div style="margin-top: 20px; height: 32px; display: flex; align-items: center; justify-content: space-between;">
+<span style="font-size: 15px; font-weight: 700;">Today · Fri 18</span>
+<span style="font-size: 13px; color: #63666B;">4 entries · −46.10</span>
+</div>
+<div style="height: 44px; display: flex; align-items: center; gap: 12px; border-top: 1px solid #E6E6E1;">
+<span style="width: 62px; font-size: 13px; color: #63666B;">7:42 PM</span>
+<span style="flex-grow: 1; font-size: 15px;">Burger</span>
+<span style="font-size: 15px; font-variant-numeric: tabular-nums;">−5.00</span>
+</div>
+<div style="height: 44px; display: flex; align-items: center; gap: 12px; border-top: 1px solid #E6E6E1;">
+<span style="width: 62px; font-size: 13px; color: #63666B;">6:20 PM</span>
+<span style="flex-grow: 1; font-size: 15px;">Grab ride home</span>
+<span style="font-size: 15px; font-variant-numeric: tabular-nums;">−18.70</span>
+</div>
+<div style="height: 44px; display: flex; align-items: center; gap: 12px; border-top: 1px solid #E6E6E1;">
+<span style="width: 62px; font-size: 13px; color: #63666B;">1:15 PM</span>
+<span style="flex-grow: 1; font-size: 15px;">Nasi lemak + teh ais</span>
+<span style="font-size: 15px; font-variant-numeric: tabular-nums;">−9.50</span>
+</div>
+
+</div>
+
+<div style="position: absolute; left: 16px; right: 16px; bottom: 34px; height: 56px; box-sizing: border-box; border-radius: 28px; background: #1B1F23; display: flex; align-items: center; gap: 6px; padding: 0 6px 0 20px;">
+<input type="text" aria-label="Add to today" placeholder="Add to today…" style="flex-grow: 1; min-width: 0; height: 44px; border: 0; background: transparent; color: #FFFFFF; font-family: 'Hanken Grotesk', -apple-system, sans-serif; font-size: 16px; outline: none;">
+<button type="button" aria-label="Read a screenshot" style="width: 44px; height: 44px; padding: 0; border: 0; border-radius: 22px; background: rgba(255, 255, 255, 0.12); color: #FFFFFF; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"></path></svg></button>
+<button type="button" aria-label="Hold to talk" style="width: 44px; height: 44px; padding: 0; border: 0; border-radius: 22px; background: #FFFFFF; color: #1B1F23; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M5 10v1a7 7 0 0 0 14 0v-1"></path><path d="M12 18v4"></path></svg></button>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

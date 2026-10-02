@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inbox · Swipe to add</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#FFFFFF;text-decoration:none}a:hover{color:#FFFFFF}
+button{font:inherit;color:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #1F35B8; color: #FFFFFF; font-family: 'IBM Plex Sans', -apple-system, 'Helvetica Neue', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<div style="display: flex; align-items: center; gap: 10px;">
+<span style="font-size: 28px; font-weight: 700; letter-spacing: -0.01em;">Inbox</span>
+<span style="min-width: 28px; height: 28px; box-sizing: border-box; padding: 0 8px; border-radius: 14px; background: #FFFFFF; color: #1F35B8; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center;">3</span>
+</div>
+<a href="InboxMonth.dc.html" aria-label="September summary" style="width: 44px; height: 44px; border-radius: 22px; background: rgba(255, 255, 255, 0.14); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V11"></path><path d="M11 20V4"></path><path d="M17 20v-6"></path><path d="M3 20h18"></path></svg></a>
+</div>
+
+<div style="position: absolute; top: 112px; left: 24px; right: 24px; display: flex; gap: 20px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #C9CFF0;">
+<span>SEP IN <span style="color: #FFFFFF; font-weight: 600;">5,200.00</span></span>
+<span>OUT <span style="color: #FFFFFF; font-weight: 600;">2,146.30</span></span>
+</div>
+
+<div aria-hidden="true" style="position: absolute; top: 188px; left: 48px; width: 294px; height: 370px; border-radius: 10px; background: #CFC8B8;"></div>
+<div aria-hidden="true" style="position: absolute; top: 172px; left: 36px; width: 318px; height: 370px; border-radius: 10px; background: #E7E2D6;"></div>
+
+<div style="position: absolute; top: 156px; left: 24px; width: 342px; filter: drop-shadow(0 14px 22px rgba(6, 14, 64, 0.35));">
+<div style="box-sizing: border-box; height: 370px; background: #FBF8F1; color: #1A1A1A; border-radius: 10px 10px 0 0; padding: 20px; display: flex; flex-direction: column;">
+<div style="display: flex; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #6A665C;">
+<span style="display: flex; align-items: center; gap: 6px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"></path></svg>FOUND IN PHOTOS · SCREENSHOT</span>
+<span>6:20 PM</span>
+</div>
+<div style="margin: 14px 0; border-top: 1.5px dashed #CFC9BC;"></div>
+<span style="font-size: 24px; line-height: 30px; font-weight: 700;">Grab</span>
+<span style="font-size: 14px; line-height: 20px; color: #6A665C;">Ride home · Bangsar South → Home</span>
+<span style="margin-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 40px; line-height: 48px; font-weight: 600; letter-spacing: -0.02em;">RM 18.70</span>
+<div style="margin-top: 14px; display: flex; flex-direction: column; gap: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 20px;">
+<div style="display: flex; align-items: center;"><span style="width: 104px; color: #6A665C;">CATEGORY</span><span style="display: flex; align-items: center; gap: 4px; font-weight: 600;">Transport<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></div>
+<div style="display: flex; align-items: center;"><span style="width: 104px; color: #6A665C;">WHEN</span><span>Today, 6:20 PM</span></div>
+<div style="display: flex; align-items: center;"><span style="width: 104px; color: #6A665C;">PAID WITH</span><span>Visa •••• 4821</span></div>
+</div>
+<div style="margin-top: auto; display: flex; gap: 10px;">
+<button type="button" style="height: 48px; padding: 0 22px; border: 1.5px solid #1A1A1A; border-radius: 24px; background: transparent; color: #1A1A1A; font-size: 15px; font-weight: 600;">Skip</button>
+<button type="button" style="flex-grow: 1; height: 48px; border: 0; border-radius: 24px; background: #1F35B8; color: #FFFFFF; font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px;">Add<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></button>
+</div>
+</div>
+<svg width="342" height="6" viewBox="0 0 342 6" aria-hidden="true" style="display: block;"><path d="M0 0 L4.5 6 L9 0 L13.5 6 L18 0 L22.5 6 L27 0 L31.5 6 L36 0 L40.5 6 L45 0 L49.5 6 L54 0 L58.5 6 L63 0 L67.5 6 L72 0 L76.5 6 L81 0 L85.5 6 L90 0 L94.5 6 L99 0 L103.5 6 L108 0 L112.5 6 L117 0 L121.5 6 L126 0 L130.5 6 L135 0 L139.5 6 L144 0 L148.5 6 L153 0 L157.5 6 L162 0 L166.5 6 L171 0 L175.5 6 L180 0 L184.5 6 L189 0 L193.5 6 L198 0 L202.5 6 L207 0 L211.5 6 L216 0 L220.5 6 L225 0 L229.5 6 L234 0 L238.5 6 L243 0 L247.5 6 L252 0 L256.5 6 L261 0 L265.5 6 L270 0 L274.5 6 L279 0 L283.5 6 L288 0 L292.5 6 L297 0 L301.5 6 L306 0 L310.5 6 L315 0 L319.5 6 L324 0 L328.5 6 L333 0 L337.5 6 L342 0 Z" fill="#FBF8F1"></path></svg>
+</div>
+
+<div style="position: absolute; top: 576px; left: 24px; right: 24px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #C9CFF0;">UP NEXT · 2</span>
+<div style="height: 48px; box-sizing: border-box; padding: 0 14px; border-radius: 14px; background: rgba(255, 255, 255, 0.10); display: flex; align-items: center; gap: 12px;">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20"></path></svg>
+<span style="flex-grow: 1; font-size: 15px;">Petronas <span style="font-size: 13px; color: #C9CFF0;">· Apple Pay tap</span></span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px;">−60.00</span>
+</div>
+<div style="height: 48px; box-sizing: border-box; padding: 0 14px; border-radius: 14px; background: rgba(255, 255, 255, 0.10); display: flex; align-items: center; gap: 12px;">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+<span style="flex-grow: 1; font-size: 15px;">Shopee <span style="font-size: 13px; color: #C9CFF0;">· e-receipt</span></span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px;">−59.00</span>
+</div>
+</div>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 34px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+<div style="display: flex; align-items: center; gap: 24px;">
+<a href="InboxScan.dc.html" aria-label="Read a screenshot" style="width: 48px; height: 48px; border-radius: 24px; background: rgba(255, 255, 255, 0.14); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"></path></svg></a>
+<button type="button" aria-label="Hold to talk" style="width: 64px; height: 64px; padding: 0; border: 0; border-radius: 32px; background: #FFFFFF; color: #1F35B8; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M5 10v1a7 7 0 0 0 14 0v-1"></path><path d="M12 18v4"></path></svg></button>
+<button type="button" aria-label="Type it" style="width: 48px; height: 48px; padding: 0; border: 0; border-radius: 24px; background: rgba(255, 255, 255, 0.14); color: #FFFFFF; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"></path></svg></button>
+</div>
+<span style="font-size: 12px; color: #C9CFF0;">What you say is saved. What it finds, you confirm.</span>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

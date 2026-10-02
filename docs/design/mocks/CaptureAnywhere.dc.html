@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Capture anywhere</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#18181B;text-decoration:none}a:hover{color:#000000}
+</style>
+</helmet>
+<div style="width: 1368px; height: 1064px; box-sizing: border-box; padding: 48px; background: #FAFAF9; color: #18181B; font-family: Geist, -apple-system, 'Segoe UI', sans-serif; display: flex; flex-direction: column;">
+
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<h1 style="margin: 0; font-size: 34px; line-height: 40px; font-weight: 700; letter-spacing: -0.02em;">Capture anywhere</h1>
+<p style="margin: 0; max-width: 940px; font-size: 17px; line-height: 24px; color: #5F5F66;">Every way in calls the same “log it” action, so Siri, the Action Button, the Lock Screen, widgets and Shortcuts all behave the same. Say it, snap it, or let it come to you.</p>
+</div>
+
+<div style="margin-top: 32px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px;">
+
+<div style="height: 356px; box-sizing: border-box; padding: 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column; gap: 14px;">
+<div style="height: 196px; border-radius: 16px; background: #F2F2EF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+<span style="max-width: 220px; padding: 8px 12px; border-radius: 14px 14px 4px 14px; background: #18181B; color: #FFFFFF; font-size: 13px; line-height: 18px;">“I spent 5 ringgit on burger”</span>
+<span style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E4E4E0; font-size: 13px;"><span style="font-weight: 600;">−RM 5.00</span>Burger · Food</span>
+<span style="width: 48px; height: 48px; border-radius: 24px; background: #D93D00; color: #FFFFFF; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M5 10v1a7 7 0 0 0 14 0v-1"></path><path d="M12 18v4"></path></svg></span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 600;">Hold to talk</span><span style="height: 24px; padding: 0 10px; border-radius: 12px; background: #E8F0FB; color: #1F4E8C; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Day 1</span></div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5F5F66;">Speak the way you’d text a friend: English, BM or Manglish. Several items in one breath.</p>
+</div>
+</div>
+
+<div style="height: 356px; box-sizing: border-box; padding: 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column; gap: 14px;">
+<div style="height: 196px; border-radius: 16px; background: #F2F2EF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+<span style="max-width: 236px; text-align: center; font-size: 13px; line-height: 18px; font-style: italic; color: #5F5F66;">“Hey Siri, log in Kira” … “5 ringgit burger”</span>
+<div style="width: 236px; box-sizing: border-box; padding: 12px 14px; border-radius: 18px; background: #1C1C22; color: #FFFFFF; display: flex; align-items: center; gap: 10px;">
+<span style="flex-shrink: 0; width: 30px; height: 30px; border-radius: 8px; background: #0A0A0F; border: 1px solid rgba(255, 255, 255, 0.18); display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7.5" fill="none" stroke="#FFFFFF" stroke-width="2.5"></circle><circle cx="18.2" cy="6" r="2.6" fill="#4FD18B"></circle></svg></span>
+<span style="flex-grow: 1; display: flex; flex-direction: column;"><span style="font-size: 14px; font-weight: 600;">Logged −RM 5.00</span><span style="font-size: 12px; color: #B4B4BC;">Burger · Food</span></span>
+<span style="height: 28px; padding: 0 10px; border-radius: 14px; background: rgba(255, 255, 255, 0.14); font-size: 12px; font-weight: 600; display: flex; align-items: center;">Undo</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 600;">Siri</span><span style="height: 24px; padding: 0 10px; border-radius: 12px; background: #E8F0FB; color: #1F4E8C; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Day 1</span></div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5F5F66;">Hands-free with AirPods. Siri only asks a follow-up when the amount is missing.</p>
+</div>
+</div>
+
+<div style="height: 356px; box-sizing: border-box; padding: 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column; gap: 14px;">
+<div style="height: 196px; border-radius: 16px; background: #F2F2EF; position: relative; display: flex; align-items: center; justify-content: center;">
+<span style="position: absolute; left: 22px; top: 44px; font-size: 12px; font-weight: 600; color: #B83300;">press &amp; hold</span>
+<div style="position: relative; width: 96px; height: 164px; box-sizing: border-box; border: 3px solid #18181B; border-radius: 24px; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+<span style="position: absolute; left: -8px; top: 30px; width: 4px; height: 20px; border-radius: 2px; background: #D93D00;"></span>
+<span style="position: absolute; left: -8px; top: 60px; width: 4px; height: 26px; border-radius: 2px; background: #18181B;"></span>
+<span style="position: absolute; left: -8px; top: 94px; width: 4px; height: 26px; border-radius: 2px; background: #18181B;"></span>
+<span style="display: flex; align-items: center; gap: 3px; height: 22px;">
+<span style="width: 3px; height: 8px; border-radius: 2px; background: #18181B;"></span>
+<span style="width: 3px; height: 18px; border-radius: 2px; background: #18181B;"></span>
+<span style="width: 3px; height: 12px; border-radius: 2px; background: #18181B;"></span>
+<span style="width: 3px; height: 22px; border-radius: 2px; background: #18181B;"></span>
+<span style="width: 3px; height: 10px; border-radius: 2px; background: #18181B;"></span>
+</span>
+<span style="font-size: 11px; color: #5F5F66;">Listening…</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 600;">Action Button</span><span style="height: 24px; padding: 0 10px; border-radius: 12px; background: #E8F0FB; color: #1F4E8C; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Day 1</span></div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5F5F66;">Map it to Kira: press, speak, let go. Works from the Lock Screen. iPhone 15 Pro and newer.</p>
+</div>
+</div>
+
+<div style="height: 356px; box-sizing: border-box; padding: 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column; gap: 14px;">
+<div style="height: 196px; border-radius: 16px; background: #11131C; position: relative; color: #FFFFFF;">
+<div style="position: absolute; top: 22px; left: 50%; width: 168px; margin-left: -84px; box-sizing: border-box; padding: 10px 14px; border-radius: 18px; background: rgba(255, 255, 255, 0.14); display: flex; flex-direction: column; gap: 2px;">
+<span style="font-size: 11px; font-weight: 600; color: rgba(255, 255, 255, 0.82);">Spent today</span>
+<span style="font-size: 20px; line-height: 24px; font-weight: 700;">RM 46.10</span>
+<span style="font-size: 10px; color: rgba(255, 255, 255, 0.78);">Sep · out 2,146 · in 5,200</span>
+</div>
+<span style="position: absolute; left: 24px; bottom: 22px; width: 44px; height: 44px; border-radius: 22px; background: rgba(255, 255, 255, 0.20); box-shadow: 0 0 0 3px #D93D00; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M5 10v1a7 7 0 0 0 14 0v-1"></path><path d="M12 18v4"></path></svg></span>
+<span style="position: absolute; right: 24px; bottom: 22px; width: 44px; height: 44px; border-radius: 22px; background: rgba(255, 255, 255, 0.20); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 600;">Lock Screen &amp; widgets</span><span style="height: 24px; padding: 0 10px; border-radius: 12px; background: #E8F0FB; color: #1F4E8C; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Day 1</span></div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5F5F66;">Swap the flashlight for “Log spend”, or use Control Center. The widget shows today without unlocking.</p>
+</div>
+</div>
+
+<div style="height: 356px; box-sizing: border-box; padding: 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column; gap: 14px;">
+<div style="height: 196px; border-radius: 16px; background: #F2F2EF; position: relative; display: flex; align-items: center; justify-content: center;">
+<div style="position: relative; width: 96px; height: 164px; box-sizing: border-box; border: 3px solid #18181B; border-radius: 24px; background: #FFFFFF;">
+<span style="position: absolute; top: 10px; left: 10px; width: 34px; height: 34px; box-sizing: border-box; border: 2px solid #18181B; border-radius: 10px;"></span>
+<span style="position: absolute; top: 62px; left: 22px; width: 46px; height: 46px; box-sizing: border-box; border: 2px dashed #D93D00; border-radius: 23px;"></span>
+<span style="position: absolute; top: 74px; left: 34px; width: 22px; height: 22px; border-radius: 11px; background: #D93D00; color: #FFFFFF; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center;">2×</span>
+</div>
+<div style="position: absolute; right: 14px; bottom: 16px; width: 150px; box-sizing: border-box; padding: 8px 10px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E4E4E0; box-shadow: 0 6px 16px rgba(24, 24, 27, 0.10); display: flex; flex-direction: column;">
+<span style="font-size: 11px; font-weight: 600;">Logged · Grab</span>
+<span style="font-size: 12px;">−RM 18.70 · Transport</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 600;">Back Tap</span><span style="height: 24px; padding: 0 10px; border-radius: 12px; background: #FDF0E6; color: #8A3B12; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Guided setup</span></div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5F5F66;">Double-tap the back of the phone on any payment screen. It screenshots, reads and logs it.</p>
+</div>
+</div>
+
+<div style="height: 356px; box-sizing: border-box; padding: 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column; gap: 14px;">
+<div style="height: 196px; border-radius: 16px; background: #F2F2EF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+<div style="width: 156px; height: 96px; box-sizing: border-box; padding: 12px 14px; border-radius: 12px; background: #18181B; color: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between;">
+<span style="width: 26px; height: 20px; border-radius: 4px; background: #C9B37A;"></span>
+<span style="font-size: 12px; letter-spacing: 0.08em;">•••• 4821</span>
+</div>
+<div style="width: 220px; box-sizing: border-box; padding: 8px 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column;">
+<span style="font-size: 11px; font-weight: 600;">Logged · 99 Speedmart</span>
+<span style="font-size: 12px;">−RM 34.80 · Groceries</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 600;">Apple Pay taps</span><span style="height: 24px; padding: 0 10px; border-radius: 12px; background: #FDF0E6; color: #8A3B12; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Guided setup</span></div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5F5F66;">A Shortcuts automation runs on every Wallet tap and hands over merchant and amount.</p>
+</div>
+</div>
+
+<div style="height: 356px; box-sizing: border-box; padding: 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column; gap: 14px;">
+<div style="height: 196px; border-radius: 16px; background: #F2F2EF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
+<div style="display: flex; gap: 14px;">
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px;"><span style="width: 44px; height: 44px; border-radius: 12px; background: #DADAD6;"></span><span style="font-size: 10px; color: #5F5F66;">&#160;</span></span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px;"><span style="width: 44px; height: 44px; border-radius: 12px; background: #0A0A0F; box-shadow: 0 0 0 3px #F2F2EF, 0 0 0 5px #D93D00; display: flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7.5" fill="none" stroke="#FFFFFF" stroke-width="2.5"></circle><circle cx="18.2" cy="6" r="2.6" fill="#4FD18B"></circle></svg></span><span style="font-size: 10px; font-weight: 600;">Kira</span></span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px;"><span style="width: 44px; height: 44px; border-radius: 12px; background: #DADAD6;"></span><span style="font-size: 10px; color: #5F5F66;">&#160;</span></span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4px;"><span style="width: 44px; height: 44px; border-radius: 12px; background: #DADAD6;"></span><span style="font-size: 10px; color: #5F5F66;">&#160;</span></span>
+</div>
+<span style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E4E4E0; font-size: 12px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"></path></svg>3 new payment screenshots · <span style="font-weight: 600;">Review</span></span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 600;">Share &amp; Photos</span><span style="height: 24px; padding: 0 10px; border-radius: 12px; background: #E8F0FB; color: #1F4E8C; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Day 1</span></div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5F5F66;">Share any screenshot, photo or PDF to Kira. In v1.1 it can also spot new payment screenshots in Photos, on-device.</p>
+</div>
+</div>
+
+<div style="height: 356px; box-sizing: border-box; padding: 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E4E4E0; display: flex; flex-direction: column; gap: 14px;">
+<div style="height: 196px; border-radius: 16px; background: #F2F2EF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+<span style="width: 220px; height: 40px; box-sizing: border-box; padding: 0 14px; border-radius: 20px; background: #FFFFFF; border: 1px solid #DADAD6; display: flex; align-items: center; font-size: 14px;">teh tarik 2.80<span style="margin-left: 2px; width: 2px; height: 18px; background: #2A78D6;"></span></span>
+<span style="font-size: 12px; color: #5F5F66;">→ −RM 2.80 · Teh tarik · Food</span>
+<div style="margin-top: 6px; display: flex; gap: 6px;">
+<span style="height: 32px; padding: 0 10px; border-radius: 16px; background: #18181B; color: #FFFFFF; font-size: 12px; display: flex; align-items: center;">Teh tarik 2.80</span>
+<span style="height: 32px; padding: 0 10px; border-radius: 16px; background: #18181B; color: #FFFFFF; font-size: 12px; display: flex; align-items: center;">Parking 3.00</span>
+<span style="height: 32px; padding: 0 10px; border-radius: 16px; background: #18181B; color: #FFFFFF; font-size: 12px; display: flex; align-items: center;">Grab 15</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 600;">Type &amp; repeat</span><span style="height: 24px; padding: 0 10px; border-radius: 12px; background: #E8F0FB; color: #1F4E8C; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Day 1</span></div>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5F5F66;">Type it like a text: “burger 5”. Your regulars become one-tap repeats on a widget.</p>
+</div>
+</div>
+
+</div>
+
+<div style="margin-top: 24px; box-sizing: border-box; padding: 16px 20px; border-radius: 18px; background: #FFFFFF; border: 1px dashed #CFCFCA; display: flex; align-items: center; gap: 14px;">
+<span style="flex-shrink: 0; height: 24px; padding: 0 10px; border-radius: 12px; background: #EFEFEC; color: #45454B; font-size: 12px; font-weight: 600; display: flex; align-items: center;">Later</span>
+<span style="font-size: 15px; line-height: 22px; color: #3F3F46;">Forward e-receipts (Grab, Shopee, Foodpanda) to a private address · drop in a bank statement PDF to catch up a whole month · recurring bills and salary suggested automatically</span>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1368,"height":1064}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
