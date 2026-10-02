@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ledger · Edit by hand</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0B1220;text-decoration:none}a:hover{color:#0B1220}
+button{font:inherit;color:inherit;cursor:pointer}
+input,textarea{font:inherit;color:inherit}
+input::placeholder,textarea::placeholder{color:#5B6472}
+@keyframes flash{0%{background-color:#FEF3C7}100%{background-color:rgba(254,243,199,0)}}
+@keyframes roll{from{transform:translateY(0)}}
+@keyframes r46{from{transform:translateY(-14em)}}
+@keyframes r38{from{transform:translateY(-13em)}}
+@keyframes r02{from{transform:translateY(-10em)}}
+@keyframes rise{0%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes pop{0%{opacity:0;transform:scale(0.7)}60%{opacity:1;transform:scale(1.04)}80%{transform:scale(0.99)}100%{opacity:1;transform:scale(1)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes spring{0%{transform:scaleX(0)}55%{transform:scaleX(1.06)}75%{transform:scaleX(0.98)}100%{transform:scaleX(1)}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes sheetUp{0%{transform:translateY(100%)}70%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+@keyframes ping{0%{transform:scale(1);opacity:0.55}100%{transform:scale(2.6);opacity:0}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes slideIn{0%{opacity:0;transform:translateX(-14px)}100%{opacity:1;transform:translateX(0)}}
+@keyframes wave{0%,100%{transform:scaleY(0.3)}50%{transform:scaleY(1)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FFFFFF; color: #0B1220; font-family: 'IBM Plex Sans', -apple-system, 'Helvetica Neue', sans-serif;">
+
+<div style="position: absolute; top: 52px; left: 16px; right: 16px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<a href="LedgerHome.dc.html" aria-label="Close" style="flex-shrink: 0; width: 44px; height: 44px; box-sizing: border-box; padding: 0; border: 1px solid #CBD2DA; border-radius: 12px; background: #FFFFFF; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></a>
+<h1 style="margin: 0; font-size: 17px; font-weight: 700;">Edit row</h1>
+<button type="button" aria-label="Delete row" style="flex-shrink: 0; width: 44px; height: 44px; box-sizing: border-box; padding: 0; border: 1px solid #CBD2DA; border-radius: 12px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #DC2626;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg></button>
+</div>
+
+<div style="position: absolute; top: 108px; left: 16px; right: 16px;">
+<span style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600;">Type</span>
+<div role="group" aria-label="Type" style="height: 44px; box-sizing: border-box; border: 1px solid #CBD2DA; border-radius: 10px; overflow: hidden; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));">
+<button type="button" aria-pressed="true" style="border: 0; background: #1D4ED8; color: #FFFFFF; font-size: 15px; font-weight: 600;">Spent</button>
+<button type="button" aria-pressed="false" style="border: 0; border-left: 1px solid #CBD2DA; background: #FFFFFF; font-size: 15px; font-weight: 500;">Received</button>
+</div>
+</div>
+
+<div style="position: absolute; top: 189px; left: 16px; right: 16px;">
+<label for="ledger-amount" style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600;">Amount (RM)</label>
+<div style="height: 52px; box-sizing: border-box; border: 2px solid #1D4ED8; border-radius: 10px; display: flex; align-items: center; overflow: hidden;">
+<input id="ledger-amount" type="text" inputmode="decimal" value="12.00" style="flex-grow: 1; min-width: 0; height: 48px; padding: 0 12px; border: 0; outline: none; background: transparent; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 24px; font-weight: 600;">
+<button type="button" aria-label="Minus one ringgit" style="flex-shrink: 0; width: 48px; height: 48px; padding: 0; border: 0; border-left: 1px solid #CBD2DA; background: #F6F7F9; display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path></svg></button>
+<button type="button" aria-label="Plus one ringgit" style="flex-shrink: 0; width: 48px; height: 48px; padding: 0; border: 0; border-left: 1px solid #CBD2DA; background: #F6F7F9; display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></button>
+</div>
+</div>
+
+<div style="position: absolute; top: 278px; left: 16px; right: 16px;">
+<label for="ledger-desc" style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600;">Description</label>
+<input id="ledger-desc" type="text" value="Lunch" style="width: 100%; height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #CBD2DA; border-radius: 10px; background: #FFFFFF; outline: none; font-size: 16px;">
+</div>
+
+<div style="position: absolute; top: 363px; left: 16px; right: 16px;">
+<span style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600;">Category</span>
+<button type="button" aria-label="Category: Food" style="width: 100%; height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #CBD2DA; border-radius: 10px; background: #FFFFFF; display: flex; align-items: center; gap: 10px; text-align: left; font-size: 16px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path><path d="M7 2v20"></path><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path></svg><span style="flex-grow: 1;">Food</span><span style="color: #5B6472; display: flex;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+</div>
+
+<div style="position: absolute; top: 448px; left: 16px; right: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+<div><span style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600;">Date</span><button type="button" style="width: 100%; height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #CBD2DA; border-radius: 10px; background: #FFFFFF; display: flex; align-items: center; justify-content: space-between; font-size: 16px;">Fri 18 Sep<span style="color: #5B6472; display: flex;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></span></button></div>
+<div><span style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600;">Time</span><button type="button" style="width: 100%; height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #CBD2DA; border-radius: 10px; background: #FFFFFF; border: 1.5px solid #92400E; background: #FEF3C7; display: flex; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 16px;">13:00<span style="color: #92400E; display: flex;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg></span></button>
+<span style="display: block; margin-top: 6px; font-size: 12px; font-weight: 600; color: #92400E;">Estimated from “lunch”</span></div>
+</div>
+
+<div style="position: absolute; top: 557px; left: 16px; right: 16px;">
+<label for="ledger-note" style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600;">Note</label>
+<textarea id="ledger-note" placeholder="Optional" style="width: 100%; height: 64px; box-sizing: border-box; padding: 10px 12px; border: 1px solid #CBD2DA; border-radius: 10px; outline: none; resize: none; font-size: 15px;"></textarea>
+</div>
+
+<button type="button" style="position: absolute; top: 660px; left: 16px; right: 16px; height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #CBD2DA; border-radius: 10px; background: #FFFFFF; display: flex; align-items: center; gap: 10px; text-align: left; font-size: 15px; font-weight: 600;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span style="flex-grow: 1;">Split this row</span><span style="color: #9AA3AF; display: flex;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></span></button>
+
+<a href="LedgerHome.dc.html" style="position: absolute; left: 16px; right: 16px; bottom: 34px; height: 52px; border-radius: 12px; background: #1D4ED8; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600;">Save row</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

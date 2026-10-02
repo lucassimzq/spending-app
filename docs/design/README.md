@@ -3,7 +3,7 @@
 Live canvas (all mocks; most screens can be clicked through in Play mode):
 https://claude.ai/artifact/5Z3BHZQokKGWBKkCog9HL4
 
-The canvas has three pages: **Round 1 · Calm** (directions A–E), **Round 2 · Fun** (directions F–J) and **Round 3 · Type & motion** (directions K–O, plus a research board). It opens on Round 3.
+The canvas has four pages: **Round 1 · Calm** (directions A–E), **Round 2 · Fun** (directions F–J), **Round 3 · Type & motion** (directions K–O, plus a research board) and **Round 4 · Clear & structured** (directions P–T, plus a legend board). It opens on Round 4.
 
 `mocks/` holds a snapshot of the canvas source. The canvas is the live version.
 
@@ -71,6 +71,25 @@ Motion in the mocks is CSS and turns off under Reduce Motion. In SwiftUI it maps
 
 Research sources: [Apple Design Awards 2026 winners](https://www.apple.com/newsroom/2026/06/apple-reveals-winners-of-the-2026-apple-design-awards/), [2026 finalists (MacStories)](https://www.macstories.net/news/apple-announces-its-2026-apple-design-award-finalists/), [Flighty design guide](https://blakecrosley.com/guides/design/flighty), [(Not Boring) Weather](https://www.tapsmart.com/apps/not-boring-weather-fun-alternative-weather-watchers/), [Copilot Money review](https://freenance.io/products/copilot-money-review-2026-budgeting-app-iphone-best-design/), [Revolut design notes](https://www.webdesignhot.com/api/design-md/revolut.md), [numericText in SwiftUI](https://www.createwithswift.com/animating-numeric-text-in-swiftui-with-the-content-transition-modifier/), [TextRenderer effects](https://www.createwithswift.com/text-effects-using-textrenderer-in-swiftui), [variable fonts in motion (FontLab)](https://blog.fontlab.com/2026/03/10/variable-fonts-in-motion-and-ui/).
 
+## Round 4 · Clear & structured (P–T)
+
+Feedback on Round 3: N (Roll) and O (Margin) were the favourites because the screen is clearly divided into parts. There are cards, pills and lines, buttons look like buttons, and coloured numbers mark what matters. The other directions read as "a bunch of text", so it took a few seconds to find the important number. Round 4 keeps the motion and the fonts but makes structure the rule. Every direction uses the same parts, explained on the canvas's legend board:
+
+- **Containers.** Every section sits in a card, a tile, or rows separated by lines, and every number has a label above it.
+- **Buttons.** One filled primary button per screen. Other actions are tinted or outlined pills, and icon actions are circles.
+- **Tappable vs read-only.** Rows that open have a ›. Tags (small, square-cornered) describe an entry and aren't tappable. Chips (round, with + or ✓) add, filter or pick in one tap.
+- **Colour marks data.** Green is money in and dark ink is money out. The accent colour marks anything the AI guessed, and AI tips sit in a tinted box.
+
+| | Direction | Layout | Home shows | Signature motion | Colour · font | Trade-off |
+|---|---|---|---|---|---|---|
+| P | **Stack** | Titled cards (like Apple Health's summary) and a floating action bar | This month (spent, came in, left), Today, Log again | Cards rise in, totals roll, new entries arrive in a sheet | iOS grey + indigo · Plus Jakarta Sans | The most familiar and the easiest to build; the least distinctive. |
+| Q | **Bento** | A grid of tiles, one answer per tile | A yellow "spent" tile, came in, left to spend, today, top category, days left | Tiles pop in, a highlighter marks the amounts it heard, the days ring fills | Warm grey + yellow · Bricolage Grotesque | The most glanceable; a fixed grid holds fewer list items. |
+| R | **Ledger** | A statement table with lines, filter pills and labelled form fields | An In/Out box, filters, and a table grouped by day | Totals tick over, new rows flash yellow, a before/after table | White + cobalt · IBM Plex Sans and Plex Mono | The most precise and scannable; also the most serious. |
+| S | **Timeline** | A vertical line with cards at their time, a Now marker and dashed quiet gaps | A month summary card, today on the line, an AI tip | The line draws down, dots pop in, the time knob slides; it asks "Is this a second lunch?" | Off-white + violet · Outfit | The best feel for a day; the month view needs its own design. |
+| T | **Sheet** | A dark summary header over a white sheet with tabs | Spent, came in and left on dark; Today and Log again in the sheet | The sheet springs up, the total rolls, live captions fill the dark area | Navy + coral, mint for money in · Manrope | The clearest split between reading and doing; the header takes a third of the screen. |
+
+Every direction keeps the two essentials from Rounds 2 and 3: one sentence becoming three entries (with the AI's guesses marked) and a full edit screen. Motion still turns off under Reduce Motion, and accent colours used for text pass WCAG AA contrast.
+
 ## Capture methods
 
 All of them call one App Intent (`LogTransactionIntent`), so behaviour is identical everywhere.
@@ -120,10 +139,10 @@ The canvas board **How the AI works** shows this as a diagram.
 
 ## Sample data used in the mocks
 
-1–18 September 2026: in RM 5,200.00 (salary 4,800 + freelance 400), out RM 2,146.30. That splits into rent 900.00, food 486.40, groceries 238.90, transport 212.60, shopping 159.00 and bills 149.40, which is 41% of income spent and net +3,053.70. Where categories are coloured, each direction's palette passes colour-blind checks. Round 3 doesn't colour categories at all.
+1–18 September 2026: in RM 5,200.00 (salary 4,800 + freelance 400), out RM 2,146.30. That splits into rent 900.00, food 486.40, groceries 238.90, transport 212.60, shopping 159.00 and bills 149.40, which is 41% of income spent and net +3,053.70. Where categories are coloured, each direction's palette passes colour-blind checks. Rounds 3 and 4 don't colour categories; Round 4 marks them with icons instead.
 
 ## Next steps
 
-1. Pick a direction or a blend across the three rounds (e.g. N's rolling numbers with O's margin notes for AI guesses, or K's weighted numbers on A's two-number home).
+1. Pick a direction or a blend across the four rounds (e.g. P's titled cards with S's duplicate check, or T's sheet holding R's statement table).
 2. Prototype the parser on real utterances and screenshots (Manglish, DuitNow, e-wallet receipts) before polishing UI.
 3. Build the SwiftUI skeleton: SwiftData store, `LogTransactionIntent`, widget and control, then home + capture.

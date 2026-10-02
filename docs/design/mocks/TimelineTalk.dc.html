@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Timeline · One sentence, three entries</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#14121A;text-decoration:none}a:hover{color:#14121A}
+button{font:inherit;color:inherit;cursor:pointer}
+input,textarea{font:inherit;color:inherit}
+input::placeholder,textarea::placeholder{color:#615E6B}
+@keyframes railDown{0%{transform:scaleY(0)}100%{transform:scaleY(1)}}
+@keyframes knob{from{transform:translateX(157px)}}
+@keyframes roll{from{transform:translateY(0)}}
+@keyframes r46{from{transform:translateY(-14em)}}
+@keyframes r38{from{transform:translateY(-13em)}}
+@keyframes r02{from{transform:translateY(-10em)}}
+@keyframes rise{0%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes pop{0%{opacity:0;transform:scale(0.7)}60%{opacity:1;transform:scale(1.04)}80%{transform:scale(0.99)}100%{opacity:1;transform:scale(1)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes spring{0%{transform:scaleX(0)}55%{transform:scaleX(1.06)}75%{transform:scaleX(0.98)}100%{transform:scaleX(1)}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes sheetUp{0%{transform:translateY(100%)}70%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+@keyframes ping{0%{transform:scale(1);opacity:0.55}100%{transform:scale(2.6);opacity:0}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes slideIn{0%{opacity:0;transform:translateX(-14px)}100%{opacity:1;transform:translateX(0)}}
+@keyframes wave{0%,100%{transform:scaleY(0.3)}50%{transform:scaleY(1)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FAFAFC; color: #14121A; font-family: Outfit, -apple-system, 'Helvetica Neue', sans-serif;">
+
+<div style="position: absolute; top: 52px; left: 16px; right: 16px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<h1 style="margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.01em;">Placing 3 entries</h1>
+<a href="TimelineHome.dc.html" style="height: 44px; padding: 0 18px; border-radius: 22px; background: #F1F0F5; display: flex; align-items: center; font-size: 15px; font-weight: 700;">Cancel</a>
+</div>
+<div style="position: absolute; top: 106px; left: 16px; right: 16px; box-sizing: border-box; padding: 12px 14px; border-radius: 16px; background: #F3EEFF; display: flex; align-items: flex-start; gap: 10px;">
+<span style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 14px; background: #FFFFFF; color: #6D28D9; display: flex; align-items: center; justify-content: center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><path d="M12 19v3"></path></svg></span>
+<p style="margin: 0; font-size: 15px; line-height: 21px; font-weight: 500;">“lunch <b style="font-weight: 800; color: #5B21B6;">12</b>, grab <b style="font-weight: 800; color: #5B21B6;">8.50</b>, and Ali paid me back <b style="font-weight: 800; color: #5B21B6;">20</b>”</p>
+</div>
+
+<span aria-hidden="true" style="position: absolute; top: 202px; left: 31px; width: 2px; height: 290px; box-sizing: border-box; background: #DCD9E3; transform-origin: top center; animation: railDown 0.35s linear 0.2s both;"></span>
+<span aria-hidden="true" style="position: absolute; top: 196px; left: 26px; width: 12px; height: 12px; border-radius: 6px; background: #6D28D9;"></span><span aria-hidden="true" style="position: absolute; top: 196px; left: 26px; width: 12px; height: 12px; border-radius: 6px; background: #6D28D9; animation: ping 1.6s ease-out 0.2s infinite;"></span><span style="position: absolute; top: 188px; left: 52px; height: 28px; padding: 0 12px; border-radius: 14px; background: #F3EEFF; color: #5B21B6; display: flex; align-items: center; font-size: 13px; font-weight: 700;">Now · 7:45 PM</span>
+<span aria-hidden="true" style="position: absolute; top: 247px; left: 27px; width: 10px; height: 10px; box-sizing: border-box; border-radius: 10px; background: #6D28D9; animation: pop 0.35s cubic-bezier(.2,.8,.2,1) 0.4s both;"></span><a href="TimelineEdit.dc.html" style="position: absolute; top: 224px; left: 52px; right: 16px; height: 56px; box-sizing: border-box; padding: 0 12px; border: 1.5px solid #6D28D9; border-radius: 16px; background: #FFFFFF; display: flex; align-items: center; gap: 10px; animation: slideIn 0.45s cubic-bezier(.2,.8,.2,1) 0.4s both;"><span style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 10px; background: #F1F0F5; color: #14121A; display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg></span><span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Grab</span><span style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #615E6B; white-space: nowrap;"><span style="height: 20px; padding: 0 7px; border-radius: 6px; background: #F1F0F5; color: #615E6B; display: inline-flex; align-items: center; font-size: 12px; font-weight: 600;">Transport</span><span style="height: 20px; padding: 0 7px; border-radius: 6px; background: #F3EEFF; color: #5B21B6; display: inline-flex; align-items: center; font-size: 12px; font-weight: 600;">New</span></span></span><span style="font-size: 15px; font-weight: 800; color: #14121A; font-variant-numeric: tabular-nums;">−8.50</span><span style="color: #A9A4B5; display: flex;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></span></a>
+<span aria-hidden="true" style="position: absolute; top: 311px; left: 27px; width: 10px; height: 10px; box-sizing: border-box; border-radius: 10px; background: #6D28D9; animation: pop 0.35s cubic-bezier(.2,.8,.2,1) 0.55s both;"></span><a href="TimelineEdit.dc.html" style="position: absolute; top: 288px; left: 52px; right: 16px; height: 56px; box-sizing: border-box; padding: 0 12px; border: 1.5px solid #6D28D9; border-radius: 16px; background: #FFFFFF; display: flex; align-items: center; gap: 10px; animation: slideIn 0.45s cubic-bezier(.2,.8,.2,1) 0.55s both;"><span style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 10px; background: #DCFCE7; color: #15803D; display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7 7 17"></path><path d="M17 17H7V7"></path></svg></span><span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Ali paid you back</span><span style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #615E6B; white-space: nowrap;"><span style="height: 20px; padding: 0 7px; border-radius: 6px; background: #DCFCE7; color: #15803D; display: inline-flex; align-items: center; font-size: 12px; font-weight: 600;">Money in</span><span style="height: 20px; padding: 0 7px; border-radius: 6px; background: #F3EEFF; color: #5B21B6; display: inline-flex; align-items: center; font-size: 12px; font-weight: 600;">New</span></span></span><span style="font-size: 15px; font-weight: 800; color: #15803D; font-variant-numeric: tabular-nums;">+20.00</span><span style="color: #A9A4B5; display: flex;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></span></a>
+<span aria-hidden="true" style="position: absolute; top: 364px; left: 28px; width: 8px; height: 8px; box-sizing: border-box; border-radius: 8px; background: #9F99AD; animation: pop 0.35s cubic-bezier(.2,.8,.2,1) 0.6s both;"></span><div style="position: absolute; top: 352px; left: 52px; right: 16px; height: 32px; display: flex; align-items: center; gap: 10px; font-size: 14px; color: #615E6B; animation: fadeIn 0.4s ease-out 0.6s both;"><span style="width: 58px; font-size: 12px;">7:42 PM</span><span style="flex-grow: 1;">Burger</span><span style="font-variant-numeric: tabular-nums;">5.00</span></div>
+<span aria-hidden="true" style="position: absolute; top: 400px; left: 28px; width: 8px; height: 8px; box-sizing: border-box; border-radius: 8px; background: #9F99AD; animation: pop 0.35s cubic-bezier(.2,.8,.2,1) 0.65s both;"></span><div style="position: absolute; top: 388px; left: 52px; right: 16px; height: 32px; display: flex; align-items: center; gap: 10px; font-size: 14px; color: #615E6B; animation: fadeIn 0.4s ease-out 0.65s both;"><span style="width: 58px; font-size: 12px;">6:20 PM</span><span style="flex-grow: 1;">Grab ride home</span><span style="font-variant-numeric: tabular-nums;">18.70</span></div>
+<span aria-hidden="true" style="position: absolute; top: 436px; left: 28px; width: 8px; height: 8px; box-sizing: border-box; border-radius: 8px; background: #9F99AD; animation: pop 0.35s cubic-bezier(.2,.8,.2,1) 0.7s both;"></span><div style="position: absolute; top: 424px; left: 52px; right: 16px; height: 32px; display: flex; align-items: center; gap: 10px; font-size: 14px; color: #615E6B; animation: fadeIn 0.4s ease-out 0.7s both;"><span style="width: 58px; font-size: 12px;">1:15 PM</span><span style="flex-grow: 1;">Nasi lemak + teh ais</span><span style="font-variant-numeric: tabular-nums;">9.50</span></div>
+<span aria-hidden="true" style="position: absolute; top: 487px; left: 27px; width: 10px; height: 10px; box-sizing: border-box; border-radius: 10px; background: #6D28D9; animation: pop 0.35s cubic-bezier(.2,.8,.2,1) 0.85s both;"></span><a href="TimelineEdit.dc.html" style="position: absolute; top: 464px; left: 52px; right: 16px; height: 56px; box-sizing: border-box; padding: 0 12px; border: 1.5px solid #6D28D9; border-radius: 16px; background: #FFFFFF; display: flex; align-items: center; gap: 10px; animation: slideIn 0.45s cubic-bezier(.2,.8,.2,1) 0.85s both;"><span style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 10px; background: #F1F0F5; color: #14121A; display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path><path d="M7 2v20"></path><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path></svg></span><span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Lunch</span><span style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #615E6B; white-space: nowrap;"><span style="height: 20px; padding: 0 7px; border-radius: 6px; background: #F1F0F5; color: #615E6B; display: inline-flex; align-items: center; font-size: 12px; font-weight: 600;">Food</span><span style="height: 20px; padding: 0 7px; border-radius: 6px; background: #F3EEFF; color: #5B21B6; display: inline-flex; align-items: center; font-size: 12px; font-weight: 600;">1:00 PM · guessed</span></span></span><span style="font-size: 15px; font-weight: 800; color: #14121A; font-variant-numeric: tabular-nums;">−12.00</span><span style="color: #A9A4B5; display: flex;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></span></a>
+
+<div style="position: absolute; top: 528px; left: 52px; right: 16px; box-sizing: border-box; padding: 12px 14px; border: 1px solid #ECEAF1; border-radius: 16px; background: #FFFFFF; animation: rise 0.45s cubic-bezier(.2,.8,.2,1) 1.2s both;">
+<p style="margin: 0; display: flex; gap: 8px; font-size: 13px; line-height: 18px; font-weight: 600;"><span style="flex-shrink: 0; color: #6D28D9; display: flex;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></span>You logged Nasi lemak at 1:15 PM. Is this a second lunch?</p>
+<div style="margin-top: 10px; display: flex; gap: 8px;">
+<button type="button" style="flex-grow: 1; height: 44px; border: 0; border-radius: 22px; background: #6D28D9; color: #FFFFFF; font-size: 14px; font-weight: 700;">Yes, keep it</button>
+<button type="button" style="flex-grow: 1; height: 44px; border: 0; border-radius: 22px; background: #F1F0F5; font-size: 14px; font-weight: 700;">No, remove</button>
+</div>
+</div>
+
+<div style="position: absolute; top: 656px; left: 16px; right: 16px; height: 56px; box-sizing: border-box; padding: 0 16px; border-radius: 16px; background: #F1F0F5; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center;">
+<span style="display: flex; flex-direction: column;"><span style="font-size: 12px; font-weight: 600; color: #615E6B;">Out after saving</span><span style="font-size: 16px; font-weight: 800; font-variant-numeric: tabular-nums;">2,166.80 <span style="font-size: 12px; font-weight: 600; color: #615E6B;">+20.50</span></span></span>
+<span style="display: flex; flex-direction: column;"><span style="font-size: 12px; font-weight: 600; color: #615E6B;">In after saving</span><span style="font-size: 16px; font-weight: 800; color: #15803D; font-variant-numeric: tabular-nums;">5,220.00 <span style="font-size: 12px; font-weight: 600;">+20.00</span></span></span>
+</div>
+<div style="position: absolute; left: 16px; right: 16px; bottom: 34px; height: 56px; display: flex; gap: 10px;">
+<button type="button" style="height: 56px; padding: 0 26px; border: 0; border-radius: 28px; background: #F1F0F5; font-size: 16px; font-weight: 700;">Undo</button>
+<a href="TimelineHome.dc.html" style="flex-grow: 1; height: 56px; border-radius: 28px; background: #6D28D9; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700;">Save all 3</a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
