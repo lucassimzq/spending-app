@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lyrics · Edit a line</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&amp;family=Funnel+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#FFFFFF;text-decoration:none}a:hover{color:#FFFFFF}
+button{font:inherit;color:inherit;cursor:pointer}
+input{font:inherit;color:inherit}
+@keyframes scrub{0%{transform:translateX(-96px)}70%{transform:translateX(6px)}100%{transform:translateX(0)}}
+@keyframes settle{0%{opacity:0.3}100%{opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #24152F; color: #FFFFFF; font-family: 'Funnel Sans', -apple-system, 'Helvetica Neue', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 12px; right: 12px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<a href="LyricsHome.dc.html" aria-label="Close" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg></a>
+<span style="font-size: 15px; font-weight: 600;">Edit line</span>
+<button type="button" aria-label="Delete line" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; display: flex; align-items: center; justify-content: center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V4h6v3"></path></svg></button>
+</div>
+
+<label style="position: absolute; top: 116px; left: 24px; right: 24px; display: flex; flex-direction: column; gap: 4px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; color: #A7A1AC;">LINE</span>
+<input type="text" value="Lunch" style="height: 52px; padding: 0; border: 0; border-bottom: 1px solid rgba(255,255,255,0.2); outline: none; background: transparent; font-family: 'Funnel Display', 'Funnel Sans', sans-serif; font-size: 40px; font-weight: 700; letter-spacing: -0.01em;">
+</label>
+
+<div style="position: absolute; top: 198px; left: 24px; right: 24px; height: 72px; display: flex; align-items: flex-start; gap: 8px;">
+<span style="margin-top: 12px; font-size: 17px; font-weight: 600; color: #A7A1AC;">RM</span>
+<span style="font-family: 'Funnel Display', 'Funnel Sans', sans-serif; font-size: 64px; line-height: 72px; font-weight: 700; color: #FFB547; font-variant-numeric: tabular-nums; animation: settle 0.9s ease-out 0.2s both;">12.00</span>
+</div>
+
+<div style="position: absolute; top: 282px; left: 24px; right: 24px; height: 56px; display: flex; align-items: center; gap: 12px;">
+<button type="button" aria-label="Minus one ringgit" style="flex-shrink: 0; width: 44px; height: 44px; box-sizing: border-box; padding: 0; border: 1.5px solid rgba(255,255,255,0.35); border-radius: 22px; background: transparent; font-size: 15px; font-weight: 700;">−1</button>
+<div style="position: relative; flex-grow: 1; height: 56px; overflow: hidden;">
+<div style="position: absolute; top: 0; left: 50%; width: 400px; height: 56px; margin-left: -200px; animation: scrub 1.3s cubic-bezier(.2,.8,.2,1) 0.3s both;">
+<svg width="400" height="56" viewBox="0 0 400 56" aria-hidden="true">
+<g stroke="rgba(255,255,255,0.35)" stroke-width="1">
+<path d="M0 14v10M8 16v6M16 16v6M24 16v6M32 16v6M40 14v10M48 16v6M56 16v6M64 16v6M72 16v6M80 14v10M88 16v6M96 16v6M104 16v6M112 16v6M120 14v10M128 16v6M136 16v6M144 16v6M152 16v6M160 14v10M168 16v6M176 16v6M184 16v6M192 16v6M200 14v10M208 16v6M216 16v6M224 16v6M232 16v6M240 14v10M248 16v6M256 16v6M264 16v6M272 16v6M280 14v10M288 16v6M296 16v6M304 16v6M312 16v6M320 14v10M328 16v6M336 16v6M344 16v6M352 16v6M360 14v10M368 16v6M376 16v6M384 16v6M392 16v6M400 14v10"></path>
+</g>
+<g fill="#A7A1AC" font-family="Funnel Sans, sans-serif" font-size="11" font-weight="600" text-anchor="middle">
+<text x="40" y="44">8</text><text x="80" y="44">9</text><text x="120" y="44">10</text><text x="160" y="44">11</text><text x="200" y="44" fill="#FFFFFF">12</text><text x="240" y="44">13</text><text x="280" y="44">14</text><text x="320" y="44">15</text><text x="360" y="44">16</text>
+</g>
+</svg>
+</div>
+<span aria-hidden="true" style="position: absolute; left: 50%; top: 6px; width: 2px; height: 26px; margin-left: -1px; border-radius: 1px; background: #FFB547;"></span>
+</div>
+<button type="button" aria-label="Plus one ringgit" style="flex-shrink: 0; width: 44px; height: 44px; box-sizing: border-box; padding: 0; border: 1.5px solid rgba(255,255,255,0.35); border-radius: 22px; background: transparent; font-size: 15px; font-weight: 700;">+1</button>
+</div>
+
+<div role="group" aria-label="Type" style="position: absolute; top: 354px; left: 24px; right: 24px; height: 44px; box-sizing: border-box; padding: 3px; border-radius: 22px; background: rgba(255,255,255,0.08); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));">
+<button type="button" aria-pressed="true" style="border: 0; border-radius: 19px; background: #FFFFFF; color: #24152F; font-size: 15px; font-weight: 700;">Spent</button>
+<button type="button" aria-pressed="false" style="border: 0; border-radius: 19px; background: transparent; color: #A7A1AC; font-size: 15px; font-weight: 600;">Received</button>
+</div>
+
+<span style="position: absolute; top: 418px; left: 24px; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; color: #A7A1AC;">CATEGORY</span>
+<div role="group" aria-label="Category" style="position: absolute; top: 438px; left: 24px; right: 24px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+<button type="button" aria-pressed="true" style="height: 44px; border: 1.5px solid #FFB547; border-radius: 12px; background: transparent; color: #FFB547; font-size: 15px; font-weight: 700;">Food</button>
+<button type="button" aria-pressed="false" style="height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: transparent; font-size: 15px; font-weight: 500;">Groceries</button>
+<button type="button" aria-pressed="false" style="height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: transparent; font-size: 15px; font-weight: 500;">Transport</button>
+<button type="button" aria-pressed="false" style="height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: transparent; font-size: 15px; font-weight: 500;">Shopping</button>
+<button type="button" aria-pressed="false" style="height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: transparent; font-size: 15px; font-weight: 500;">Bills</button>
+<button type="button" aria-pressed="false" style="height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: transparent; font-size: 15px; font-weight: 500;">Rent</button>
+</div>
+
+<span style="position: absolute; top: 604px; left: 24px; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; color: #A7A1AC;">WHEN</span>
+<div role="group" aria-label="When" style="position: absolute; top: 624px; left: 24px; right: 24px; height: 44px; display: flex; gap: 8px;">
+<button type="button" aria-pressed="true" style="height: 44px; padding: 0 16px; border: 0; border-radius: 22px; background: #FFFFFF; color: #24152F; font-size: 15px; font-weight: 700;">Today, 1:00 PM</button>
+<button type="button" aria-pressed="false" style="height: 44px; padding: 0 16px; border: 1px solid rgba(255,255,255,0.2); border-radius: 22px; background: transparent; font-size: 15px; font-weight: 500;">Now</button>
+<button type="button" aria-pressed="false" style="height: 44px; padding: 0 16px; border: 1px solid rgba(255,255,255,0.2); border-radius: 22px; background: transparent; font-size: 15px; font-weight: 500;">Yesterday</button>
+</div>
+<p style="position: absolute; top: 678px; left: 24px; right: 24px; margin: 0; font-size: 13px; line-height: 19px; font-style: italic; color: #A7A1AC;">1:00 PM is a guess from “lunch”. Drag the ruler, or tap −1 / +1.</p>
+
+<a href="LyricsHome.dc.html" style="position: absolute; left: 24px; right: 24px; bottom: 34px; height: 56px; border-radius: 28px; background: #FFB547; color: #24152F; display: flex; align-items: center; justify-content: center; font-family: 'Funnel Display', 'Funnel Sans', sans-serif; font-size: 18px; font-weight: 700;">Save line</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

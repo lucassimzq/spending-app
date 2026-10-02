@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Margin · Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&amp;family=Shantell+Sans:wght,BNCE,INFM,SPAC@300..800,-100..100,0..100,0..100&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#161616;text-decoration:none}a:hover{color:#161616}
+button{font:inherit;color:inherit;cursor:pointer}
+input{font:inherit;color:inherit}
+input::placeholder{color:#5E5E5A}
+@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes write{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes jiggle{0%,100%{font-variation-settings:"BNCE" 0,"INFM" 40}50%{font-variation-settings:"BNCE" 70,"INFM" 100}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.4)}}
+@keyframes rowIn{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FBFBF8; color: #161616; font-family: Figtree, -apple-system, 'Helvetica Neue', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<button type="button" style="height: 44px; padding: 0; border: 0; background: transparent; display: flex; align-items: center; gap: 6px; font-size: 17px; font-weight: 700;">September<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+<span style="font-size: 13px; font-weight: 500; color: #5E5E5A;">12 days left</span>
+</div>
+
+<span style="position: absolute; top: 114px; left: 24px; font-size: 13px; font-weight: 600; color: #5E5E5A;">Out</span>
+<div style="position: absolute; top: 136px; left: 26px; display: flex; align-items: baseline; gap: 6px;"><span style="font-size: 22px; font-weight: 700;">RM</span><span style="font-size: 44px; line-height: 50px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums;">2,146.30</span></div>
+<svg width="256" height="72" viewBox="0 0 256 72" fill="none" aria-hidden="true" style="overflow: visible; position: absolute; top: 126px; left: 8px;"><path d="M148.5 4.3 C235.5 1.4 256.0 30.2 248.3 43.2 C238.1 68.4 76.8 72.0 20.5 54.7 C-7.7 36.0 30.7 7.2 128.0 6.5 C158.7 5.8 184.3 8.6 199.7 14.4" pathLength="100" stroke="#D61F69" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.8s cubic-bezier(.4,0,.2,1) 0.4s both;"></path></svg>
+<svg width="40" height="30" viewBox="0 0 40 30" fill="none" aria-hidden="true" style="overflow: visible; position: absolute; top: 180px; left: 262px;"><path d="M30 28 C30 16 22 8 6 4" pathLength="100" stroke="#D61F69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.6s cubic-bezier(.4,0,.2,1) 1.25s both;"></path><path d="M13 0 L6 4 L12 10" pathLength="100" stroke="#D61F69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.25s ease-out 1.85s both;"></path></svg>
+<span style="position: absolute; top: 210px; left: 214px; width: 152px; transform: rotate(-4deg); transform-origin: left top;"><span style="font-family: 'Shantell Sans', 'Comic Sans MS', cursive; color: #D61F69; display: inline-block; font-size: 15px; line-height: 19px; font-weight: 500; font-variation-settings: 'BNCE' 0, 'INFM' 40; animation: write 0.9s linear 1.5s both, jiggle 3.2s ease-in-out 2.80s infinite;">41% gone, 12 days left — you’re fine.</span></span>
+
+<span style="position: absolute; top: 206px; left: 24px; font-size: 13px; font-weight: 600; color: #5E5E5A;">In</span>
+<div style="position: absolute; top: 224px; left: 24px; display: flex; align-items: baseline; gap: 5px;"><span style="font-size: 17px; font-weight: 700;">RM</span><span style="font-size: 32px; line-height: 38px; font-weight: 800; letter-spacing: -0.01em; font-variant-numeric: tabular-nums;">5,200.00</span></div>
+
+<div style="position: absolute; top: 278px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<span style="font-size: 15px; font-weight: 700;">Where it went</span>
+<button type="button" style="height: 44px; padding: 0; border: 0; background: transparent; font-size: 13px; font-weight: 600; color: #5E5E5A;">See all 6</button>
+</div>
+<div style="position: absolute; top: 322px; left: 24px; right: 24px; display: flex; flex-direction: column;">
+<div style="position: relative; height: 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ECECE6;"><span style="position: relative; font-size: 16px; font-weight: 600;">Rent</span><span style="font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums;">900.00</span></div>
+<div style="position: relative; height: 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ECECE6;"><span style="position: relative; font-size: 16px; font-weight: 600;">Food<svg width="44" height="10" viewBox="0 0 44 10" fill="none" aria-hidden="true" style="overflow: visible; position: absolute; left: -2px; top: 19px;"><path d="M1 5 Q3 1 6 5 Q9 9 12 5 Q15 1 18 5 Q21 9 24 5 Q27 1 30 5 Q33 9 36 5 Q39 1 42 5" pathLength="100" stroke="#D61F69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.6s cubic-bezier(.4,0,.2,1) 1.9s both;"></path></svg></span><span style="position: absolute; left: 70px; top: 8px; transform: rotate(-3deg);"><span style="font-family: 'Shantell Sans', 'Comic Sans MS', cursive; color: #D61F69; display: inline-block; font-size: 14px; line-height: 18px; font-weight: 500; font-variation-settings: 'BNCE' 0, 'INFM' 40; animation: write 0.9s linear 2.3s both, jiggle 3.2s ease-in-out 3.60s infinite;">RM 61 less than August!</span></span><span style="font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums;">486.40</span></div>
+<div style="position: relative; height: 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ECECE6;"><span style="position: relative; font-size: 16px; font-weight: 600;">Groceries</span><span style="font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums;">238.90</span></div>
+</div>
+
+<div style="position: absolute; top: 458px; left: 24px; right: 24px; height: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 16px; font-weight: 700;">
+<span>Today</span><span style="font-variant-numeric: tabular-nums;">−46.10</span>
+</div>
+<div style="position: absolute; top: 488px; left: 24px; right: 24px; display: flex; flex-direction: column;">
+<a href="MarginEdit.dc.html" style="height: 48px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ECECE6;"><span style="display: flex; flex-direction: column; gap: 1px;"><span style="display: flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 600;">Burger<svg width="18" height="16" viewBox="0 0 18 16" fill="none" aria-hidden="true" style="overflow: visible;"><path d="M2 9.5 L7 14 L16.5 2" pathLength="100" stroke="#D61F69" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.35s cubic-bezier(.4,0,.2,1) 2.8s both;"></path></svg></span><span style="font-size: 12px; color: #5E5E5A;">Food · just now</span></span><span style="font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums;">5.00</span></a>
+<a href="MarginEdit.dc.html" style="height: 48px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ECECE6;"><span style="display: flex; flex-direction: column; gap: 1px;"><span style="display: flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 600;">Grab ride home<svg width="18" height="16" viewBox="0 0 18 16" fill="none" aria-hidden="true" style="overflow: visible;"><path d="M2 9.5 L7 14 L16.5 2" pathLength="100" stroke="#D61F69" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.35s cubic-bezier(.4,0,.2,1) 3.0s both;"></path></svg></span><span style="font-size: 12px; color: #5E5E5A;">Transport · 6:20 PM</span></span><span style="font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums;">18.70</span></a>
+<a href="MarginEdit.dc.html" style="height: 48px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ECECE6;"><span style="display: flex; flex-direction: column; gap: 1px;"><span style="display: flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 600;">Nasi lemak + teh ais<svg width="18" height="16" viewBox="0 0 18 16" fill="none" aria-hidden="true" style="overflow: visible;"><path d="M2 9.5 L7 14 L16.5 2" pathLength="100" stroke="#D61F69" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.35s cubic-bezier(.4,0,.2,1) 3.2s both;"></path></svg></span><span style="font-size: 12px; color: #5E5E5A;">Food · 1:15 PM</span></span><span style="font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums;">9.50</span></a>
+<a href="MarginEdit.dc.html" style="height: 48px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ECECE6;"><span style="display: flex; flex-direction: column; gap: 1px;"><span style="display: flex; align-items: center; gap: 6px; font-size: 16px; font-weight: 600;">ZUS Coffee<svg width="18" height="16" viewBox="0 0 18 16" fill="none" aria-hidden="true" style="overflow: visible;"><path d="M2 9.5 L7 14 L16.5 2" pathLength="100" stroke="#D61F69" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.35s cubic-bezier(.4,0,.2,1) 3.4s both;"></path></svg></span><span style="font-size: 12px; color: #5E5E5A;">Food · 8:42 AM</span></span><span style="font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums;">12.90</span></a>
+</div>
+
+<span style="position: absolute; top: 694px; left: 64px; transform: rotate(-2deg); transform-origin: left top;"><span style="font-family: 'Shantell Sans', 'Comic Sans MS', cursive; color: #D61F69; display: inline-block; font-size: 15px; line-height: 19px; font-weight: 500; font-variation-settings: 'BNCE' 0, 'INFM' 40; animation: write 0.9s linear 3.8s both, jiggle 3.2s ease-in-out 5.10s infinite;">try: “lunch 12, grab 8.50”</span></span>
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" aria-hidden="true" style="overflow: visible; position: absolute; top: 698px; left: 262px;"><path d="M8 6 C38 8 46 30 28 50" pathLength="100" stroke="#D61F69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.6s cubic-bezier(.4,0,.2,1) 4.6s both;"></path><path d="M36 45 L28 50 L26 41" pathLength="100" stroke="#D61F69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray: 100; stroke-dashoffset: 0; animation: draw 0.25s ease-out 5.20s both;"></path></svg>
+
+<div style="position: absolute; left: 24px; right: 24px; bottom: 34px; display: flex; align-items: center; gap: 12px;">
+<a href="MarginEdit.dc.html" aria-label="Add by hand" style="flex-shrink: 0; width: 52px; height: 52px; box-sizing: border-box; border: 1.5px solid #161616; border-radius: 26px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a>
+<a href="MarginTalk.dc.html" style="flex-grow: 1; height: 56px; border-radius: 28px; background: #161616; color: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 17px; font-weight: 700;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg>Hold to talk</a>
+<button type="button" aria-label="Read a screenshot" style="flex-shrink: 0; width: 52px; height: 52px; padding: 0; border: 1.5px solid #161616; border-radius: 26px; background: transparent; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"></path></svg></button>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Roll · Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0F1413;text-decoration:none}a:hover{color:#0F1413}
+button{font:inherit;color:inherit;cursor:pointer}
+input{font:inherit;color:inherit}
+@keyframes roll{from{transform:translateY(0)}}
+@keyframes spring{0%{transform:scaleX(0)}55%{transform:scaleX(1.08)}75%{transform:scaleX(0.97)}100%{transform:scaleX(1)}}
+@keyframes pop{0%{opacity:0;transform:scale(0.6)}60%{opacity:1;transform:scale(1.06)}80%{transform:scale(0.98)}100%{opacity:1;transform:scale(1)}}
+@keyframes typing{0%{clip-path:inset(0 100% 0 0)}55%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 0 0)}}
+@keyframes caret{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FFFFFF; color: #0F1413; font-family: 'Schibsted Grotesk', -apple-system, 'Helvetica Neue', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<button type="button" style="height: 44px; padding: 0; border: 0; background: transparent; display: flex; align-items: center; gap: 6px; font-size: 17px; font-weight: 700;">September<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+<span style="font-size: 13px; font-weight: 500; color: #5D6664;">12 days left</span>
+</div>
+
+<span style="position: absolute; top: 118px; left: 24px; font-size: 15px; font-weight: 500; color: #5D6664;">Spent this month</span>
+<div style="position: absolute; top: 142px; left: 22px; display: flex; align-items: flex-start; gap: 6px;">
+<span style="margin-top: 6px; font-size: 22px; font-weight: 700;">RM</span>
+<span style="display: flex; align-items: flex-start; font-size: 56px; line-height: 1; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums;"><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">RM 2,146.30</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-12em); animation: roll 0.9s cubic-bezier(.2,1.3,.4,1) 0.15s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span aria-hidden="true">,</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-11em); animation: roll 1.0s cubic-bezier(.2,1.3,.4,1) 0.15s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-14em); animation: roll 1.1s cubic-bezier(.2,1.3,.4,1) 0.15s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-16em); animation: roll 1.2s cubic-bezier(.2,1.3,.4,1) 0.15s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span aria-hidden="true">.</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-13em); animation: roll 1.3s cubic-bezier(.2,1.3,.4,1) 0.15s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-10em); animation: roll 1.4s cubic-bezier(.2,1.3,.4,1) 0.15s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span></span>
+</div>
+
+<div aria-hidden="true" style="position: absolute; top: 216px; left: 24px; right: 24px; height: 8px; border-radius: 4px; background: #EEF1F0; overflow: hidden;"><span style="display: block; width: 41%; height: 8px; border-radius: 4px; background: #0EA371; transform-origin: left center; animation: spring 1.2s cubic-bezier(.3,.7,.3,1) 0.5s both;"></span></div>
+<div style="position: absolute; top: 234px; left: 24px; right: 24px; height: 28px; display: flex; align-items: center; justify-content: space-between;">
+<span style="display: flex; align-items: baseline; gap: 8px;"><span style="font-size: 15px; color: #5D6664;">Came in</span><span style="font-size: 20px; font-weight: 750; font-variant-numeric: tabular-nums;">RM 5,200.00</span></span>
+<span style="font-size: 15px; font-weight: 700; color: #087A54;">41% used</span>
+</div>
+
+<div style="position: absolute; top: 294px; left: 24px; right: 24px; display: flex; align-items: baseline; gap: 8px;">
+<span style="font-size: 17px; font-weight: 750;">Again?</span><span style="font-size: 13px; color: #5D6664;">One tap logs it.</span>
+</div>
+<div style="position: absolute; top: 322px; left: 0; right: 0; height: 44px; padding: 0 24px; box-sizing: border-box; display: flex; gap: 8px; overflow-x: auto; white-space: nowrap; scrollbar-width: none;">
+<button type="button" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: 0; border-radius: 22px; background: #E9F7F1; font-size: 15px; font-weight: 600; animation: pop 0.6s cubic-bezier(.2,.8,.2,1) 0.7s both;">Teh tarik <span style="color: #087A54;">2.80</span></button>
+<button type="button" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: 0; border-radius: 22px; background: #E9F7F1; font-size: 15px; font-weight: 600; animation: pop 0.6s cubic-bezier(.2,.8,.2,1) 0.8s both;">Grab <span style="color: #087A54;">15.00</span></button>
+<button type="button" style="flex-shrink: 0; height: 44px; padding: 0 16px; border: 0; border-radius: 22px; background: #E9F7F1; font-size: 15px; font-weight: 600; animation: pop 0.6s cubic-bezier(.2,.8,.2,1) 0.9s both;">Lunch <span style="color: #087A54;">12.00</span></button>
+</div>
+
+<div style="position: absolute; top: 392px; left: 24px; right: 24px; height: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 17px; font-weight: 750;">
+<span>Today</span><span style="font-variant-numeric: tabular-nums;">−46.10</span>
+</div>
+<div style="position: absolute; top: 424px; left: 24px; right: 24px; display: flex; flex-direction: column;">
+<a href="RollEdit.dc.html" style="height: 54px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #EEF1F0;"><span style="display: flex; flex-direction: column; gap: 1px;"><span style="font-size: 17px; font-weight: 600;">Burger</span><span style="font-size: 13px; color: #5D6664;">Food · just now</span></span><span style="display: flex; align-items: flex-start; font-size: 17px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums;"><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">5.00</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-15em); animation: roll 0.9s cubic-bezier(.2,1.3,.4,1) 0.9s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span aria-hidden="true">.</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-10em); animation: roll 1.0s cubic-bezier(.2,1.3,.4,1) 0.9s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden; vertical-align: top;"><span style="display: flex; flex-direction: column; transform: translateY(-10em); animation: roll 1.1s cubic-bezier(.2,1.3,.4,1) 0.9s both;"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span></span></a>
+<a href="RollEdit.dc.html" style="height: 54px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #EEF1F0;"><span style="display: flex; flex-direction: column; gap: 1px;"><span style="font-size: 17px; font-weight: 600;">Grab ride home</span><span style="font-size: 13px; color: #5D6664;">Transport · 6:20 PM</span></span><span style="font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums;">18.70</span></a>
+<a href="RollEdit.dc.html" style="height: 54px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #EEF1F0;"><span style="display: flex; flex-direction: column; gap: 1px;"><span style="font-size: 17px; font-weight: 600;">Nasi lemak + teh ais</span><span style="font-size: 13px; color: #5D6664;">Food · 1:15 PM</span></span><span style="font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums;">9.50</span></a>
+<a href="RollEdit.dc.html" style="height: 54px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #EEF1F0;"><span style="display: flex; flex-direction: column; gap: 1px;"><span style="font-size: 17px; font-weight: 600;">ZUS Coffee</span><span style="font-size: 13px; color: #5D6664;">Food · 8:42 AM</span></span><span style="font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums;">12.90</span></a>
+</div>
+
+<div style="position: absolute; left: 24px; right: 24px; bottom: 34px; height: 52px; display: flex; align-items: center; gap: 10px;">
+<label style="position: relative; flex-grow: 1; height: 52px; box-sizing: border-box; padding: 0 18px; border-radius: 26px; background: #F3F5F4; display: flex; align-items: center;">
+<span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">Type an entry</span>
+<input type="text" style="flex-grow: 1; min-width: 0; height: 48px; padding: 0; border: 0; outline: none; background: transparent; font-size: 15px;">
+<span aria-hidden="true" style="position: absolute; left: 18px; top: 0; height: 52px; display: flex; align-items: center; gap: 2px; pointer-events: none; font-size: 15px; color: #5D6664;"><span style="display: inline-block; white-space: nowrap; animation: typing 4.5s steps(22) 1.2s infinite both;">lunch 12, grab 8.50 …</span><span style="width: 2px; height: 18px; background: #0EA371; animation: caret 1s steps(1) infinite;"></span></span>
+</label>
+<a href="RollEdit.dc.html" aria-label="Add by hand" style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 26px; background: #F3F5F4; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></a>
+<a href="RollTalk.dc.html" aria-label="Hold to talk" style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 26px; background: #0EA371; color: #0F1413; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

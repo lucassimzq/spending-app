@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weight · Edit by hand</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,100..900;1,50..150,100..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#121212;text-decoration:none}a:hover{color:#000000}
+button{font:inherit;color:inherit;cursor:pointer}
+input{font:inherit;color:inherit}
+@keyframes press{0%{font-weight:300;font-stretch:100%}35%{font-weight:900;font-stretch:122%}100%{font-weight:300;font-stretch:100%}}
+@keyframes typeIn{0%{font-weight:100;font-stretch:150%;opacity:0}50%{opacity:1}100%{font-weight:620;font-stretch:85%;opacity:1}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes heavy{0%{font-weight:250}100%{font-weight:800}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F4F2EF; color: #121212; font-family: Anybody, 'Helvetica Neue', Helvetica, sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 12px; right: 12px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<a href="WeightHome.dc.html" aria-label="Close" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg></a>
+<span style="font-size: 15px; font-weight: 600; font-stretch: 110%;">Edit entry</span>
+<button type="button" aria-label="Delete entry" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; display: flex; align-items: center; justify-content: center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V4h6v3"></path></svg></button>
+</div>
+
+<div role="group" aria-label="Type" style="position: absolute; top: 116px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; gap: 10px; font-size: 30px; line-height: 44px;">
+<button type="button" aria-pressed="true" style="height: 44px; padding: 0; border: 0; background: transparent; font-weight: 800; font-stretch: 92%;">Spent</button>
+<span aria-hidden="true" style="font-weight: 200; color: #B5B0A9;">/</span>
+<button type="button" aria-pressed="false" style="height: 44px; padding: 0; border: 0; background: transparent; font-weight: 200; font-stretch: 125%; color: #6B6965;">Received</button>
+</div>
+
+<div style="position: absolute; top: 170px; left: 22px; right: 24px; height: 80px; display: flex; align-items: flex-start;">
+<span style="margin-top: 10px; margin-right: 8px; font-size: 20px; font-weight: 600; font-stretch: 110%; color: #6B6965;">RM</span>
+<span style="font-size: 76px; line-height: 80px; font-weight: 620; font-stretch: 85%; letter-spacing: -0.02em; display: flex;"><span style="display: inline-block; animation: typeIn 0.5s cubic-bezier(.2,.8,.2,1) 0.55s both;">1</span><span style="display: inline-block; animation: typeIn 0.5s cubic-bezier(.2,.8,.2,1) 1.15s both;">2</span><span>.00</span></span>
+<span aria-hidden="true" style="margin: 10px 0 0 6px; width: 3px; height: 62px; background: #FF4F1F; animation: blink 1s steps(1) infinite;"></span>
+</div>
+
+<label style="position: absolute; top: 262px; left: 24px; right: 24px; height: 44px; box-sizing: border-box; border-bottom: 1px solid #D8D4CE; display: flex; align-items: center; gap: 10px;">
+<span style="font-size: 17px; font-weight: 300; font-stretch: 120%; color: #6B6965;">on</span>
+<input type="text" value="Lunch" style="flex-grow: 1; min-width: 0; height: 42px; padding: 0; border: 0; outline: none; background: transparent; font-size: 22px; font-weight: 650; font-stretch: 95%;">
+</label>
+
+<div style="position: absolute; top: 318px; left: 0; right: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: #E2DED8; border-top: 1px solid #E2DED8; border-bottom: 1px solid #E2DED8;">
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300; animation: press 0.6s ease-out 0.5s;">1</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300; animation: press 0.6s ease-out 1.1s;">2</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">3</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">4</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">5</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">6</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">7</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">8</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">9</button>
+<button type="button" aria-label="Decimal point" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">.</button>
+<button type="button" style="height: 52px; border: 0; background: #F4F2EF; font-size: 28px; font-weight: 300;">0</button>
+<button type="button" aria-label="Delete digit" style="height: 52px; border: 0; background: #F4F2EF; display: flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 5H9l-6 7 6 7h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z"></path><path d="m17 9-5 6M12 9l5 6"></path></svg></button>
+</div>
+
+<span style="position: absolute; top: 548px; left: 24px; font-size: 12px; font-weight: 600; font-stretch: 125%; letter-spacing: 0.12em; color: #6B6965;">CATEGORY</span>
+<div role="group" aria-label="Category" style="position: absolute; top: 562px; left: 0; right: 0; height: 44px; padding: 0 24px; box-sizing: border-box; display: flex; align-items: center; gap: 20px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; font-size: 22px;">
+<button type="button" aria-pressed="true" style="flex-shrink: 0; height: 44px; padding: 0; border: 0; background: transparent; font-weight: 800; font-stretch: 95%; animation: heavy 0.7s ease-out 0.3s both;">Food</button>
+<button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0; border: 0; background: transparent; font-weight: 250; color: #6B6965;">Groceries</button>
+<button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0; border: 0; background: transparent; font-weight: 250; color: #6B6965;">Transport</button>
+<button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0; border: 0; background: transparent; font-weight: 250; color: #6B6965;">Shopping</button>
+<button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0; border: 0; background: transparent; font-weight: 250; color: #6B6965;">Bills</button>
+<button type="button" aria-pressed="false" style="flex-shrink: 0; height: 44px; padding: 0; border: 0; background: transparent; font-weight: 250; color: #6B6965;">Rent</button>
+</div>
+
+<span style="position: absolute; top: 622px; left: 24px; font-size: 12px; font-weight: 600; font-stretch: 125%; letter-spacing: 0.12em; color: #6B6965;">WHEN</span>
+<div style="position: absolute; top: 636px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<span style="display: flex; align-items: baseline; gap: 8px;"><span style="font-size: 20px; font-weight: 650;">Today, 1:00 PM</span><span style="font-size: 13px; color: #6B6965;">guessed from “lunch”</span></span>
+<button type="button" style="height: 44px; padding: 0; border: 0; background: transparent; font-size: 15px; font-weight: 700; color: #B8330A;">Change</button>
+</div>
+
+<div style="position: absolute; top: 690px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; gap: 22px; font-size: 15px; font-weight: 600;">
+<button type="button" style="height: 44px; padding: 0; border: 0; background: transparent;">+ Note</button>
+<button type="button" style="height: 44px; padding: 0; border: 0; background: transparent;">+ Split</button>
+<button type="button" style="height: 44px; padding: 0; border: 0; background: transparent;">+ Repeat</button>
+</div>
+
+<a href="WeightHome.dc.html" style="position: absolute; left: 24px; right: 24px; bottom: 34px; height: 56px; border-radius: 28px; background: #121212; color: #F4F2EF; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 750; font-stretch: 110%;">Save</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

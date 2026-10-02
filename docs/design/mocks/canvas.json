@@ -35,7 +35,23 @@
     "QuiltHome.dc.html": {"h": 844, "is_interactive": true, "title": "J1 · Quilt — Home", "w": 390, "x": 0, "y": 4960, "page": "round2"},
     "QuiltWeave.dc.html": {"h": 844, "is_interactive": true, "title": "J2 · Quilt — Weaving today", "w": 390, "x": 470, "y": 4960, "page": "round2"},
     "QuiltEdit.dc.html": {"h": 844, "is_interactive": true, "title": "J3 · Quilt — Edit a thread", "w": 390, "x": 940, "y": 4960, "page": "round2"},
-    "QuiltPoster.dc.html": {"h": 844, "is_interactive": true, "title": "J4 · Quilt — Month poster", "w": 390, "x": 1410, "y": 4960, "page": "round2"}
+    "QuiltPoster.dc.html": {"h": 844, "is_interactive": true, "title": "J4 · Quilt — Month poster", "w": 390, "x": 1410, "y": 4960, "page": "round2"},
+    "Research.dc.html": {"h": 900, "title": "What the best apps do", "w": 1368, "x": 0, "y": 0, "page": "round3"},
+    "WeightHome.dc.html": {"h": 844, "is_interactive": true, "title": "K1 · Weight — Home", "w": 390, "x": 0, "y": 1240, "page": "round3"},
+    "WeightTalk.dc.html": {"h": 844, "is_interactive": true, "title": "K2 · Weight — One sentence, three entries", "w": 390, "x": 470, "y": 1240, "page": "round3"},
+    "WeightEdit.dc.html": {"h": 844, "is_interactive": true, "title": "K3 · Weight — Edit by hand", "w": 390, "x": 940, "y": 1240, "page": "round3"},
+    "LyricsHome.dc.html": {"h": 844, "is_interactive": true, "title": "L1 · Lyrics — Today", "w": 390, "x": 0, "y": 2480, "page": "round3"},
+    "LyricsTalk.dc.html": {"h": 844, "is_interactive": true, "title": "L2 · Lyrics — Captions to setlist", "w": 390, "x": 470, "y": 2480, "page": "round3"},
+    "LyricsEdit.dc.html": {"h": 844, "is_interactive": true, "title": "L3 · Lyrics — Edit a line", "w": 390, "x": 940, "y": 2480, "page": "round3"},
+    "EditionHome.dc.html": {"h": 844, "is_interactive": true, "title": "M1 · Edition — Front page", "w": 390, "x": 0, "y": 3720, "page": "round3"},
+    "EditionTalk.dc.html": {"h": 844, "is_interactive": true, "title": "M2 · Edition — Three new briefs", "w": 390, "x": 470, "y": 3720, "page": "round3"},
+    "EditionEdit.dc.html": {"h": 844, "is_interactive": true, "title": "M3 · Edition — Corrections", "w": 390, "x": 940, "y": 3720, "page": "round3"},
+    "RollHome.dc.html": {"h": 844, "is_interactive": true, "title": "N1 · Roll — Home", "w": 390, "x": 0, "y": 4960, "page": "round3"},
+    "RollTalk.dc.html": {"h": 844, "is_interactive": true, "title": "N2 · Roll — Chips spring out", "w": 390, "x": 470, "y": 4960, "page": "round3"},
+    "RollEdit.dc.html": {"h": 844, "is_interactive": true, "title": "N3 · Roll — Edit by hand", "w": 390, "x": 940, "y": 4960, "page": "round3"},
+    "MarginHome.dc.html": {"h": 844, "is_interactive": true, "title": "O1 · Margin — Home", "w": 390, "x": 0, "y": 6200, "page": "round3"},
+    "MarginTalk.dc.html": {"h": 844, "is_interactive": true, "title": "O2 · Margin — Marked-up sentence", "w": 390, "x": 470, "y": 6200, "page": "round3"},
+    "MarginEdit.dc.html": {"h": 844, "is_interactive": true, "title": "O3 · Margin — Edit by hand", "w": 390, "x": 940, "y": 6200, "page": "round3"}
   },
   "createdOnFiles": {
     "at": "2026-10-02T08:30:00Z",
@@ -44,7 +60,7 @@
   "designSystems": [],
   "launch": {
     "view": "canvas",
-    "page": "round2"
+    "page": "round3"
   },
   "notes": {
     "noteA": {
@@ -97,7 +113,18 @@
     "noteG": {"x": 1880, "y": 1240, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: a soft mochi buddy is the button. Hold it and talk; it squishes while it listens.\n\nSurprise: list several things and it splits into little mochis, one per record, each in its category colour. Drag two together to merge; pinch one to split a bill.\n\nEdit: tap a mochi — big − / + buttons, spent or received, category mochis, split with friends.\n\nTrade-off: the most charming and memorable; some people find a character too cute for money."},
     "noteH": {"x": 1880, "y": 2480, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: everything is a sentence. Home reads ‘In September, RM 5,200 came in and RM 2,146 went out…’ and every highlighted word is a button.\n\nSurprise: a marker sweeps across each word it understood, and a run-on sentence gets cut into separate records.\n\nEdit: tap any highlight to change only that part — keypad for amounts, colour chips for categories.\n\nTrade-off: the clearest about what the AI understood; less visual than a chart."},
     "noteI": {"x": 1880, "y": 3720, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: your money on a split-flap departures board. Every log flips the digits with a clack (sound + haptics).\n\nSurprise: several items arrive as ‘NOW BOARDING · 3’. Anything the AI guessed shows a status like TIME? so you know what to check. Pace reads ON TIME or DELAYED.\n\nEdit: drag any digit up or down like a reel; categories are big colour ‘gates’.\n\nTrade-off: the most satisfying motion; darker and denser than the others."},
-    "noteJ": {"x": 1880, "y": 4960, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: every ringgit becomes a thread. Each day is a patch woven from category colours and sized by what you spent; the month becomes a quilt.\n\nSurprise: one sentence weaves several threads into today, and at month end the quilt becomes a poster to share.\n\nEdit: tap a thread — a calculator keypad (type 36 ÷ 3 to split a bill), category spools, date.\n\nTrade-off: the most beautiful and shareable; exact numbers take a tap."}
+    "noteJ": {"x": 1880, "y": 4960, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: every ringgit becomes a thread. Each day is a patch woven from category colours and sized by what you spent; the month becomes a quilt.\n\nSurprise: one sentence weaves several threads into today, and at month end the quilt becomes a poster to share.\n\nEdit: tap a thread — a calculator keypad (type 36 ÷ 3 to split a bill), category spools, date.\n\nTrade-off: the most beautiful and shareable; exact numbers take a tap."},
+    "rowR": {"kind": "title1", "maxW": 1368, "text": "Round 3 — study the best, then simplify", "x": 0, "y": -260, "page": "round3"},
+    "rowK": {"kind": "title1", "maxW": 1330, "text": "K · Weight — the more you spend, the bolder it gets", "x": 0, "y": 980, "page": "round3"},
+    "rowL": {"kind": "title1", "maxW": 1330, "text": "L · Lyrics — your day, line by line", "x": 0, "y": 2220, "page": "round3"},
+    "rowM": {"kind": "title1", "maxW": 1330, "text": "M · Edition — your money as front-page news", "x": 0, "y": 3460, "page": "round3"},
+    "rowN": {"kind": "title1", "maxW": 1330, "text": "N · Roll — numbers that spin into place", "x": 0, "y": 4700, "page": "round3"},
+    "rowO": {"kind": "title1", "maxW": 1330, "text": "O · Margin — the AI writes in the margins", "x": 0, "y": 5940, "page": "round3"},
+    "noteK": {"x": 1410, "y": 1240, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: the Out number gets bolder as you spend. It's a variable font, so its weight tracks how much of your income is gone; money in stays light.\n\nMotion: words inflate as they're heard, the keypad digit you press thickens, and selected options turn bold while the rest stay thin.\n\nColour: warm grey and one vermilion.\n\nTrade-off: the most original. Weight is a feeling, not a precise read, so the digits stay exact."},
+    "noteL": {"x": 1410, "y": 2480, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: today reads like synced lyrics. Earlier entries dim, the latest glows, and a karaoke sweep runs across it.\n\nMotion: captions appear word by word as you talk, then split into a numbered setlist.\n\nPace: two bars — how far through the month vs how far through your income.\n\nColour: deep plum and amber.\n\nTrade-off: the most emotional; dark-only and less dense."},
+    "noteM": {"x": 1410, "y": 3720, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: your money as a daily paper. The AI writes the headline — ‘Rent and food lead a calm September’.\n\nMotion: headlines rise out of a mask, rules draw themselves, briefs file in one by one.\n\nEdit: ‘Corrections’ is a typographic form; the chosen option is underlined in blue.\n\nColour: paper white, ink and one ultramarine.\n\nTrade-off: the strongest voice; serif headlines take more room."},
+    "noteN": {"x": 1410, "y": 4960, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: numbers that roll. Every amount is an odometer, so logging something spins the digits to the new total.\n\nMotion: when one sentence holds several entries, they spring out of the input as chips. ‘Again?’ chips repeat your regulars in one tap, and the placeholder types itself.\n\nColour: white and jade.\n\nTrade-off: the most familiar and quickest to learn; also the least unusual."},
+    "noteO": {"x": 1410, "y": 6200, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: the AI writes in the margins. Clean type, plus pink hand-drawn circles, underlines and notes — ‘41% gone, 12 days left. You're fine.’\n\nMotion: strokes draw themselves, and the handwriting bounces (a variable font with a bounce axis).\n\nOne sentence: the AI slashes what you said into parts and labels each one.\n\nColour: paper, ink and one marker pink.\n\nTrade-off: the friendliest way to show what the AI did; the notes need restraint to stay minimal."}
   },
   "order": [
     "Main.dc.html",
@@ -133,11 +160,28 @@
     "QuiltHome.dc.html",
     "QuiltWeave.dc.html",
     "QuiltEdit.dc.html",
-    "QuiltPoster.dc.html"
+    "QuiltPoster.dc.html",
+    "Research.dc.html",
+    "WeightHome.dc.html",
+    "WeightTalk.dc.html",
+    "WeightEdit.dc.html",
+    "LyricsHome.dc.html",
+    "LyricsTalk.dc.html",
+    "LyricsEdit.dc.html",
+    "EditionHome.dc.html",
+    "EditionTalk.dc.html",
+    "EditionEdit.dc.html",
+    "RollHome.dc.html",
+    "RollTalk.dc.html",
+    "RollEdit.dc.html",
+    "MarginHome.dc.html",
+    "MarginTalk.dc.html",
+    "MarginEdit.dc.html"
   ],
   "pages": [
     {"id": "round1", "name": "Round 1 · Calm"},
-    {"id": "round2", "name": "Round 2 · Fun"}
+    {"id": "round2", "name": "Round 2 · Fun"},
+    {"id": "round3", "name": "Round 3 · Type & motion"}
   ],
   "title": "Spending App Mocks"
 }

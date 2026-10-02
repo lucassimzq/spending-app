@@ -3,7 +3,7 @@
 Live canvas (all mocks; most screens can be clicked through in Play mode):
 https://claude.ai/artifact/5Z3BHZQokKGWBKkCog9HL4
 
-The canvas has two pages: **Round 1 · Calm** (directions A–E) and **Round 2 · Fun** (directions F–J).
+The canvas has three pages: **Round 1 · Calm** (directions A–E), **Round 2 · Fun** (directions F–J) and **Round 3 · Type & motion** (directions K–O, plus a research board). It opens on Round 3.
 
 `mocks/` holds a snapshot of the canvas source. The canvas is the live version.
 
@@ -45,6 +45,31 @@ Round 1 had three gaps: no obvious way to adjust a record by hand, the several-r
 | J | **Quilt** | Each day is a patch woven from category colours and sized by spend. At month end the quilt becomes a poster to share. | New threads weave into today's patch; money in becomes a stitched border. | Calculator keypad (type 36 ÷ 3 to split a bill), category spools. | The most beautiful and shareable; exact numbers take a tap. |
 
 Motion in the mocks is CSS and turns off under Reduce Motion. In the app it maps to SwiftUI springs plus light haptics (a tap per pebble, flip or stitch). Each direction has its own category palette, checked for colour-blind safety.
+
+## Round 3 · Type & motion (K–O)
+
+Feedback on Round 2: too much colour, and the fun should come from motion and typography, not characters. Round 3 started with research into recent Apple Design Award winners and the best-rated money apps (summarised on the canvas's research board). What we took from them:
+
+- **One answer per moment** (Flighty): home shows the one number that matters now.
+- **Huge numbers, one colour** (Revolut, Monzo, Cash App): every direction is a neutral base plus exactly one accent.
+- **Motion that confirms** (Copilot Money): when a number changes it animates, and nothing else on screen moves.
+- **Make the mundane tactile** (the (Not Boring) apps): every entry gets one physical moment.
+- **Colour that means something** (Tide Guide): the accent marks meaning, such as pace or money in vs out, and nothing else.
+- **Words can be the delight** (grug): microcopy with personality. The type is the illustration.
+
+Every direction keeps Round 2's two must-haves: one sentence becoming three records (including money in), and a full edit screen.
+
+| | Direction | Signature (type + motion) | Fonts | Colour | Trade-off |
+|---|---|---|---|---|---|
+| K | **Weight** | The Out number is set heavier the more of your income is gone, and money in stays light. Spoken words inflate from hairline to bold, a pressed keypad digit thickens, and the selected option is bold while the rest stay thin. | Anybody (variable weight and width) | Warm grey + vermilion | The most original. Weight is a feeling, so the digits stay exact. |
+| L | **Lyrics** | Today reads like synced lyrics: earlier entries dim, the latest gets a karaoke sweep, and "…what's next?" waits below. Talking shows live captions that turn into a numbered setlist. Pace is two bars, month vs income. | Funnel Display + Funnel Sans | Deep plum + amber | The most emotional. Dark-only and less dense. |
+| M | **Edition** | Your money as a daily paper: an AI-written headline ("Rent and food lead a calm September"), briefs ("Burger, five ringgit.") and a forecast. Headlines rise out of a mask, rules draw themselves, and briefs type and print in. Editing is "Corrections". | Instrument Serif + Geist + Geist Mono | Paper white + ultramarine | The strongest voice. Serif headlines take more room. |
+| N | **Roll** | Every amount is an odometer that rolls to the new total. Several entries spring out of the input as cards, "Again?" chips re-log your regulars in one tap, and the placeholder types itself. | Schibsted Grotesk | White + jade | The most familiar and quickest to learn, and the least unusual. |
+| O | **Margin** | Clean type plus the AI's pink pen: circles, underlines, ticks and handwritten notes ("41% gone, 12 days left — you're fine"). A spoken sentence gets bracketed and labelled in the margin, and guesses get a circled "?". | Figtree + Shantell Sans (bounce axis) | Paper + marker pink | The friendliest way to show what the AI did. The notes need restraint to stay minimal. |
+
+Motion in the mocks is CSS and turns off under Reduce Motion. In SwiftUI it maps to `contentTransition(.numericText())` for rolling numbers, `TextRenderer` (iOS 18+) for per-word and per-line effects, variable-font axes for weight and bounce, and Core Haptics for the tactile beats. Accent colours used for text pass WCAG AA contrast on their backgrounds.
+
+Research sources: [Apple Design Awards 2026 winners](https://www.apple.com/newsroom/2026/06/apple-reveals-winners-of-the-2026-apple-design-awards/), [2026 finalists (MacStories)](https://www.macstories.net/news/apple-announces-its-2026-apple-design-award-finalists/), [Flighty design guide](https://blakecrosley.com/guides/design/flighty), [(Not Boring) Weather](https://www.tapsmart.com/apps/not-boring-weather-fun-alternative-weather-watchers/), [Copilot Money review](https://freenance.io/products/copilot-money-review-2026-budgeting-app-iphone-best-design/), [Revolut design notes](https://www.webdesignhot.com/api/design-md/revolut.md), [numericText in SwiftUI](https://www.createwithswift.com/animating-numeric-text-in-swiftui-with-the-content-transition-modifier/), [TextRenderer effects](https://www.createwithswift.com/text-effects-using-textrenderer-in-swiftui), [variable fonts in motion (FontLab)](https://blog.fontlab.com/2026/03/10/variable-fonts-in-motion-and-ui/).
 
 ## Capture methods
 
@@ -95,10 +120,10 @@ The canvas board **How the AI works** shows this as a diagram.
 
 ## Sample data used in the mocks
 
-1–18 September 2026: in RM 5,200.00 (salary 4,800 + freelance 400), out RM 2,146.30. That splits into rent 900.00, food 486.40, groceries 238.90, transport 212.60, shopping 159.00 and bills 149.40, which is 41% of income spent and net +3,053.70. Where categories are coloured, each keeps the same hue in every direction, and the palette passes colour-blind checks.
+1–18 September 2026: in RM 5,200.00 (salary 4,800 + freelance 400), out RM 2,146.30. That splits into rent 900.00, food 486.40, groceries 238.90, transport 212.60, shopping 159.00 and bills 149.40, which is 41% of income spent and net +3,053.70. Where categories are coloured, each direction's palette passes colour-blind checks. Round 3 doesn't colour categories at all.
 
 ## Next steps
 
-1. Pick a direction or a blend across both rounds (e.g. F's jar with H's tap-a-word editing, or I's board with D's Inbox rule).
+1. Pick a direction or a blend across the three rounds (e.g. N's rolling numbers with O's margin notes for AI guesses, or K's weighted numbers on A's two-number home).
 2. Prototype the parser on real utterances and screenshots (Manglish, DuitNow, e-wallet receipts) before polishing UI.
 3. Build the SwiftUI skeleton: SwiftData store, `LogTransactionIntent`, widget and control, then home + capture.
