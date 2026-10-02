@@ -3,6 +3,8 @@
 Live canvas (all mocks; most screens can be clicked through in Play mode):
 https://claude.ai/artifact/5Z3BHZQokKGWBKkCog9HL4
 
+The canvas has two pages: **Round 1 · Calm** (directions A–E) and **Round 2 · Fun** (directions F–J).
+
 `mocks/` holds a snapshot of the canvas source. The canvas is the live version.
 
 Working name in the mocks: **Kira** (Malay *kira*, "to count"). It's a placeholder.
@@ -15,7 +17,7 @@ Working name in the mocks: **Kira** (Malay *kira*, "to count"). It's a placehold
 4. **Minimal.** One primary action per screen, no dashboards on the home screen.
 5. **Malaysian by default.** RM, English/BM/Manglish ("tapau nasi ayam 8"), DuitNow / e-wallet screenshots, and wallet top-ups that don't count as spending.
 
-## The five directions
+## Round 1 · Calm (A–E)
 
 | | Direction | Idea | Trade-off |
 |---|---|---|---|
@@ -26,6 +28,23 @@ Working name in the mocks: **Kira** (Malay *kira*, "to count"). It's a placehold
 | E | **Calendar** | Time is the home screen. A heatmap shows which days cost the most, you can tap any day to see or backfill it, and a flow chart shows where the income went. | The most informative over weeks. It's a little slower for "how am I doing today". |
 
 These aren't mutually exclusive. The capture surfaces and AI pipeline below apply to every direction.
+
+## Round 2 · Fun (F–J)
+
+Round 1 had three gaps: no obvious way to adjust a record by hand, the several-records-from-one-recording feature wasn't visible, and nothing surprised. Round 2 keeps the layouts minimal but adds colour, motion and one signature surprise per direction. Every direction now shows:
+
+- one spoken sentence ("lunch 12, grab 8.50, and Ali paid me back 20") becoming three separate records, including money in;
+- a full manual edit screen: amount, spent or received, category, date and time, note, split, repeat and delete. The same screen is used to add a record by hand.
+
+| | Direction | Signature surprise | One recording → several records | Manual edit | Trade-off |
+|---|---|---|---|---|---|
+| F | **Jar** | The month is a jar and every expense is a pebble (colour = category, size = amount). Tilt to stir, shake to undo, and "Sort" pours the pebbles into category tubes. | Each item drops in as its own pebble; money in lands as a coin. | Tap a pebble and it pops out: drag a ruler for the amount, tap a colour for the category. | Playful at a glance; exact numbers live in labels. |
+| G | **Mochi** | A squishy mochi buddy is the talk button. It listens, then splits into one little mochi per record. | The split itself. Drag two together to merge; pinch one to split a bill. | Big − / + nudges, spent or got, category mochis, split with friends. | Charming and memorable; some people find a character too cute for money. |
+| H | **Sentence** | Home is one editable sentence ("RM 5,200 came in and RM 2,146 went out…"). A marker sweeps over each word the AI understood. | A run-on sentence is visibly cut into separate records. | Tap any highlighted word to change only that part: keypad for amounts, colour chips for categories. | The clearest about what the AI understood; less visual. |
+| I | **Flap** | A split-flap departures board that flips with every log. Pace reads ON TIME or DELAYED. | "NOW BOARDING · 3": rows flip in one by one, and anything guessed shows a status like TIME?. | Roll each digit like a reel; categories are colour "gates". | The most satisfying motion; darker and denser. |
+| J | **Quilt** | Each day is a patch woven from category colours and sized by spend. At month end the quilt becomes a poster to share. | New threads weave into today's patch; money in becomes a stitched border. | Calculator keypad (type 36 ÷ 3 to split a bill), category spools. | The most beautiful and shareable; exact numbers take a tap. |
+
+Motion in the mocks is CSS and turns off under Reduce Motion. In the app it maps to SwiftUI springs plus light haptics (a tap per pebble, flip or stitch). Each direction has its own category palette, checked for colour-blind safety.
 
 ## Capture methods
 
@@ -80,6 +99,6 @@ The canvas board **How the AI works** shows this as a diagram.
 
 ## Next steps
 
-1. Pick a direction (or a blend: e.g. A's home, D's Inbox rule, C's system surfaces).
+1. Pick a direction or a blend across both rounds (e.g. F's jar with H's tap-a-word editing, or I's board with D's Inbox rule).
 2. Prototype the parser on real utterances and screenshots (Manglish, DuitNow, e-wallet receipts) before polishing UI.
 3. Build the SwiftUI skeleton: SwiftData store, `LogTransactionIntent`, widget and control, then home + capture.

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flap · Now boarding</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#F5F5F0;text-decoration:none}a:hover{color:#FFFFFF}
+button{font:inherit;color:inherit;cursor:pointer}
+@keyframes flip{0%{transform:rotateX(90deg)}5%{transform:rotateX(-24deg)}8%{transform:rotateX(10deg)}10%,100%{transform:rotateX(0deg)}}
+@keyframes rowFlip{0%{transform:rotateX(-90deg);opacity:.2}8%{transform:rotateX(14deg);opacity:1}12%,100%{transform:rotateX(0deg);opacity:1}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes blinkDot{0%,60%{opacity:1}61%,100%{opacity:.25}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #111214; color: #F5F5F0; font-family: Barlow, -apple-system, 'Segoe UI', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; justify-content: space-between; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<span style="display: flex; align-items: center; gap: 10px; font-size: 26px; font-weight: 700; letter-spacing: 0.1em; color: #FFC700;"><span style="width: 10px; height: 10px; border-radius: 5px; background: #FFC700; animation: blinkDot 1s steps(1) infinite;"></span>NOW BOARDING</span>
+<a href="FlapHome.dc.html" style="height: 44px; display: flex; align-items: center; font-size: 16px; font-weight: 600; letter-spacing: 0.14em; color: #9A9CA3;">CANCEL</a>
+</div>
+
+<div style="position: absolute; top: 112px; left: 0; right: 0; height: 40px; background: #1A1B1E; overflow: hidden; display: flex; align-items: center;">
+<div style="display: flex; white-space: nowrap; animation: ticker 14s linear infinite; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 19px; font-weight: 600; letter-spacing: 0.08em; color: #FFC700;">
+<span style="padding-right: 28px;">“LUNCH 12, GRAB 8.50, AND ALI PAID ME BACK 20” ★ 3 ENTRIES FROM ONE SENTENCE ★</span>
+<span style="padding-right: 28px;">“LUNCH 12, GRAB 8.50, AND ALI PAID ME BACK 20” ★ 3 ENTRIES FROM ONE SENTENCE ★</span>
+</div>
+</div>
+
+<div style="position: absolute; top: 170px; left: 24px; right: 24px; display: flex; flex-direction: column; gap: 10px; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<div style="display: flex; align-items: center; gap: 10px;">
+<span style="width: 40px; font-size: 15px; font-weight: 600; letter-spacing: 0.2em; color: #9A9CA3;">OUT</span>
+<div style="display: flex; align-items: center; gap: 3px;">
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden;"><span style="font-size: 36px; line-height: 44px; font-weight: 600;">2</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="align-self: flex-end; width: 7px; font-size: 24px; line-height: 30px; color: #9A9CA3;">,</span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden;"><span style="font-size: 36px; line-height: 44px; font-weight: 600;">1</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden; perspective: 200px;"><span style="display: block; font-size: 36px; line-height: 44px; font-weight: 600; color: #FFC700; animation: flip 5s cubic-bezier(.3,.6,.4,1) 1.4s infinite;">6</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden; perspective: 200px;"><span style="display: block; font-size: 36px; line-height: 44px; font-weight: 600; color: #FFC700; animation: flip 5s cubic-bezier(.3,.6,.4,1) 1.5s infinite;">6</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="align-self: flex-end; width: 7px; font-size: 24px; line-height: 30px; color: #9A9CA3;">.</span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden; perspective: 200px;"><span style="display: block; font-size: 36px; line-height: 44px; font-weight: 600; color: #FFC700; animation: flip 5s cubic-bezier(.3,.6,.4,1) 1.6s infinite;">8</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden;"><span style="font-size: 36px; line-height: 44px; font-weight: 600;">0</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+</div>
+<span style="margin-left: auto; height: 26px; padding: 0 8px; border-radius: 4px; background: #2A2410; color: #FFC700; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; display: flex; align-items: center;">+20.50</span>
+</div>
+<div style="display: flex; align-items: center; gap: 10px;">
+<span style="width: 40px; font-size: 15px; font-weight: 600; letter-spacing: 0.2em; color: #9A9CA3;">IN</span>
+<div style="display: flex; align-items: center; gap: 3px;">
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden;"><span style="font-size: 36px; line-height: 44px; font-weight: 600;">5</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="align-self: flex-end; width: 7px; font-size: 24px; line-height: 30px; color: #9A9CA3;">,</span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden;"><span style="font-size: 36px; line-height: 44px; font-weight: 600;">2</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden; perspective: 200px;"><span style="display: block; font-size: 36px; line-height: 44px; font-weight: 600; color: #34D27B; animation: flip 5s cubic-bezier(.3,.6,.4,1) 2.2s infinite;">2</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden;"><span style="font-size: 36px; line-height: 44px; font-weight: 600;">0</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="align-self: flex-end; width: 7px; font-size: 24px; line-height: 30px; color: #9A9CA3;">.</span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden;"><span style="font-size: 36px; line-height: 44px; font-weight: 600;">0</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; display: flex; align-items: center; justify-content: center; overflow: hidden;"><span style="font-size: 36px; line-height: 44px; font-weight: 600;">0</span><span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+</div>
+<span style="margin-left: auto; height: 26px; padding: 0 8px; border-radius: 4px; background: #0F2A1C; color: #34D27B; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; display: flex; align-items: center;">+20.00</span>
+</div>
+</div>
+
+<span style="position: absolute; top: 290px; left: 24px; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #9A9CA3;">3 NEW · FROM ONE SENTENCE</span>
+
+<div style="position: absolute; top: 314px; left: 24px; right: 24px; display: flex; flex-direction: column; gap: 6px; perspective: 600px; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<a href="FlapEdit.dc.html" style="box-sizing: border-box; padding: 9px 10px; border-radius: 8px; background: #1A1B1E; box-shadow: inset 3px 0 0 #FFC700; display: flex; flex-direction: column; gap: 4px; transform-origin: 50% 0%; animation: rowFlip 5s cubic-bezier(.3,.6,.4,1) 0.2s infinite;">
+<span style="display: grid; grid-template-columns: 46px minmax(0, 1fr) 100px 62px; column-gap: 8px; align-items: center; font-size: 19px; font-weight: 600; letter-spacing: 0.03em;"><span style="color: #FFC700;">13:00</span><span>LUNCH</span><span style="justify-self: start; height: 26px; padding: 0 8px; border-radius: 4px; background: #FF7A1A; color: #111111; font-size: 14px; letter-spacing: 0.08em; display: flex; align-items: center;">FOOD</span><span style="text-align: right;">12.00</span></span>
+<span style="font-family: Barlow, sans-serif; font-size: 12px; color: #FFC700;">TIME? Guessed from “lunch” — tap to check</span>
+</a>
+<a href="FlapEdit.dc.html" style="height: 50px; box-sizing: border-box; padding: 0 10px; border-radius: 8px; background: #1A1B1E; display: grid; grid-template-columns: 46px minmax(0, 1fr) 100px 62px; column-gap: 8px; align-items: center; font-size: 19px; font-weight: 600; letter-spacing: 0.03em; transform-origin: 50% 0%; animation: rowFlip 5s cubic-bezier(.3,.6,.4,1) 0.6s infinite;"><span style="color: #9A9CA3;">19:45</span><span>GRAB</span><span style="justify-self: start; height: 26px; padding: 0 8px; border-radius: 4px; background: #22C3F3; color: #111111; font-size: 14px; letter-spacing: 0.08em; display: flex; align-items: center;">TRANSPORT</span><span style="text-align: right;">8.50</span></a>
+<a href="FlapEdit.dc.html" style="height: 50px; box-sizing: border-box; padding: 0 10px; border-radius: 8px; background: #1A1B1E; display: grid; grid-template-columns: 46px minmax(0, 1fr) 100px 62px; column-gap: 8px; align-items: center; font-size: 19px; font-weight: 600; letter-spacing: 0.03em; transform-origin: 50% 0%; animation: rowFlip 5s cubic-bezier(.3,.6,.4,1) 1s infinite;"><span style="color: #9A9CA3;">19:45</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">FROM ALI</span><span style="justify-self: start; height: 26px; padding: 0 8px; border-radius: 4px; background: #F5F5F0; color: #111111; font-size: 14px; letter-spacing: 0.08em; display: flex; align-items: center;">IN</span><span style="text-align: right; color: #34D27B;">+20.00</span></a>
+</div>
+
+<span style="position: absolute; top: 514px; left: 24px; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #8A8C93;">EARLIER TODAY</span>
+<div style="position: absolute; top: 538px; left: 24px; right: 24px; display: flex; flex-direction: column; gap: 6px; font-family: 'Barlow Condensed', Barlow, sans-serif; color: #8A8C93;">
+<div style="height: 44px; box-sizing: border-box; padding: 0 10px; border-radius: 8px; border: 1px solid #22242A; display: grid; grid-template-columns: 46px minmax(0, 1fr) 100px 62px; column-gap: 8px; align-items: center; font-size: 18px; font-weight: 600;"><span>19:42</span><span>BURGER</span><span>FOOD</span><span style="text-align: right;">5.00</span></div>
+<div style="height: 44px; box-sizing: border-box; padding: 0 10px; border-radius: 8px; border: 1px solid #22242A; display: grid; grid-template-columns: 46px minmax(0, 1fr) 100px 62px; column-gap: 8px; align-items: center; font-size: 18px; font-weight: 600;"><span>18:20</span><span>GRAB HOME</span><span>TRANSPORT</span><span style="text-align: right;">18.70</span></div>
+</div>
+
+<p style="position: absolute; top: 656px; left: 24px; right: 24px; margin: 0; font-size: 13px; line-height: 18px; color: #9A9CA3;">Anything the AI guessed gets a yellow status, so you know exactly what to check.</p>
+
+<div style="position: absolute; left: 24px; right: 24px; bottom: 34px; display: flex; gap: 12px; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<a href="FlapEdit.dc.html" style="height: 56px; padding: 0 24px; box-sizing: border-box; border: 1.5px solid #3A3C42; border-radius: 28px; display: flex; align-items: center; font-size: 19px; font-weight: 700; letter-spacing: 0.14em;">EDIT</a>
+<a href="FlapHome.dc.html" style="flex-grow: 1; height: 56px; border-radius: 28px; background: #FFC700; color: #111111; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; letter-spacing: 0.14em;">CONFIRM 3</a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

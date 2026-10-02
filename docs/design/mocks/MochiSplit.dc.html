@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mochi · It splits</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#3A2430;text-decoration:none}a:hover{color:#1F1219}
+button{font:inherit;color:inherit;cursor:pointer}
+@keyframes parent{0%,12%{transform:scale(1)}40%{transform:scale(.2)}46%,88%{transform:scale(0)}100%{transform:scale(1)}}
+@keyframes goL{0%,12%{transform:translate(117px,-18px) scale(.45)}44%,88%{transform:translate(0,0) scale(1)}100%{transform:translate(117px,-18px) scale(.45)}}
+@keyframes goC{0%,12%{transform:translate(0,24px) scale(.45)}44%,88%{transform:translate(0,0) scale(1)}100%{transform:translate(0,24px) scale(.45)}}
+@keyframes goR{0%,12%{transform:translate(-117px,-18px) scale(.45)}44%,88%{transform:translate(0,0) scale(1)}100%{transform:translate(-117px,-18px) scale(.45)}}
+@keyframes faceL{0%,12%{transform:translate(117px,-18px) scale(.45);opacity:0}38%{opacity:0}46%,86%{transform:translate(0,0) scale(1);opacity:1}92%,100%{transform:translate(117px,-18px) scale(.45);opacity:0}}
+@keyframes faceC{0%,12%{transform:translate(0,24px) scale(.45);opacity:0}38%{opacity:0}46%,86%{transform:translate(0,0) scale(1);opacity:1}92%,100%{transform:translate(0,24px) scale(.45);opacity:0}}
+@keyframes faceR{0%,12%{transform:translate(-117px,-18px) scale(.45);opacity:0}38%{opacity:0}46%,86%{transform:translate(0,0) scale(1);opacity:1}92%,100%{transform:translate(-117px,-18px) scale(.45);opacity:0}}
+@keyframes parentFace{0%,10%{opacity:1}24%,90%{opacity:0}100%{opacity:1}}
+@keyframes labelIn{0%,40%{opacity:0;transform:translateY(8px)}50%,86%{opacity:1;transform:translateY(0)}92%,100%{opacity:0;transform:translateY(0)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FFF4EE; color: #3A2430; font-family: Nunito, -apple-system, 'Segoe UI', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 24px; right: 24px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<span style="font-family: Fredoka, Nunito, sans-serif; font-size: 24px; font-weight: 600;">Got 3 things</span>
+<a href="MochiHome.dc.html" style="height: 44px; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #7A5A66;">Cancel</a>
+</div>
+
+<div style="position: absolute; top: 112px; right: 24px; max-width: 290px; box-sizing: border-box; padding: 10px 14px; border-radius: 20px 20px 6px 20px; background: #3A2430; color: #FFFFFF; font-size: 15px; line-height: 21px; font-weight: 600;">lunch 12, grab 8.50, and Ali paid me back 20</div>
+
+<svg width="390" height="300" viewBox="0 0 390 300" role="img" aria-label="One mochi splits into three: lunch, Grab and money from Ali" style="position: absolute; left: 0; top: 186px;">
+<defs>
+<filter id="goo" x="-20%" y="-30%" width="140%" height="160%">
+<feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur"></feGaussianBlur>
+<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -8" result="goo"></feColorMatrix>
+<feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+</filter>
+</defs>
+<ellipse cx="78" cy="226" rx="42" ry="6" fill="#F5D9CD"></ellipse>
+<ellipse cx="195" cy="178" rx="36" ry="5" fill="#F5D9CD"></ellipse>
+<ellipse cx="312" cy="224" rx="40" ry="6" fill="#F5D9CD"></ellipse>
+<g filter="url(#goo)">
+<circle cx="195" cy="150" r="80" fill="#FFFFFF" style="transform-box: fill-box; transform-origin: center; transform: scale(0); animation: parent 5s ease-in-out infinite;"></circle>
+<circle cx="78" cy="168" r="50" fill="#EF5B6E" style="transform-box: fill-box; transform-origin: center; animation: goL 5s ease-in-out infinite;"></circle>
+<circle cx="195" cy="126" r="44" fill="#E39A2F" style="transform-box: fill-box; transform-origin: center; animation: goC 5s ease-in-out infinite;"></circle>
+<circle cx="312" cy="168" r="48" fill="#FFFFFF" style="transform-box: fill-box; transform-origin: center; animation: goR 5s ease-in-out infinite;"></circle>
+</g>
+<g style="opacity: 0; animation: parentFace 5s ease-in-out infinite;">
+<ellipse cx="180" cy="146" rx="6" ry="8" fill="#3A2430"></ellipse>
+<ellipse cx="210" cy="146" rx="6" ry="8" fill="#3A2430"></ellipse>
+<ellipse cx="195" cy="166" rx="9" ry="6" fill="#3A2430"></ellipse>
+</g>
+<g style="transform-box: fill-box; transform-origin: center; animation: faceL 5s ease-in-out infinite;">
+<circle cx="66" cy="164" r="4" fill="#3A2430"></circle>
+<circle cx="90" cy="164" r="4" fill="#3A2430"></circle>
+<path d="M 72 176 Q 78 182 84 176" fill="none" stroke="#3A2430" stroke-width="2.5" stroke-linecap="round"></path>
+<ellipse cx="56" cy="176" rx="7" ry="4" fill="#FFFFFF" opacity="0.35"></ellipse>
+<ellipse cx="100" cy="176" rx="7" ry="4" fill="#FFFFFF" opacity="0.35"></ellipse>
+</g>
+<g style="transform-box: fill-box; transform-origin: center; animation: faceC 5s ease-in-out infinite;">
+<circle cx="184" cy="122" r="4" fill="#3A2430"></circle>
+<circle cx="206" cy="122" r="4" fill="#3A2430"></circle>
+<path d="M 189 134 Q 195 140 201 134" fill="none" stroke="#3A2430" stroke-width="2.5" stroke-linecap="round"></path>
+</g>
+<g style="transform-box: fill-box; transform-origin: center; animation: faceR 5s ease-in-out infinite;">
+<circle cx="300" cy="164" r="4" fill="#3A2430"></circle>
+<circle cx="324" cy="164" r="4" fill="#3A2430"></circle>
+<path d="M 305 175 Q 312 182 319 175" fill="none" stroke="#3A2430" stroke-width="2.5" stroke-linecap="round"></path>
+<ellipse cx="290" cy="176" rx="7" ry="4" fill="#FFB3C1" opacity="0.85"></ellipse>
+<ellipse cx="334" cy="176" rx="7" ry="4" fill="#FFB3C1" opacity="0.85"></ellipse>
+<circle cx="344" cy="130" r="14" fill="#E3B341"></circle>
+<path d="M 344 123 L 344 137 M 337 130 L 351 130" stroke="#3A2430" stroke-width="3" stroke-linecap="round"></path>
+</g>
+</svg>
+
+<div style="position: absolute; top: 424px; left: 18px; width: 120px; display: flex; flex-direction: column; align-items: center; text-align: center; animation: labelIn 5s ease-in-out infinite;"><span style="font-size: 15px; font-weight: 800;">Lunch</span><span style="font-size: 13px; font-weight: 700; color: #7A5A66;">−12.00 · Food</span></div>
+<div style="position: absolute; top: 374px; left: 135px; width: 120px; display: flex; flex-direction: column; align-items: center; text-align: center; animation: labelIn 5s ease-in-out infinite;"><span style="font-size: 15px; font-weight: 800;">Grab</span><span style="font-size: 13px; font-weight: 700; color: #7A5A66;">−8.50 · Transport</span></div>
+<div style="position: absolute; top: 424px; left: 248px; width: 128px; display: flex; flex-direction: column; align-items: center; text-align: center; animation: labelIn 5s ease-in-out infinite;"><span style="font-size: 15px; font-weight: 800;">Ali paid back</span><span style="font-size: 13px; font-weight: 700; color: #7A5A66;">+20.00 · Money in</span></div>
+
+<div style="position: absolute; top: 486px; left: 24px; right: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
+<span style="height: 32px; padding: 0 12px; border-radius: 16px; background: #FFFFFF; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V6a2 2 0 1 1 4 0v5"></path><path d="M13 10a2 2 0 1 1 4 0v3a6 6 0 0 1-6 6h-1a6 6 0 0 1-5-2.7L3.5 13a2 2 0 0 1 3.2-2.4L9 13"></path></svg>Tap one to edit</span>
+<span style="height: 32px; padding: 0 12px; border-radius: 16px; background: #FFFFFF; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="12" r="4"></circle><circle cx="17" cy="12" r="4"></circle><path d="M11 12h2"></path></svg>Drag two together to merge</span>
+<span style="height: 32px; padding: 0 12px; border-radius: 16px; background: #FFFFFF; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h6M14 12h6"></path><path d="m7 9-3 3 3 3M17 9l3 3-3 3"></path></svg>Pinch one to split a bill</span>
+</div>
+
+<div style="position: absolute; top: 590px; left: 24px; right: 24px; height: 64px; box-sizing: border-box; padding: 0 16px; border-radius: 22px; background: #FFFFFF; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 12px;">
+<div style="display: flex; flex-direction: column;"><span style="font-size: 12px; font-weight: 800; color: #A3283B;">Out +20.50</span><span style="font-family: Fredoka, Nunito, sans-serif; font-size: 20px; font-weight: 600;">2,166.80</span></div>
+<div style="display: flex; flex-direction: column;"><span style="font-size: 12px; font-weight: 800; color: #2E6B3D;">In +20.00</span><span style="font-family: Fredoka, Nunito, sans-serif; font-size: 20px; font-weight: 600;">5,220.00</span></div>
+</div>
+
+<div style="position: absolute; left: 24px; right: 24px; bottom: 34px; display: flex; gap: 12px;">
+<button type="button" style="height: 56px; padding: 0 22px; border: 2px solid #3A2430; border-radius: 28px; background: transparent; font-size: 16px; font-weight: 800;">Undo</button>
+<a href="MochiHome.dc.html" style="flex-grow: 1; height: 56px; border-radius: 28px; background: #3A2430; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800;">Keep all 3</a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

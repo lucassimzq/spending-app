@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jar · Sorted into tubes</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0E3B3A;text-decoration:none}a:hover{color:#072322}
+button{font:inherit;color:inherit;cursor:pointer}
+@keyframes fillUp{0%{transform:scaleY(0)}70%{transform:scaleY(1.03)}100%{transform:scaleY(1)}}
+@keyframes plop{0%{transform:translateY(-60px);opacity:0}10%{opacity:1}40%{transform:translateY(0);opacity:1}55%,100%{transform:translateY(0);opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #E8F3F1; color: #0E3B3A; font-family: Rubik, -apple-system, 'Segoe UI', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 16px; right: 24px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<a href="JarHome.dc.html" style="height: 44px; display: flex; align-items: center; gap: 2px; font-size: 17px; font-weight: 600;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>Jar</a>
+<div style="height: 44px; box-sizing: border-box; padding: 3px; border-radius: 22px; background: #FFFFFF; display: flex; gap: 2px;">
+<button type="button" aria-pressed="true" style="height: 38px; padding: 0 16px; border: 0; border-radius: 19px; background: #0E3B3A; color: #FFFFFF; font-size: 14px; font-weight: 600;">Tubes</button>
+<button type="button" aria-pressed="false" style="height: 38px; padding: 0 16px; border: 0; border-radius: 19px; background: transparent; font-size: 14px; font-weight: 600;">List</button>
+</div>
+</div>
+
+<div style="position: absolute; top: 116px; left: 24px; right: 24px; display: flex; flex-direction: column; gap: 4px;">
+<span style="font-size: 24px; line-height: 30px; font-weight: 700; letter-spacing: -0.01em;">Where September went</span>
+<span style="font-size: 13px; color: #4A6B69;">Out 2,146.30 · In 5,200.00 · 65 pebbles</span>
+</div>
+
+<span style="position: absolute; left: 22px; top: 230px; width: 56px; height: 8px; border-radius: 4px; background: #FFFFFF;"></span>
+<span style="position: absolute; left: 80px; top: 230px; width: 56px; height: 8px; border-radius: 4px; background: #FFFFFF;"></span>
+<span style="position: absolute; left: 138px; top: 230px; width: 56px; height: 8px; border-radius: 4px; background: #FFFFFF;"></span>
+<span style="position: absolute; left: 196px; top: 230px; width: 56px; height: 8px; border-radius: 4px; background: #FFFFFF;"></span>
+<span style="position: absolute; left: 254px; top: 230px; width: 56px; height: 8px; border-radius: 4px; background: #FFFFFF;"></span>
+<span style="position: absolute; left: 312px; top: 230px; width: 56px; height: 8px; border-radius: 4px; background: #FFFFFF;"></span>
+
+<div role="img" aria-label="Rent 900.00, 42% of spending" style="position: absolute; left: 25px; top: 236px; width: 50px; height: 340px; box-sizing: border-box; border: 3px solid #FFFFFF; border-top: 0; border-radius: 0 0 25px 25px; background: rgba(255, 255, 255, 0.45); overflow: hidden;"><div style="position: absolute; left: 0; right: 0; bottom: 0; height: 297px; background-color: #4848B8; background-image: radial-gradient(circle at 7.3px 6.5px, #5B5BD6 0 6.4px, transparent 7px); background-size: 14.67px 13px; transform-origin: 50% 100%; animation: fillUp 1.4s cubic-bezier(.2,.8,.2,1) 0.1s both;"></div></div>
+<div role="img" aria-label="Food 486.40, 23% of spending" style="position: absolute; left: 83px; top: 236px; width: 50px; height: 340px; box-sizing: border-box; border: 3px solid #FFFFFF; border-top: 0; border-radius: 0 0 25px 25px; background: rgba(255, 255, 255, 0.45); overflow: hidden;"><div style="position: absolute; left: 0; right: 0; bottom: 0; height: 160.5px; background-color: #E2622F; background-image: radial-gradient(circle at 7.3px 6.5px, #FF7A45 0 6.4px, transparent 7px); background-size: 14.67px 13px; transform-origin: 50% 100%; animation: fillUp 1.4s cubic-bezier(.2,.8,.2,1) 0.25s both;"></div></div>
+<div role="img" aria-label="Groceries 238.90, 11% of spending" style="position: absolute; left: 141px; top: 236px; width: 50px; height: 340px; box-sizing: border-box; border: 3px solid #FFFFFF; border-top: 0; border-radius: 0 0 25px 25px; background: rgba(255, 255, 255, 0.45); overflow: hidden;"><div style="position: absolute; left: 0; right: 0; bottom: 0; height: 78.8px; background-color: #229A60; background-image: radial-gradient(circle at 7.3px 6.5px, #2BB673 0 6.4px, transparent 7px); background-size: 14.67px 13px; transform-origin: 50% 100%; animation: fillUp 1.4s cubic-bezier(.2,.8,.2,1) 0.4s both;"></div></div>
+<div role="img" aria-label="Transport 212.60, 10% of spending" style="position: absolute; left: 199px; top: 236px; width: 50px; height: 340px; box-sizing: border-box; border: 3px solid #FFFFFF; border-top: 0; border-radius: 0 0 25px 25px; background: rgba(255, 255, 255, 0.45); overflow: hidden;"><div style="position: absolute; left: 0; right: 0; bottom: 0; height: 70.2px; background-color: #1A8CCF; background-image: radial-gradient(circle at 7.3px 6.5px, #22A6F2 0 6.4px, transparent 7px); background-size: 14.67px 13px; transform-origin: 50% 100%; animation: fillUp 1.4s cubic-bezier(.2,.8,.2,1) 0.55s both;"></div></div>
+<div role="img" aria-label="Shopping 159.00, 7% of spending" style="position: absolute; left: 257px; top: 236px; width: 50px; height: 340px; box-sizing: border-box; border: 3px solid #FFFFFF; border-top: 0; border-radius: 0 0 25px 25px; background: rgba(255, 255, 255, 0.45); overflow: hidden;"><div style="position: absolute; left: 0; right: 0; bottom: 0; height: 52.5px; background-color: #E04A8B; background-image: radial-gradient(circle at 7.3px 6.5px, #FF5FA2 0 6.4px, transparent 7px); background-size: 14.67px 13px; transform-origin: 50% 100%; animation: fillUp 1.4s cubic-bezier(.2,.8,.2,1) 0.7s both;"></div></div>
+<div role="img" aria-label="Bills 149.40, 7% of spending" style="position: absolute; left: 315px; top: 236px; width: 50px; height: 340px; box-sizing: border-box; border: 3px solid #FFFFFF; border-top: 0; border-radius: 0 0 25px 25px; background: rgba(255, 255, 255, 0.45); overflow: hidden;"><div style="position: absolute; left: 0; right: 0; bottom: 0; height: 49.3px; background-color: #C98A00; background-image: radial-gradient(circle at 7.3px 6.5px, #E9A100 0 6.4px, transparent 7px); background-size: 14.67px 13px; transform-origin: 50% 100%; animation: fillUp 1.4s cubic-bezier(.2,.8,.2,1) 0.85s both;"></div></div>
+
+<span aria-hidden="true" style="position: absolute; left: 44px; top: 262px; width: 12px; height: 12px; border-radius: 6px; background: #5B5BD6; animation: plop 4s ease-in 1.6s infinite;"></span>
+<span aria-hidden="true" style="position: absolute; left: 102px; top: 398px; width: 12px; height: 12px; border-radius: 6px; background: #FF7A45; animation: plop 4s ease-in 2.2s infinite;"></span>
+<span aria-hidden="true" style="position: absolute; left: 160px; top: 480px; width: 12px; height: 12px; border-radius: 6px; background: #2BB673; animation: plop 4s ease-in 2.8s infinite;"></span>
+
+<span style="position: absolute; left: 25px; top: 242px; width: 50px; text-align: center; font-size: 13px; font-weight: 700;">900</span>
+<span style="position: absolute; left: 83px; top: 378px; width: 50px; text-align: center; font-size: 13px; font-weight: 700;">486</span>
+<span style="position: absolute; left: 141px; top: 460px; width: 50px; text-align: center; font-size: 13px; font-weight: 700;">239</span>
+<span style="position: absolute; left: 199px; top: 469px; width: 50px; text-align: center; font-size: 13px; font-weight: 700;">213</span>
+<span style="position: absolute; left: 257px; top: 486px; width: 50px; text-align: center; font-size: 13px; font-weight: 700;">159</span>
+<span style="position: absolute; left: 315px; top: 490px; width: 50px; text-align: center; font-size: 13px; font-weight: 700;">149</span>
+
+<div style="position: absolute; left: 21px; top: 588px; width: 348px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; text-align: center;">
+<span style="display: flex; flex-direction: column; gap: 2px; font-size: 11px; font-weight: 600;">Rent<span style="font-weight: 400; color: #4A6B69;">42%</span></span>
+<span style="display: flex; flex-direction: column; gap: 2px; font-size: 11px; font-weight: 600;">Food<span style="font-weight: 400; color: #4A6B69;">23%</span></span>
+<span style="display: flex; flex-direction: column; gap: 2px; font-size: 11px; font-weight: 600;">Groceries<span style="font-weight: 400; color: #4A6B69;">11%</span></span>
+<span style="display: flex; flex-direction: column; gap: 2px; font-size: 11px; font-weight: 600;">Transport<span style="font-weight: 400; color: #4A6B69;">10%</span></span>
+<span style="display: flex; flex-direction: column; gap: 2px; font-size: 11px; font-weight: 600;">Shopping<span style="font-weight: 400; color: #4A6B69;">7%</span></span>
+<span style="display: flex; flex-direction: column; gap: 2px; font-size: 11px; font-weight: 600;">Bills<span style="font-weight: 400; color: #4A6B69;">7%</span></span>
+</div>
+
+<div style="position: absolute; left: 24px; right: 24px; top: 646px; height: 64px; box-sizing: border-box; padding: 0 16px; border-radius: 20px; background: #FFFFFF; display: flex; align-items: center; gap: 12px;">
+<span style="flex-shrink: 0; display: flex; flex-direction: column; gap: 2px;"><span style="width: 24px; height: 8px; box-sizing: border-box; border-radius: 4px; background: #F2C230; border: 1.5px solid #D9A514;"></span><span style="width: 24px; height: 8px; box-sizing: border-box; border-radius: 4px; background: #F2C230; border: 1.5px solid #D9A514;"></span><span style="width: 24px; height: 8px; box-sizing: border-box; border-radius: 4px; background: #F2C230; border: 1.5px solid #D9A514;"></span></span>
+<span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 15px; font-weight: 600;">In · 5,200.00</span><span style="font-size: 12px; color: #4A6B69;">Salary 4,800.00 · Freelance 400.00</span></span>
+</div>
+
+<span style="position: absolute; left: 24px; right: 24px; top: 722px; text-align: center; font-size: 12px; color: #4A6B69;">Tap a tube to see its pebbles · switch to List for exact numbers</span>
+
+<a href="JarHome.dc.html" style="position: absolute; left: 24px; right: 24px; bottom: 34px; height: 52px; border-radius: 26px; background: #0E3B3A; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600;">Pour back into the jar</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

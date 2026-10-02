@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flap · Roll the digits</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#F5F5F0;text-decoration:none}a:hover{color:#FFFFFF}
+button{font:inherit;color:inherit;cursor:pointer}
+input{font:inherit;color:inherit}
+@keyframes roll{0%,30%{transform:translateY(0)}40%,62%{transform:translateY(-60px)}72%,100%{transform:translateY(0)}}
+@keyframes hint{0%,30%{transform:translateY(0)}40%,62%{transform:translateY(-4px)}72%,100%{transform:translateY(0)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #111214; color: #F5F5F0; font-family: Barlow, -apple-system, 'Segoe UI', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 16px; right: 16px; height: 44px; display: flex; align-items: center; justify-content: space-between; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<a href="FlapBoard.dc.html" style="height: 44px; display: flex; align-items: center; gap: 2px; font-size: 16px; font-weight: 600; letter-spacing: 0.14em; color: #9A9CA3;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>BOARD</a>
+<span style="font-size: 18px; font-weight: 700; letter-spacing: 0.16em;">EDIT ENTRY</span>
+<button type="button" aria-label="Delete this entry" style="width: 44px; height: 44px; padding: 0; border: 1.5px solid #3A3C42; border-radius: 22px; background: transparent; color: #FF6B5E; display: flex; align-items: center; justify-content: center;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path><path d="M10 11v6M14 11v6"></path></svg></button>
+</div>
+
+<div style="position: absolute; top: 116px; left: 24px; right: 24px; height: 44px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<button type="button" aria-pressed="true" style="border: 0; border-radius: 8px; background: #F5F5F0; color: #111111; font-size: 18px; font-weight: 700; letter-spacing: 0.16em;">SPENT</button>
+<button type="button" aria-pressed="false" style="border: 1.5px solid #3A3C42; border-radius: 8px; background: transparent; font-size: 18px; font-weight: 700; letter-spacing: 0.16em; color: #9A9CA3;">GOT</button>
+</div>
+
+<span style="position: absolute; top: 176px; left: 24px; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; color: #9A9CA3;">AMOUNT · RM · DRAG A DIGIT</span>
+
+<div style="position: absolute; top: 200px; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 8px; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+<button type="button" aria-label="Tens up" style="width: 60px; height: 36px; border: 0; border-radius: 8px; background: #1A1B1E; color: #9A9CA3; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"></path></svg></button>
+<div style="position: relative; width: 60px; height: 84px; border-radius: 8px; background: #1E1F23; overflow: hidden;">
+<div style="position: absolute; left: 0; right: 0; top: -48px; display: flex; flex-direction: column;">
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">0</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">1</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">2</span>
+</div>
+<span style="position: absolute; left: 0; right: 0; top: 0; height: 13px; background: rgba(17, 18, 20, 0.78);"></span>
+<span style="position: absolute; left: 0; right: 0; bottom: 0; height: 13px; background: rgba(17, 18, 20, 0.78);"></span>
+<span style="position: absolute; left: 0; right: 0; top: 41.5px; height: 1.5px; background: #0A0A0B;"></span>
+</div>
+<button type="button" aria-label="Tens down" style="width: 60px; height: 36px; border: 0; border-radius: 8px; background: #1A1B1E; color: #9A9CA3; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+<button type="button" aria-label="Ones up" style="width: 60px; height: 36px; border: 0; border-radius: 8px; background: #2A2410; color: #FFC700; display: flex; align-items: center; justify-content: center; animation: hint 4s ease-in-out infinite;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"></path></svg></button>
+<div style="position: relative; width: 60px; height: 84px; border-radius: 8px; background: #1E1F23; overflow: hidden; box-shadow: 0 0 0 2px #FFC700;">
+<div style="position: absolute; left: 0; right: 0; top: -48px; display: flex; flex-direction: column; animation: roll 4s cubic-bezier(.3,.7,.3,1) infinite;">
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">1</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">2</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">3</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">4</span>
+</div>
+<span style="position: absolute; left: 0; right: 0; top: 0; height: 13px; background: rgba(17, 18, 20, 0.78);"></span>
+<span style="position: absolute; left: 0; right: 0; bottom: 0; height: 13px; background: rgba(17, 18, 20, 0.78);"></span>
+<span style="position: absolute; left: 0; right: 0; top: 41.5px; height: 1.5px; background: #0A0A0B;"></span>
+</div>
+<button type="button" aria-label="Ones down" style="width: 60px; height: 36px; border: 0; border-radius: 8px; background: #1A1B1E; color: #9A9CA3; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+
+<span style="align-self: center; margin-top: 30px; font-size: 40px; font-weight: 600; color: #9A9CA3;">.</span>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+<button type="button" aria-label="Tenths up" style="width: 60px; height: 36px; border: 0; border-radius: 8px; background: #1A1B1E; color: #9A9CA3; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"></path></svg></button>
+<div style="position: relative; width: 60px; height: 84px; border-radius: 8px; background: #1E1F23; overflow: hidden;">
+<div style="position: absolute; left: 0; right: 0; top: -48px; display: flex; flex-direction: column;">
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">9</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">0</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">1</span>
+</div>
+<span style="position: absolute; left: 0; right: 0; top: 0; height: 13px; background: rgba(17, 18, 20, 0.78);"></span>
+<span style="position: absolute; left: 0; right: 0; bottom: 0; height: 13px; background: rgba(17, 18, 20, 0.78);"></span>
+<span style="position: absolute; left: 0; right: 0; top: 41.5px; height: 1.5px; background: #0A0A0B;"></span>
+</div>
+<button type="button" aria-label="Tenths down" style="width: 60px; height: 36px; border: 0; border-radius: 8px; background: #1A1B1E; color: #9A9CA3; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+<button type="button" aria-label="Hundredths up" style="width: 60px; height: 36px; border: 0; border-radius: 8px; background: #1A1B1E; color: #9A9CA3; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"></path></svg></button>
+<div style="position: relative; width: 60px; height: 84px; border-radius: 8px; background: #1E1F23; overflow: hidden;">
+<div style="position: absolute; left: 0; right: 0; top: -48px; display: flex; flex-direction: column;">
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">9</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">0</span>
+<span style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 54px; font-weight: 600;">1</span>
+</div>
+<span style="position: absolute; left: 0; right: 0; top: 0; height: 13px; background: rgba(17, 18, 20, 0.78);"></span>
+<span style="position: absolute; left: 0; right: 0; bottom: 0; height: 13px; background: rgba(17, 18, 20, 0.78);"></span>
+<span style="position: absolute; left: 0; right: 0; top: 41.5px; height: 1.5px; background: #0A0A0B;"></span>
+</div>
+<button type="button" aria-label="Hundredths down" style="width: 60px; height: 36px; border: 0; border-radius: 8px; background: #1A1B1E; color: #9A9CA3; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+
+</div>
+
+<span style="position: absolute; top: 380px; left: 24px; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; color: #9A9CA3;">ITEM</span>
+<input type="text" aria-label="Item" value="LUNCH" style="position: absolute; top: 400px; left: 24px; width: 342px; height: 52px; box-sizing: border-box; padding: 0 14px; border: 0; border-radius: 8px; background: #1E1F23; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 24px; font-weight: 600; letter-spacing: 0.06em; color: #F5F5F0; outline: none;">
+
+<span style="position: absolute; top: 466px; left: 24px; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; color: #9A9CA3;">GATE</span>
+<div style="position: absolute; top: 486px; left: 24px; right: 24px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<button type="button" aria-pressed="true" style="height: 46px; border: 0; border-radius: 8px; background: #FF7A1A; color: #111111; font-size: 17px; font-weight: 700; letter-spacing: 0.1em; display: flex; align-items: center; justify-content: center; gap: 6px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>FOOD</button>
+<button type="button" style="height: 46px; border: 0; border-radius: 8px; background: #1A1B1E; box-shadow: inset 4px 0 0 #22C3F3; font-size: 17px; font-weight: 700; letter-spacing: 0.1em;">TRANSPORT</button>
+<button type="button" style="height: 46px; border: 0; border-radius: 8px; background: #1A1B1E; box-shadow: inset 4px 0 0 #34D27B; font-size: 17px; font-weight: 700; letter-spacing: 0.1em;">GROCERIES</button>
+<button type="button" style="height: 46px; border: 0; border-radius: 8px; background: #1A1B1E; box-shadow: inset 4px 0 0 #A99BFF; font-size: 17px; font-weight: 700; letter-spacing: 0.1em;">RENT</button>
+<button type="button" style="height: 46px; border: 0; border-radius: 8px; background: #1A1B1E; box-shadow: inset 4px 0 0 #FF5CAB; font-size: 17px; font-weight: 700; letter-spacing: 0.1em;">SHOPPING</button>
+<button type="button" style="height: 46px; border: 0; border-radius: 8px; background: #1A1B1E; box-shadow: inset 4px 0 0 #B5F23D; font-size: 17px; font-weight: 700; letter-spacing: 0.1em;">BILLS</button>
+</div>
+
+<span style="position: absolute; top: 596px; left: 24px; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; color: #9A9CA3;">TIME</span>
+<div style="position: absolute; top: 616px; left: 24px; right: 24px; display: flex; align-items: center; gap: 10px; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<button type="button" aria-label="Time 13:00, guessed — tap to change" style="height: 46px; padding: 0 4px; border: 0; background: transparent; display: flex; align-items: center; gap: 3px;">
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; box-shadow: 0 0 0 1.5px #FFC700; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: 32px; font-weight: 600;">1<span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; box-shadow: 0 0 0 1.5px #FFC700; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: 32px; font-weight: 600;">3<span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="font-size: 26px; font-weight: 600; color: #9A9CA3;">:</span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; box-shadow: 0 0 0 1.5px #FFC700; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: 32px; font-weight: 600;">0<span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+<span style="position: relative; width: 28px; height: 44px; border-radius: 5px; background: #1E1F23; box-shadow: 0 0 0 1.5px #FFC700; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: 32px; font-weight: 600;">0<span style="position: absolute; left: 0; right: 0; top: 21.5px; height: 1px; background: #0A0A0B;"></span></span>
+</button>
+<button type="button" aria-pressed="true" style="height: 44px; padding: 0 14px; border: 0; border-radius: 8px; background: #F5F5F0; color: #111111; font-size: 16px; font-weight: 700; letter-spacing: 0.12em;">TODAY</button>
+<button type="button" style="height: 44px; padding: 0 14px; border: 1.5px solid #3A3C42; border-radius: 8px; background: transparent; font-size: 16px; font-weight: 700; letter-spacing: 0.12em;">PICK DAY</button>
+</div>
+
+<div style="position: absolute; top: 680px; left: 24px; right: 24px; display: flex; gap: 8px; font-family: 'Barlow Condensed', Barlow, sans-serif;">
+<button type="button" style="height: 44px; padding: 0 16px; border: 1.5px solid #3A3C42; border-radius: 8px; background: transparent; font-size: 16px; font-weight: 700; letter-spacing: 0.12em;">+ NOTE</button>
+<button type="button" style="height: 44px; padding: 0 16px; border: 1.5px solid #3A3C42; border-radius: 8px; background: transparent; font-size: 16px; font-weight: 700; letter-spacing: 0.12em;">SPLIT</button>
+<button type="button" style="height: 44px; padding: 0 16px; border: 1.5px solid #3A3C42; border-radius: 8px; background: transparent; font-size: 16px; font-weight: 700; letter-spacing: 0.12em;">REPEAT</button>
+</div>
+
+<a href="FlapHome.dc.html" style="position: absolute; left: 24px; right: 24px; bottom: 34px; height: 56px; border-radius: 28px; background: #FFC700; color: #111111; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', Barlow, sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 0.16em;">SAVE</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

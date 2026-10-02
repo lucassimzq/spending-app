@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quilt · Edit a thread</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#FFFFFF;text-decoration:none}a:hover{color:#FFFFFF}
+button{font:inherit;color:inherit;cursor:pointer}
+@keyframes flow{to{stroke-dashoffset:-40}}
+@keyframes tapA{0%,18%,30%,100%{transform:scale(1);filter:brightness(1)}22%{transform:scale(.9);filter:brightness(1.6)}}
+@keyframes tapB{0%,48%,60%,100%{transform:scale(1);filter:brightness(1)}52%{transform:scale(.9);filter:brightness(1.6)}}
+@keyframes tapC{0%,70%,82%,100%{transform:scale(1);filter:brightness(1)}74%{transform:scale(.9);filter:brightness(1.6)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #1C2459; color: #FFFFFF; font-family: Manrope, -apple-system, 'Segoe UI', sans-serif;">
+
+<div style="position: absolute; top: 60px; left: 16px; right: 16px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+<a href="QuiltHome.dc.html" aria-label="Close" style="width: 44px; height: 44px; border-radius: 22px; background: rgba(255, 255, 255, 0.12); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg></a>
+<span style="font-family: Syne, Manrope, sans-serif; font-size: 18px; font-weight: 700;">Edit thread</span>
+<button type="button" aria-label="Delete this entry" style="width: 44px; height: 44px; padding: 0; border: 0; border-radius: 22px; background: rgba(255, 255, 255, 0.12); color: #FF9C8F; display: flex; align-items: center; justify-content: center;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path><path d="M10 11v6M14 11v6"></path></svg></button>
+</div>
+
+<svg aria-hidden="true" width="342" height="44" viewBox="0 0 342 44" style="position: absolute; top: 114px; left: 24px;">
+<path d="M 4 22 C 24 6, 44 6, 64 22 S 104 38, 124 22 S 164 6, 184 22 S 224 38, 244 22 S 284 6, 304 22" fill="none" stroke="#D95926" stroke-width="6" stroke-linecap="round"></path>
+<path d="M 4 22 C 24 6, 44 6, 64 22 S 104 38, 124 22 S 164 6, 184 22 S 224 38, 244 22 S 284 6, 304 22" fill="none" stroke="#F7A27E" stroke-width="1.5" stroke-dasharray="6 14" stroke-linecap="round" style="animation: flow 1.6s linear infinite;"></path>
+<path d="M 304 22 L 336 14" stroke="#E4E7F5" stroke-width="3" stroke-linecap="round"></path>
+<ellipse cx="331" cy="15.3" rx="3.2" ry="1.6" fill="none" stroke="#1C2459" stroke-width="1.2" transform="rotate(-14 331 15.3)"></ellipse>
+</svg>
+
+<div style="position: absolute; top: 172px; left: 24px; right: 24px; height: 44px; box-sizing: border-box; padding: 3px; border-radius: 22px; background: rgba(255, 255, 255, 0.10); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px;">
+<button type="button" aria-pressed="true" style="border: 0; border-radius: 19px; background: #FFFFFF; color: #1C2459; font-size: 15px; font-weight: 800;">Spent</button>
+<button type="button" aria-pressed="false" style="border: 0; border-radius: 19px; background: transparent; font-size: 15px; font-weight: 800;">Got money</button>
+</div>
+
+<div style="position: absolute; top: 228px; left: 24px; right: 24px; height: 88px; box-sizing: border-box; padding: 12px 16px; border-radius: 20px; background: rgba(255, 255, 255, 0.08); display: flex; align-items: center; justify-content: space-between;">
+<span style="max-width: 120px; font-size: 12px; line-height: 16px; color: #B9C0E8;">Splitting a bill? Just type 36 ÷ 3</span>
+<span style="display: flex; flex-direction: column; align-items: flex-end;">
+<span style="font-size: 18px; font-weight: 600; color: #B9C0E8;">36 ÷ 3 =</span>
+<span style="font-family: Syne, Manrope, sans-serif; font-size: 34px; line-height: 40px; font-weight: 800;">RM 12.00</span>
+</span>
+</div>
+
+<div style="position: absolute; top: 330px; left: 24px; right: 24px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px;">
+<button type="button" style="height: 70px; padding: 0; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: #B9C0E8;"><span style="width: 40px; height: 40px; border-radius: 20px; background-color: #3987E5; background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.2) 0 2px, transparent 2px 6px); box-shadow: inset 0 0 0 4px rgba(0,0,0,0.12);"></span>Transport</button>
+<button type="button" aria-pressed="true" style="height: 70px; padding: 0; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 11px; font-weight: 800; color: #FFFFFF;"><span style="width: 40px; height: 40px; border-radius: 20px; background-color: #D95926; background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.2) 0 2px, transparent 2px 6px); box-shadow: 0 0 0 3px #1C2459, 0 0 0 5px #FFFFFF;"></span>Food</button>
+<button type="button" style="height: 70px; padding: 0; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: #B9C0E8;"><span style="width: 40px; height: 40px; border-radius: 20px; background-color: #199E70; background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.2) 0 2px, transparent 2px 6px); box-shadow: inset 0 0 0 4px rgba(0,0,0,0.12);"></span>Groceries</button>
+<button type="button" style="height: 70px; padding: 0; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: #B9C0E8;"><span style="width: 40px; height: 40px; border-radius: 20px; background-color: #C98500; background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.2) 0 2px, transparent 2px 6px); box-shadow: inset 0 0 0 4px rgba(0,0,0,0.12);"></span>Bills</button>
+<button type="button" style="height: 70px; padding: 0; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: #B9C0E8;"><span style="width: 40px; height: 40px; border-radius: 20px; background-color: #D55181; background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.2) 0 2px, transparent 2px 6px); box-shadow: inset 0 0 0 4px rgba(0,0,0,0.12);"></span>Shopping</button>
+<button type="button" style="height: 70px; padding: 0; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: #B9C0E8;"><span style="width: 40px; height: 40px; border-radius: 20px; background-color: #9085E9; background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.2) 0 2px, transparent 2px 6px); box-shadow: inset 0 0 0 4px rgba(0,0,0,0.12);"></span>Rent</button>
+</div>
+
+<div style="position: absolute; top: 416px; left: 24px; right: 24px; display: flex; gap: 8px;">
+<button type="button" aria-pressed="true" style="height: 44px; padding: 0 14px; border: 0; border-radius: 22px; background: #FFFFFF; color: #1C2459; font-size: 14px; font-weight: 800;">Today 1:00 PM</button>
+<button type="button" style="height: 44px; padding: 0 14px; border: 1.5px solid rgba(255, 255, 255, 0.3); border-radius: 22px; background: transparent; font-size: 14px; font-weight: 700;">Pick a day</button>
+<button type="button" style="height: 44px; padding: 0 14px; border: 1.5px solid rgba(255, 255, 255, 0.3); border-radius: 22px; background: transparent; font-size: 14px; font-weight: 700;">Note</button>
+</div>
+
+<div style="position: absolute; top: 476px; left: 24px; right: 24px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; font-family: Syne, Manrope, sans-serif;">
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">7</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">8</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">9</button>
+<button type="button" aria-label="Divide" style="height: 56px; border: 0; border-radius: 16px; background: rgba(242, 179, 61, 0.22); color: #F2B33D; font-size: 26px; font-weight: 700; animation: tapB 3.6s ease-out infinite;">÷</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">4</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">5</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700; animation: tapA 3.6s ease-out infinite;">6</button>
+<button type="button" aria-label="Multiply" style="height: 56px; border: 0; border-radius: 16px; background: rgba(242, 179, 61, 0.22); color: #F2B33D; font-size: 26px; font-weight: 700;">×</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">1</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">2</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700; animation: tapC 3.6s ease-out infinite;">3</button>
+<button type="button" aria-label="Minus" style="height: 56px; border: 0; border-radius: 16px; background: rgba(242, 179, 61, 0.22); color: #F2B33D; font-size: 26px; font-weight: 700;">−</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">.</button>
+<button type="button" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); font-size: 24px; font-weight: 700;">0</button>
+<button type="button" aria-label="Delete last digit" style="height: 56px; border: 0; border-radius: 16px; background: rgba(255, 255, 255, 0.10); display: flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path><path d="m18 9-6 6M12 9l6 6"></path></svg></button>
+<button type="button" aria-label="Plus" style="height: 56px; border: 0; border-radius: 16px; background: rgba(242, 179, 61, 0.22); color: #F2B33D; font-size: 26px; font-weight: 700;">+</button>
+</div>
+
+<a href="QuiltHome.dc.html" style="position: absolute; left: 24px; right: 24px; bottom: 34px; height: 56px; border-radius: 28px; background: #F2B33D; color: #1C2459; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800;">Save thread</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
