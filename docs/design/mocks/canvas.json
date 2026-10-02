@@ -2,85 +2,792 @@
   "v": 3,
   "attachments": {},
   "boards": {
-    "AIPipeline.dc.html": {"h": 840, "title": "How the AI works", "w": 1600, "x": 1448, "y": 6200},
-    "CalendarDay.dc.html": {"h": 844, "is_interactive": true, "title": "E2 · Calendar — Day & backfill", "w": 390, "x": 470, "y": 4960},
-    "CalendarFlow.dc.html": {"h": 844, "is_interactive": true, "title": "E3 · Calendar — Where it went", "w": 390, "x": 940, "y": 4960},
-    "CalendarMonth.dc.html": {"h": 844, "is_interactive": true, "title": "E1 · Calendar — Month", "w": 390, "x": 0, "y": 4960},
-    "CaptureAnywhere.dc.html": {"h": 1064, "title": "Capture anywhere", "w": 1368, "x": 0, "y": 6200},
-    "ChatAsk.dc.html": {"h": 844, "is_interactive": true, "title": "B3 · Chat — Ask anything", "w": 390, "x": 940, "y": 1240},
-    "ChatScreenshot.dc.html": {"h": 844, "is_interactive": true, "title": "B2 · Chat — Screenshot in", "w": 390, "x": 470, "y": 1240},
-    "ChatThread.dc.html": {"h": 844, "is_interactive": true, "title": "B1 · Chat — Thread", "w": 390, "x": 0, "y": 1240},
-    "InboxMonth.dc.html": {"h": 844, "is_interactive": true, "title": "D3 · Inbox — Month receipt", "w": 390, "x": 940, "y": 3720},
-    "InboxReview.dc.html": {"h": 844, "is_interactive": true, "title": "D1 · Inbox — Swipe to add", "w": 390, "x": 0, "y": 3720},
-    "InboxScan.dc.html": {"h": 844, "is_interactive": true, "title": "D2 · Inbox — Bank screenshot", "w": 390, "x": 470, "y": 3720},
-    "Main.dc.html": {"h": 844, "is_interactive": true, "title": "A1 · Mono — Home", "w": 390, "x": 0, "y": 0},
-    "MonoTalk.dc.html": {"h": 844, "is_interactive": true, "title": "A2 · Mono — Hold to talk", "w": 390, "x": 470, "y": 0},
-    "MonoWhere.dc.html": {"h": 844, "is_interactive": true, "title": "A3 · Mono — Where it went", "w": 390, "x": 940, "y": 0},
-    "OrbitHome.dc.html": {"h": 844, "is_interactive": true, "title": "C1 · Orbit — Home", "w": 390, "x": 0, "y": 2480},
-    "OrbitListen.dc.html": {"h": 844, "is_interactive": true, "title": "C2 · Orbit — Several at once", "w": 390, "x": 470, "y": 2480},
-    "OrbitLock.dc.html": {"h": 844, "title": "C3 · Orbit — Lock Screen", "w": 390, "x": 940, "y": 2480},
-    "JarHome.dc.html": {"h": 844, "is_interactive": true, "title": "F1 · Jar — Home", "w": 390, "x": 0, "y": 0, "page": "round2"},
-    "JarTalk.dc.html": {"h": 844, "is_interactive": true, "title": "F2 · Jar — Three in one breath", "w": 390, "x": 470, "y": 0, "page": "round2"},
-    "JarEdit.dc.html": {"h": 844, "is_interactive": true, "title": "F3 · Jar — Edit a pebble", "w": 390, "x": 940, "y": 0, "page": "round2"},
-    "JarSort.dc.html": {"h": 844, "is_interactive": true, "title": "F4 · Jar — Sorted into tubes", "w": 390, "x": 1410, "y": 0, "page": "round2"},
-    "MochiHome.dc.html": {"h": 844, "is_interactive": true, "title": "G1 · Mochi — Home", "w": 390, "x": 0, "y": 1240, "page": "round2"},
-    "MochiSplit.dc.html": {"h": 844, "is_interactive": true, "title": "G2 · Mochi — It splits", "w": 390, "x": 470, "y": 1240, "page": "round2"},
-    "MochiEdit.dc.html": {"h": 844, "is_interactive": true, "title": "G3 · Mochi — Edit", "w": 390, "x": 940, "y": 1240, "page": "round2"},
-    "SentenceHome.dc.html": {"h": 844, "is_interactive": true, "title": "H1 · Sentence — Home", "w": 390, "x": 0, "y": 2480, "page": "round2"},
-    "SentenceSplit.dc.html": {"h": 844, "is_interactive": true, "title": "H2 · Sentence — Cut into three", "w": 390, "x": 470, "y": 2480, "page": "round2"},
-    "SentenceEdit.dc.html": {"h": 844, "is_interactive": true, "title": "H3 · Sentence — Tap a word to edit", "w": 390, "x": 940, "y": 2480, "page": "round2"},
-    "FlapHome.dc.html": {"h": 844, "is_interactive": true, "title": "I1 · Flap — Home", "w": 390, "x": 0, "y": 3720, "page": "round2"},
-    "FlapBoard.dc.html": {"h": 844, "is_interactive": true, "title": "I2 · Flap — Now boarding", "w": 390, "x": 470, "y": 3720, "page": "round2"},
-    "FlapEdit.dc.html": {"h": 844, "is_interactive": true, "title": "I3 · Flap — Roll the digits", "w": 390, "x": 940, "y": 3720, "page": "round2"},
-    "QuiltHome.dc.html": {"h": 844, "is_interactive": true, "title": "J1 · Quilt — Home", "w": 390, "x": 0, "y": 4960, "page": "round2"},
-    "QuiltWeave.dc.html": {"h": 844, "is_interactive": true, "title": "J2 · Quilt — Weaving today", "w": 390, "x": 470, "y": 4960, "page": "round2"},
-    "QuiltEdit.dc.html": {"h": 844, "is_interactive": true, "title": "J3 · Quilt — Edit a thread", "w": 390, "x": 940, "y": 4960, "page": "round2"},
-    "QuiltPoster.dc.html": {"h": 844, "is_interactive": true, "title": "J4 · Quilt — Month poster", "w": 390, "x": 1410, "y": 4960, "page": "round2"},
-    "Research.dc.html": {"h": 900, "title": "What the best apps do", "w": 1368, "x": 0, "y": 0, "page": "round3"},
-    "WeightHome.dc.html": {"h": 844, "is_interactive": true, "title": "K1 · Weight — Home", "w": 390, "x": 0, "y": 1240, "page": "round3"},
-    "WeightTalk.dc.html": {"h": 844, "is_interactive": true, "title": "K2 · Weight — One sentence, three entries", "w": 390, "x": 470, "y": 1240, "page": "round3"},
-    "WeightEdit.dc.html": {"h": 844, "is_interactive": true, "title": "K3 · Weight — Edit by hand", "w": 390, "x": 940, "y": 1240, "page": "round3"},
-    "LyricsHome.dc.html": {"h": 844, "is_interactive": true, "title": "L1 · Lyrics — Today", "w": 390, "x": 0, "y": 2480, "page": "round3"},
-    "LyricsTalk.dc.html": {"h": 844, "is_interactive": true, "title": "L2 · Lyrics — Captions to setlist", "w": 390, "x": 470, "y": 2480, "page": "round3"},
-    "LyricsEdit.dc.html": {"h": 844, "is_interactive": true, "title": "L3 · Lyrics — Edit a line", "w": 390, "x": 940, "y": 2480, "page": "round3"},
-    "EditionHome.dc.html": {"h": 844, "is_interactive": true, "title": "M1 · Edition — Front page", "w": 390, "x": 0, "y": 3720, "page": "round3"},
-    "EditionTalk.dc.html": {"h": 844, "is_interactive": true, "title": "M2 · Edition — Three new briefs", "w": 390, "x": 470, "y": 3720, "page": "round3"},
-    "EditionEdit.dc.html": {"h": 844, "is_interactive": true, "title": "M3 · Edition — Corrections", "w": 390, "x": 940, "y": 3720, "page": "round3"},
-    "RollHome.dc.html": {"h": 844, "is_interactive": true, "title": "N1 · Roll — Home", "w": 390, "x": 0, "y": 4960, "page": "round3"},
-    "RollTalk.dc.html": {"h": 844, "is_interactive": true, "title": "N2 · Roll — Chips spring out", "w": 390, "x": 470, "y": 4960, "page": "round3"},
-    "RollEdit.dc.html": {"h": 844, "is_interactive": true, "title": "N3 · Roll — Edit by hand", "w": 390, "x": 940, "y": 4960, "page": "round3"},
-    "MarginHome.dc.html": {"h": 844, "is_interactive": true, "title": "O1 · Margin — Home", "w": 390, "x": 0, "y": 6200, "page": "round3"},
-    "MarginTalk.dc.html": {"h": 844, "is_interactive": true, "title": "O2 · Margin — Marked-up sentence", "w": 390, "x": 470, "y": 6200, "page": "round3"},
-    "MarginEdit.dc.html": {"h": 844, "is_interactive": true, "title": "O3 · Margin — Edit by hand", "w": 390, "x": 940, "y": 6200, "page": "round3"}
-,
-    "Legend.dc.html": {"h": 880, "title": "How to read every screen", "w": 1368, "x": 0, "y": 0, "page": "round4"},
-    "StackHome.dc.html": {"h": 844, "is_interactive": true, "title": "P1 · Stack — Home", "w": 390, "x": 0, "y": 1240, "page": "round4"},
-    "StackTalk.dc.html": {"h": 844, "is_interactive": true, "title": "P2 · Stack — One sentence, three entries", "w": 390, "x": 470, "y": 1240, "page": "round4"},
-    "StackEdit.dc.html": {"h": 844, "is_interactive": true, "title": "P3 · Stack — Edit by hand", "w": 390, "x": 940, "y": 1240, "page": "round4"},
-    "BentoHome.dc.html": {"h": 844, "is_interactive": true, "title": "Q1 · Bento — Home", "w": 390, "x": 0, "y": 2480, "page": "round4"},
-    "BentoTalk.dc.html": {"h": 844, "is_interactive": true, "title": "Q2 · Bento — Three new tiles", "w": 390, "x": 470, "y": 2480, "page": "round4"},
-    "BentoEdit.dc.html": {"h": 844, "is_interactive": true, "title": "Q3 · Bento — Edit by hand", "w": 390, "x": 940, "y": 2480, "page": "round4"},
-    "LedgerHome.dc.html": {"h": 844, "is_interactive": true, "title": "R1 · Ledger — Statement", "w": 390, "x": 0, "y": 3720, "page": "round4"},
-    "LedgerTalk.dc.html": {"h": 844, "is_interactive": true, "title": "R2 · Ledger — Review new rows", "w": 390, "x": 470, "y": 3720, "page": "round4"},
-    "LedgerEdit.dc.html": {"h": 844, "is_interactive": true, "title": "R3 · Ledger — Edit a row", "w": 390, "x": 940, "y": 3720, "page": "round4"},
-    "TimelineHome.dc.html": {"h": 844, "is_interactive": true, "title": "S1 · Timeline — Today", "w": 390, "x": 0, "y": 4960, "page": "round4"},
-    "TimelineTalk.dc.html": {"h": 844, "is_interactive": true, "title": "S2 · Timeline — Placing entries", "w": 390, "x": 470, "y": 4960, "page": "round4"},
-    "TimelineEdit.dc.html": {"h": 844, "is_interactive": true, "title": "S3 · Timeline — Edit by hand", "w": 390, "x": 940, "y": 4960, "page": "round4"},
-    "SheetHome.dc.html": {"h": 844, "is_interactive": true, "title": "T1 · Sheet — Home", "w": 390, "x": 0, "y": 6200, "page": "round4"},
-    "SheetTalk.dc.html": {"h": 844, "is_interactive": true, "title": "T2 · Sheet — Listening", "w": 390, "x": 470, "y": 6200, "page": "round4"},
-    "SheetEdit.dc.html": {"h": 844, "is_interactive": true, "title": "T3 · Sheet — Edit by hand", "w": 390, "x": 940, "y": 6200, "page": "round4"},
-    "TLNotes.dc.html": {"h": 900, "title": "What changed from S", "w": 1368, "x": 0, "y": 0, "page": "round5"},
-    "TLToday.dc.html": {"h": 844, "is_interactive": true, "title": "1 · Today", "w": 390, "x": 0, "y": 1240, "page": "round5"},
-    "TLAdd.dc.html": {"h": 844, "is_interactive": true, "title": "2 · Add", "w": 390, "x": 470, "y": 1240, "page": "round5"},
-    "TLListen.dc.html": {"h": 844, "is_interactive": true, "title": "3 · Listening", "w": 390, "x": 940, "y": 1240, "page": "round5"},
-    "TLReview.dc.html": {"h": 844, "is_interactive": true, "title": "4 · Review 3 entries", "w": 390, "x": 1410, "y": 1240, "page": "round5"},
-    "TLEdit.dc.html": {"h": 844, "is_interactive": true, "title": "5 · Edit entry", "w": 390, "x": 1880, "y": 1240, "page": "round5"},
-    "TLMonth.dc.html": {"h": 844, "is_interactive": true, "title": "6 · Month", "w": 390, "x": 0, "y": 2480, "page": "round5"},
-    "TLCategory.dc.html": {"h": 844, "is_interactive": true, "title": "7 · Category: Food", "w": 390, "x": 470, "y": 2480, "page": "round5"},
-    "TLSearch.dc.html": {"h": 844, "is_interactive": true, "title": "8 · Search", "w": 390, "x": 940, "y": 2480, "page": "round5"},
-    "TLScan.dc.html": {"h": 844, "is_interactive": true, "title": "9 · From a screenshot", "w": 390, "x": 1410, "y": 2480, "page": "round5"},
-    "TLLock.dc.html": {"h": 844, "is_interactive": true, "title": "10 · Lock Screen", "w": 390, "x": 0, "y": 3720, "page": "round5"},
-    "TLWidgets.dc.html": {"h": 844, "is_interactive": true, "title": "11 · Widgets, Control Center, Action button", "w": 390, "x": 470, "y": 3720, "page": "round5"}
+    "AIPipeline.dc.html": {
+      "h": 840,
+      "title": "How the AI works",
+      "w": 1600,
+      "x": 1448,
+      "y": 6200
+    },
+    "BentoEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "Q3 · Bento — Edit by hand",
+      "w": 390,
+      "x": 940,
+      "y": 2480
+    },
+    "BentoHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "Q1 · Bento — Home",
+      "w": 390,
+      "x": 0,
+      "y": 2480
+    },
+    "BentoTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "Q2 · Bento — Three new tiles",
+      "w": 390,
+      "x": 470,
+      "y": 2480
+    },
+    "CalendarDay.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "E2 · Calendar — Day & backfill",
+      "w": 390,
+      "x": 470,
+      "y": 4960
+    },
+    "CalendarFlow.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "E3 · Calendar — Where it went",
+      "w": 390,
+      "x": 940,
+      "y": 4960
+    },
+    "CalendarMonth.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "E1 · Calendar — Month",
+      "w": 390,
+      "x": 0,
+      "y": 4960
+    },
+    "CaptureAnywhere.dc.html": {
+      "h": 1064,
+      "title": "Capture anywhere",
+      "w": 1368,
+      "x": 0,
+      "y": 6200
+    },
+    "ChatAsk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "B3 · Chat — Ask anything",
+      "w": 390,
+      "x": 940,
+      "y": 1240
+    },
+    "ChatScreenshot.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "B2 · Chat — Screenshot in",
+      "w": 390,
+      "x": 470,
+      "y": 1240
+    },
+    "ChatThread.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "B1 · Chat — Thread",
+      "w": 390,
+      "x": 0,
+      "y": 1240
+    },
+    "EditionEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "M3 · Edition — Corrections",
+      "w": 390,
+      "x": 940,
+      "y": 3720
+    },
+    "EditionHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "M1 · Edition — Front page",
+      "w": 390,
+      "x": 0,
+      "y": 3720
+    },
+    "EditionTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "M2 · Edition — Three new briefs",
+      "w": 390,
+      "x": 470,
+      "y": 3720
+    },
+    "FlapBoard.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "I2 · Flap — Now boarding",
+      "w": 390,
+      "x": 470,
+      "y": 3720
+    },
+    "FlapEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "I3 · Flap — Roll the digits",
+      "w": 390,
+      "x": 940,
+      "y": 3720
+    },
+    "FlapHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "I1 · Flap — Home",
+      "w": 390,
+      "x": 0,
+      "y": 3720
+    },
+    "InboxMonth.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "D3 · Inbox — Month receipt",
+      "w": 390,
+      "x": 940,
+      "y": 3720
+    },
+    "InboxReview.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "D1 · Inbox — Swipe to add",
+      "w": 390,
+      "x": 0,
+      "y": 3720
+    },
+    "InboxScan.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "D2 · Inbox — Bank screenshot",
+      "w": 390,
+      "x": 470,
+      "y": 3720
+    },
+    "JarEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "F3 · Jar — Edit a pebble",
+      "w": 390,
+      "x": 940,
+      "y": 0
+    },
+    "JarHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "F1 · Jar — Home",
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "JarSort.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "F4 · Jar — Sorted into tubes",
+      "w": 390,
+      "x": 1410,
+      "y": 0
+    },
+    "JarTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "F2 · Jar — Three in one breath",
+      "w": 390,
+      "x": 470,
+      "y": 0
+    },
+    "LedgerEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "R3 · Ledger — Edit a row",
+      "w": 390,
+      "x": 940,
+      "y": 3720
+    },
+    "LedgerHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "R1 · Ledger — Statement",
+      "w": 390,
+      "x": 0,
+      "y": 3720
+    },
+    "LedgerTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "R2 · Ledger — Review new rows",
+      "w": 390,
+      "x": 470,
+      "y": 3720
+    },
+    "Legend.dc.html": {
+      "h": 880,
+      "page": "round4",
+      "title": "How to read every screen",
+      "w": 1368,
+      "x": 0,
+      "y": 0
+    },
+    "LyricsEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "L3 · Lyrics — Edit a line",
+      "w": 390,
+      "x": 940,
+      "y": 2480
+    },
+    "LyricsHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "L1 · Lyrics — Today",
+      "w": 390,
+      "x": 0,
+      "y": 2480
+    },
+    "LyricsTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "L2 · Lyrics — Captions to setlist",
+      "w": 390,
+      "x": 470,
+      "y": 2480
+    },
+    "Main.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "A1 · Mono — Home",
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "MarginEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "O3 · Margin — Edit by hand",
+      "w": 390,
+      "x": 940,
+      "y": 6200
+    },
+    "MarginHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "O1 · Margin — Home",
+      "w": 390,
+      "x": 0,
+      "y": 6200
+    },
+    "MarginTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "O2 · Margin — Marked-up sentence",
+      "w": 390,
+      "x": 470,
+      "y": 6200
+    },
+    "MochiEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "G3 · Mochi — Edit",
+      "w": 390,
+      "x": 940,
+      "y": 1240
+    },
+    "MochiHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "G1 · Mochi — Home",
+      "w": 390,
+      "x": 0,
+      "y": 1240
+    },
+    "MochiSplit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "G2 · Mochi — It splits",
+      "w": 390,
+      "x": 470,
+      "y": 1240
+    },
+    "MonoTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "A2 · Mono — Hold to talk",
+      "w": 390,
+      "x": 470,
+      "y": 0
+    },
+    "MonoWhere.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "A3 · Mono — Where it went",
+      "w": 390,
+      "x": 940,
+      "y": 0
+    },
+    "OrbitHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "C1 · Orbit — Home",
+      "w": 390,
+      "x": 0,
+      "y": 2480
+    },
+    "OrbitListen.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "C2 · Orbit — Several at once",
+      "w": 390,
+      "x": 470,
+      "y": 2480
+    },
+    "OrbitLock.dc.html": {
+      "h": 844,
+      "title": "C3 · Orbit — Lock Screen",
+      "w": 390,
+      "x": 940,
+      "y": 2480
+    },
+    "QuiltEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "J3 · Quilt — Edit a thread",
+      "w": 390,
+      "x": 940,
+      "y": 4960
+    },
+    "QuiltHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "J1 · Quilt — Home",
+      "w": 390,
+      "x": 0,
+      "y": 4960
+    },
+    "QuiltPoster.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "J4 · Quilt — Month poster",
+      "w": 390,
+      "x": 1410,
+      "y": 4960
+    },
+    "QuiltWeave.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "J2 · Quilt — Weaving today",
+      "w": 390,
+      "x": 470,
+      "y": 4960
+    },
+    "Research.dc.html": {
+      "h": 900,
+      "page": "round3",
+      "title": "What the best apps do",
+      "w": 1368,
+      "x": 0,
+      "y": 0
+    },
+    "RollEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "N3 · Roll — Edit by hand",
+      "w": 390,
+      "x": 940,
+      "y": 4960
+    },
+    "RollHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "N1 · Roll — Home",
+      "w": 390,
+      "x": 0,
+      "y": 4960
+    },
+    "RollTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "N2 · Roll — Chips spring out",
+      "w": 390,
+      "x": 470,
+      "y": 4960
+    },
+    "SentenceEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "H3 · Sentence — Tap a word to edit",
+      "w": 390,
+      "x": 940,
+      "y": 2480
+    },
+    "SentenceHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "H1 · Sentence — Home",
+      "w": 390,
+      "x": 0,
+      "y": 2480
+    },
+    "SentenceSplit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round2",
+      "title": "H2 · Sentence — Cut into three",
+      "w": 390,
+      "x": 470,
+      "y": 2480
+    },
+    "SheetEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "T3 · Sheet — Edit by hand",
+      "w": 390,
+      "x": 940,
+      "y": 6200
+    },
+    "SheetHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "T1 · Sheet — Home",
+      "w": 390,
+      "x": 0,
+      "y": 6200
+    },
+    "SheetTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "T2 · Sheet — Listening",
+      "w": 390,
+      "x": 470,
+      "y": 6200
+    },
+    "StackEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "P3 · Stack — Edit by hand",
+      "w": 390,
+      "x": 940,
+      "y": 1240
+    },
+    "StackHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "P1 · Stack — Home",
+      "w": 390,
+      "x": 0,
+      "y": 1240
+    },
+    "StackTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "P2 · Stack — One sentence, three entries",
+      "w": 390,
+      "x": 470,
+      "y": 1240
+    },
+    "TLAdd.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "2 · Add",
+      "w": 390,
+      "x": 470,
+      "y": 1240
+    },
+    "TLCategory.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "7 · Category: Food",
+      "w": 390,
+      "x": 470,
+      "y": 2480
+    },
+    "TLEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "5 · Edit entry",
+      "w": 390,
+      "x": 1880,
+      "y": 1240
+    },
+    "TLListen.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "3 · Listening",
+      "w": 390,
+      "x": 940,
+      "y": 1240
+    },
+    "TLLock.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "10 · Lock Screen",
+      "w": 390,
+      "x": 0,
+      "y": 3720
+    },
+    "TLMonth.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "6 · Month",
+      "w": 390,
+      "x": 0,
+      "y": 2480
+    },
+    "TLNotes.dc.html": {
+      "h": 900,
+      "page": "round5",
+      "title": "What changed from S",
+      "w": 1368,
+      "x": 0,
+      "y": 0
+    },
+    "TLReview.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "4 · Review 3 entries",
+      "w": 390,
+      "x": 1410,
+      "y": 1240
+    },
+    "TLScan.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "9 · From a screenshot",
+      "w": 390,
+      "x": 1410,
+      "y": 2480
+    },
+    "TLSearch.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "8 · Search",
+      "w": 390,
+      "x": 940,
+      "y": 2480
+    },
+    "TLToday.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "1 · Today",
+      "w": 390,
+      "x": 0,
+      "y": 1240
+    },
+    "TLWidgets.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round5",
+      "title": "11 · Widgets, Control Center, Action button",
+      "w": 390,
+      "x": 470,
+      "y": 3720
+    },
+    "TimelineEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "S3 · Timeline — Edit by hand",
+      "w": 390,
+      "x": 940,
+      "y": 4960
+    },
+    "TimelineHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "S1 · Timeline — Today",
+      "w": 390,
+      "x": 0,
+      "y": 4960
+    },
+    "TimelineTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round4",
+      "title": "S2 · Timeline — Placing entries",
+      "w": 390,
+      "x": 470,
+      "y": 4960
+    },
+    "WeightEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "K3 · Weight — Edit by hand",
+      "w": 390,
+      "x": 940,
+      "y": 1240
+    },
+    "WeightHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "K1 · Weight — Home",
+      "w": 390,
+      "x": 0,
+      "y": 1240
+    },
+    "WeightTalk.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "page": "round3",
+      "title": "K2 · Weight — One sentence, three entries",
+      "w": 390,
+      "x": 470,
+      "y": 1240
+    },
+    "TGNotes.dc.html": {
+      "h": 900,
+      "title": "What changed from Round 5",
+      "w": 1368,
+      "x": 0,
+      "y": 0,
+      "page": "round6"
+    },
+    "TGToday.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "1 · Today",
+      "w": 390,
+      "x": 0,
+      "y": 1240,
+      "page": "round6"
+    },
+    "TGAdd.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "2 · Add",
+      "w": 390,
+      "x": 470,
+      "y": 1240,
+      "page": "round6"
+    },
+    "TGListen.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "3 · Listening",
+      "w": 390,
+      "x": 940,
+      "y": 1240,
+      "page": "round6"
+    },
+    "TGReview.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "4 · Review 3 entries",
+      "w": 390,
+      "x": 1410,
+      "y": 1240,
+      "page": "round6"
+    },
+    "TGEdit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "5 · Edit entry",
+      "w": 390,
+      "x": 1880,
+      "y": 1240,
+      "page": "round6"
+    },
+    "TGMonth.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "6 · Month",
+      "w": 390,
+      "x": 0,
+      "y": 2480,
+      "page": "round6"
+    },
+    "TGCategory.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "7 · Category: Food",
+      "w": 390,
+      "x": 470,
+      "y": 2480,
+      "page": "round6"
+    },
+    "TGSearch.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "8 · Search",
+      "w": 390,
+      "x": 940,
+      "y": 2480,
+      "page": "round6"
+    },
+    "TGScan.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "9 · From a screenshot",
+      "w": 390,
+      "x": 1410,
+      "y": 2480,
+      "page": "round6"
+    },
+    "TGLock.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "10 · Lock Screen",
+      "w": 390,
+      "x": 0,
+      "y": 3720,
+      "page": "round6"
+    },
+    "TGWidgets.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "11 · Widgets, Control Center, Action button",
+      "w": 390,
+      "x": 470,
+      "y": 3720,
+      "page": "round6"
+    }
   },
   "createdOnFiles": {
     "at": "2026-10-02T08:30:00Z",
@@ -88,8 +795,8 @@
   },
   "designSystems": [],
   "launch": {
-    "view": "canvas",
-    "page": "round5"
+    "page": "round6",
+    "view": "canvas"
   },
   "notes": {
     "noteA": {
@@ -127,51 +834,447 @@
       "x": 1410,
       "y": 4960
     },
-    "rowA": {"kind": "title1", "maxW": 1330, "text": "A · Mono — two numbers, one button", "w": 240, "x": 0, "y": -260},
-    "rowB": {"kind": "title1", "maxW": 1330, "text": "B · Chat — just tell it", "w": 240, "x": 0, "y": 980},
-    "rowC": {"kind": "title1", "maxW": 1330, "text": "C · Orbit — native iOS, log from anywhere", "w": 240, "x": 0, "y": 2220},
-    "rowD": {"kind": "title1", "maxW": 1330, "text": "D · Inbox — it finds them, you swipe", "w": 240, "x": 0, "y": 3460},
-    "rowE": {"kind": "title1", "maxW": 1330, "text": "E · Calendar — the month at a glance", "w": 240, "x": 0, "y": 4700},
-    "rowS": {"kind": "title1", "maxW": 3048, "text": "Shared by every direction — capture & AI", "w": 240, "x": 0, "y": 5940},
-    "rowF": {"kind": "title1", "maxW": 1800, "text": "F · Jar — every ringgit is a pebble", "x": 0, "y": -260, "page": "round2"},
-    "rowG": {"kind": "title1", "maxW": 1800, "text": "G · Mochi — a buddy that listens", "x": 0, "y": 980, "page": "round2"},
-    "rowH": {"kind": "title1", "maxW": 1800, "text": "H · Sentence — your money as one editable sentence", "x": 0, "y": 2220, "page": "round2"},
-    "rowI": {"kind": "title1", "maxW": 1800, "text": "I · Flap — the departures board", "x": 0, "y": 3460, "page": "round2"},
-    "rowJ": {"kind": "title1", "maxW": 1800, "text": "J · Quilt — your month, woven", "x": 0, "y": 4700, "page": "round2"},
-    "noteF": {"x": 1880, "y": 0, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: the month is a jar. Income sets its size; every expense drops in as a pebble (colour = category, size = amount). How full it is = how much of your income is gone.\n\nSurprise: tilt the phone and the pebbles roll, shake to undo, and ‘Sort’ pours them into tubes by category.\n\nOne recording: each thing you say drops in as its own pebble; money in lands as a coin.\n\nEdit: tap any pebble and it pops out — drag a ruler to change the amount, tap a colour to change the category.\n\nTrade-off: the most playful at a glance; exact numbers live in labels, not the picture."},
-    "noteG": {"x": 1880, "y": 1240, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: a soft mochi buddy is the button. Hold it and talk; it squishes while it listens.\n\nSurprise: list several things and it splits into little mochis, one per record, each in its category colour. Drag two together to merge; pinch one to split a bill.\n\nEdit: tap a mochi — big − / + buttons, spent or received, category mochis, split with friends.\n\nTrade-off: the most charming and memorable; some people find a character too cute for money."},
-    "noteH": {"x": 1880, "y": 2480, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: everything is a sentence. Home reads ‘In September, RM 5,200 came in and RM 2,146 went out…’ and every highlighted word is a button.\n\nSurprise: a marker sweeps across each word it understood, and a run-on sentence gets cut into separate records.\n\nEdit: tap any highlight to change only that part — keypad for amounts, colour chips for categories.\n\nTrade-off: the clearest about what the AI understood; less visual than a chart."},
-    "noteI": {"x": 1880, "y": 3720, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: your money on a split-flap departures board. Every log flips the digits with a clack (sound + haptics).\n\nSurprise: several items arrive as ‘NOW BOARDING · 3’. Anything the AI guessed shows a status like TIME? so you know what to check. Pace reads ON TIME or DELAYED.\n\nEdit: drag any digit up or down like a reel; categories are big colour ‘gates’.\n\nTrade-off: the most satisfying motion; darker and denser than the others."},
-    "noteJ": {"x": 1880, "y": 4960, "w": 360, "fill": "gray", "page": "round2", "text": "Idea: every ringgit becomes a thread. Each day is a patch woven from category colours and sized by what you spent; the month becomes a quilt.\n\nSurprise: one sentence weaves several threads into today, and at month end the quilt becomes a poster to share.\n\nEdit: tap a thread — a calculator keypad (type 36 ÷ 3 to split a bill), category spools, date.\n\nTrade-off: the most beautiful and shareable; exact numbers take a tap."},
-    "rowR": {"kind": "title1", "maxW": 1368, "text": "Round 3 — study the best, then simplify", "x": 0, "y": -260, "page": "round3"},
-    "rowK": {"kind": "title1", "maxW": 1330, "text": "K · Weight — the more you spend, the bolder it gets", "x": 0, "y": 980, "page": "round3"},
-    "rowL": {"kind": "title1", "maxW": 1330, "text": "L · Lyrics — your day, line by line", "x": 0, "y": 2220, "page": "round3"},
-    "rowM": {"kind": "title1", "maxW": 1330, "text": "M · Edition — your money as front-page news", "x": 0, "y": 3460, "page": "round3"},
-    "rowN": {"kind": "title1", "maxW": 1330, "text": "N · Roll — numbers that spin into place", "x": 0, "y": 4700, "page": "round3"},
-    "rowO": {"kind": "title1", "maxW": 1330, "text": "O · Margin — the AI writes in the margins", "x": 0, "y": 5940, "page": "round3"},
-    "noteK": {"x": 1410, "y": 1240, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: the Out number gets bolder as you spend. It's a variable font, so its weight tracks how much of your income is gone; money in stays light.\n\nMotion: words inflate as they're heard, the keypad digit you press thickens, and selected options turn bold while the rest stay thin.\n\nColour: warm grey and one vermilion.\n\nTrade-off: the most original. Weight is a feeling, not a precise read, so the digits stay exact."},
-    "noteL": {"x": 1410, "y": 2480, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: today reads like synced lyrics. Earlier entries dim, the latest glows, and a karaoke sweep runs across it.\n\nMotion: captions appear word by word as you talk, then split into a numbered setlist.\n\nPace: two bars — how far through the month vs how far through your income.\n\nColour: deep plum and amber.\n\nTrade-off: the most emotional; dark-only and less dense."},
-    "noteM": {"x": 1410, "y": 3720, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: your money as a daily paper. The AI writes the headline — ‘Rent and food lead a calm September’.\n\nMotion: headlines rise out of a mask, rules draw themselves, briefs file in one by one.\n\nEdit: ‘Corrections’ is a typographic form; the chosen option is underlined in blue.\n\nColour: paper white, ink and one ultramarine.\n\nTrade-off: the strongest voice; serif headlines take more room."},
-    "noteN": {"x": 1410, "y": 4960, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: numbers that roll. Every amount is an odometer, so logging something spins the digits to the new total.\n\nMotion: when one sentence holds several entries, they spring out of the input as chips. ‘Again?’ chips repeat your regulars in one tap, and the placeholder types itself.\n\nColour: white and jade.\n\nTrade-off: the most familiar and quickest to learn; also the least unusual."},
-    "noteO": {"x": 1410, "y": 6200, "w": 360, "fill": "gray", "page": "round3", "text": "Idea: the AI writes in the margins. Clean type, plus pink hand-drawn circles, underlines and notes — ‘41% gone, 12 days left. You're fine.’\n\nMotion: strokes draw themselves, and the handwriting bounces (a variable font with a bounce axis).\n\nOne sentence: the AI slashes what you said into parts and labels each one.\n\nColour: paper, ink and one marker pink.\n\nTrade-off: the friendliest way to show what the AI did; the notes need restraint to stay minimal."},
-    "r4title": {"kind": "title1", "maxW": 1368, "text": "Round 4 — clear sections, obvious buttons", "x": 0, "y": -260, "page": "round4"},
-    "r4rowP": {"kind": "title1", "maxW": 1330, "text": "P · Stack — every section is a titled card", "x": 0, "y": 980, "page": "round4"},
-    "r4rowQ": {"kind": "title1", "maxW": 1330, "text": "Q · Bento — one tile, one answer", "x": 0, "y": 2220, "page": "round4"},
-    "r4rowR": {"kind": "title1", "maxW": 1330, "text": "R · Ledger — a statement you can read at a glance", "x": 0, "y": 3460, "page": "round4"},
-    "r4rowS": {"kind": "title1", "maxW": 1330, "text": "S · Timeline — your day on a line", "x": 0, "y": 4700, "page": "round4"},
-    "r4rowT": {"kind": "title1", "maxW": 1330, "text": "T · Sheet — summary on top, details in a sheet", "x": 0, "y": 5940, "page": "round4"},
-    "r4noteP": {"x": 1410, "y": 1240, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: every section is a titled card (This month, Today, Log again), like Apple Health’s summary.\n\nClear parts: actions live in one floating bar; rows that open have a ›; categories are small grey tags; anything the AI guessed is indigo.\n\nMotion: cards rise in, the total rolls, and new entries arrive in a sheet that slides up over home.\n\nColour & font: iOS grey, white cards, one indigo. Plus Jakarta Sans.\n\nTrade-off: the most familiar and the easiest to build on iOS; also the least distinctive."},
-    "r4noteQ": {"x": 1410, "y": 2480, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: a grid of tiles, one answer per tile: spent, came in, left to spend, today, top category, days left.\n\nClear parts: the yellow tile is the headline number; white tiles hold the details; tiles that open show an arrow or ›.\n\nMotion: tiles pop in one by one, a highlighter marks the amounts it heard, and the days ring fills.\n\nColour & font: warm grey, white and one yellow. Bricolage Grotesque.\n\nTrade-off: the most glanceable; a fixed grid holds fewer list items."},
-    "r4noteR": {"x": 1410, "y": 3720, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: a bank statement you can actually read: an In/Out box, filter pills, and a table grouped by day.\n\nClear parts: a line under every row, columns for time, item and amount, and labelled form fields when you edit.\n\nMotion: totals tick over, new rows flash yellow then fade, and a ‘What changes’ table shows before and after.\n\nColour & font: white and one cobalt. IBM Plex Sans, with Plex Mono for numbers.\n\nTrade-off: the most precise and scannable; also the most serious."},
-    "r4noteS": {"x": 1410, "y": 4960, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: your day on a line, with a Now marker, cards at the time they happened, and dashed gaps for quiet hours.\n\nClear parts: summary card on top, entries as cards on the line, AI tips in a tinted box.\n\nSmart: new entries land at their time, and it asks when one looks like a repeat (‘Is this a second lunch?’).\n\nMotion: the line draws down, dots pop in, and the time knob slides to the guessed time.\n\nColour & font: off-white and one violet. Outfit.\n\nTrade-off: the best feel for a day; the month view needs its own design."},
-    "r4noteT": {"x": 1410, "y": 6200, "w": 360, "fill": "gray", "page": "round4", "text": "Idea: the summary sits in a dark header, and everything else lives in a white sheet you can pull up.\n\nClear parts: dark is for reading numbers, white is for doing things; tabs switch Today, This month and Categories.\n\nMotion: the sheet springs up, the total rolls, and live captions fill the dark area while you talk.\n\nColour & font: navy, white and one coral; money in is mint on dark. Manrope.\n\nTrade-off: the clearest split between summary and detail; the header takes a third of the screen."},
-    "r5title": {"kind": "title1", "maxW": 2270, "text": "Round 5 — S, refined for iOS 27", "x": 0, "y": -260, "page": "round5"},
-    "r5row1": {"kind": "title1", "maxW": 2270, "text": "Today — calmer home, one Add button, glass sheets", "x": 0, "y": 980, "page": "round5"},
-    "r5row2": {"kind": "title1", "maxW": 1800, "text": "Month, categories, search and screenshots", "x": 0, "y": 2220, "page": "round5"},
-    "r5row3": {"kind": "title1", "maxW": 1330, "text": "Outside the app — Lock Screen, widgets, controls", "x": 0, "y": 3460, "page": "round5"},
-    "r5note1": {"x": 2350, "y": 1240, "w": 360, "fill": "gray", "page": "round5", "text": "Today shows three things: September’s Spent and Came in, today’s entries on the timeline, and one Add button.\n\nAdd is iOS 27’s ‘prominent tab’. It opens a glass sheet: hold to talk, type, screenshot, or log a regular again.\n\nListening shows words and entries appearing as you speak. Review places them on the timeline and asks if a lunch looks like a repeat.\n\nSheets use Apple’s × and ✓ buttons. Edit keeps the time ruler from S."},
-    "r5note2": {"x": 1880, "y": 2480, "w": 360, "fill": "gray", "page": "round5", "text": "Month holds what left Today: the 41% bar, a daily chart, the AI tip and categories.\n\nFood compares September with August, then lists entries by day.\n\nSearch answers questions (‘9 Grab rides, RM 146.60’) and keeps the search field at the bottom, the iOS way.\n\nScreenshots: it reads every row, skips one already logged, and leaves a wallet reload out of spending."},
-    "r5note3": {"x": 940, "y": 3720, "w": 360, "fill": "gray", "page": "round5", "text": "Log without opening the app: a Lock Screen control, Lock Screen widgets, Home Screen widgets with ‘Log again’ buttons, a Control Center control and the Action button.\n\nAll of them open the same listening screen. A notification confirms what was saved."}
+    "noteF": {
+      "fill": "gray",
+      "page": "round2",
+      "text": "Idea: the month is a jar. Income sets its size; every expense drops in as a pebble (colour = category, size = amount). How full it is = how much of your income is gone.\n\nSurprise: tilt the phone and the pebbles roll, shake to undo, and ‘Sort’ pours them into tubes by category.\n\nOne recording: each thing you say drops in as its own pebble; money in lands as a coin.\n\nEdit: tap any pebble and it pops out — drag a ruler to change the amount, tap a colour to change the category.\n\nTrade-off: the most playful at a glance; exact numbers live in labels, not the picture.",
+      "w": 360,
+      "x": 1880,
+      "y": 0
+    },
+    "noteG": {
+      "fill": "gray",
+      "page": "round2",
+      "text": "Idea: a soft mochi buddy is the button. Hold it and talk; it squishes while it listens.\n\nSurprise: list several things and it splits into little mochis, one per record, each in its category colour. Drag two together to merge; pinch one to split a bill.\n\nEdit: tap a mochi — big − / + buttons, spent or received, category mochis, split with friends.\n\nTrade-off: the most charming and memorable; some people find a character too cute for money.",
+      "w": 360,
+      "x": 1880,
+      "y": 1240
+    },
+    "noteH": {
+      "fill": "gray",
+      "page": "round2",
+      "text": "Idea: everything is a sentence. Home reads ‘In September, RM 5,200 came in and RM 2,146 went out…’ and every highlighted word is a button.\n\nSurprise: a marker sweeps across each word it understood, and a run-on sentence gets cut into separate records.\n\nEdit: tap any highlight to change only that part — keypad for amounts, colour chips for categories.\n\nTrade-off: the clearest about what the AI understood; less visual than a chart.",
+      "w": 360,
+      "x": 1880,
+      "y": 2480
+    },
+    "noteI": {
+      "fill": "gray",
+      "page": "round2",
+      "text": "Idea: your money on a split-flap departures board. Every log flips the digits with a clack (sound + haptics).\n\nSurprise: several items arrive as ‘NOW BOARDING · 3’. Anything the AI guessed shows a status like TIME? so you know what to check. Pace reads ON TIME or DELAYED.\n\nEdit: drag any digit up or down like a reel; categories are big colour ‘gates’.\n\nTrade-off: the most satisfying motion; darker and denser than the others.",
+      "w": 360,
+      "x": 1880,
+      "y": 3720
+    },
+    "noteJ": {
+      "fill": "gray",
+      "page": "round2",
+      "text": "Idea: every ringgit becomes a thread. Each day is a patch woven from category colours and sized by what you spent; the month becomes a quilt.\n\nSurprise: one sentence weaves several threads into today, and at month end the quilt becomes a poster to share.\n\nEdit: tap a thread — a calculator keypad (type 36 ÷ 3 to split a bill), category spools, date.\n\nTrade-off: the most beautiful and shareable; exact numbers take a tap.",
+      "w": 360,
+      "x": 1880,
+      "y": 4960
+    },
+    "noteK": {
+      "fill": "gray",
+      "page": "round3",
+      "text": "Idea: the Out number gets bolder as you spend. It's a variable font, so its weight tracks how much of your income is gone; money in stays light.\n\nMotion: words inflate as they're heard, the keypad digit you press thickens, and selected options turn bold while the rest stay thin.\n\nColour: warm grey and one vermilion.\n\nTrade-off: the most original. Weight is a feeling, not a precise read, so the digits stay exact.",
+      "w": 360,
+      "x": 1410,
+      "y": 1240
+    },
+    "noteL": {
+      "fill": "gray",
+      "page": "round3",
+      "text": "Idea: today reads like synced lyrics. Earlier entries dim, the latest glows, and a karaoke sweep runs across it.\n\nMotion: captions appear word by word as you talk, then split into a numbered setlist.\n\nPace: two bars — how far through the month vs how far through your income.\n\nColour: deep plum and amber.\n\nTrade-off: the most emotional; dark-only and less dense.",
+      "w": 360,
+      "x": 1410,
+      "y": 2480
+    },
+    "noteM": {
+      "fill": "gray",
+      "page": "round3",
+      "text": "Idea: your money as a daily paper. The AI writes the headline — ‘Rent and food lead a calm September’.\n\nMotion: headlines rise out of a mask, rules draw themselves, briefs file in one by one.\n\nEdit: ‘Corrections’ is a typographic form; the chosen option is underlined in blue.\n\nColour: paper white, ink and one ultramarine.\n\nTrade-off: the strongest voice; serif headlines take more room.",
+      "w": 360,
+      "x": 1410,
+      "y": 3720
+    },
+    "noteN": {
+      "fill": "gray",
+      "page": "round3",
+      "text": "Idea: numbers that roll. Every amount is an odometer, so logging something spins the digits to the new total.\n\nMotion: when one sentence holds several entries, they spring out of the input as chips. ‘Again?’ chips repeat your regulars in one tap, and the placeholder types itself.\n\nColour: white and jade.\n\nTrade-off: the most familiar and quickest to learn; also the least unusual.",
+      "w": 360,
+      "x": 1410,
+      "y": 4960
+    },
+    "noteO": {
+      "fill": "gray",
+      "page": "round3",
+      "text": "Idea: the AI writes in the margins. Clean type, plus pink hand-drawn circles, underlines and notes — ‘41% gone, 12 days left. You're fine.’\n\nMotion: strokes draw themselves, and the handwriting bounces (a variable font with a bounce axis).\n\nOne sentence: the AI slashes what you said into parts and labels each one.\n\nColour: paper, ink and one marker pink.\n\nTrade-off: the friendliest way to show what the AI did; the notes need restraint to stay minimal.",
+      "w": 360,
+      "x": 1410,
+      "y": 6200
+    },
+    "r4noteP": {
+      "fill": "gray",
+      "page": "round4",
+      "text": "Idea: every section is a titled card (This month, Today, Log again), like Apple Health’s summary.\n\nClear parts: actions live in one floating bar; rows that open have a ›; categories are small grey tags; anything the AI guessed is indigo.\n\nMotion: cards rise in, the total rolls, and new entries arrive in a sheet that slides up over home.\n\nColour & font: iOS grey, white cards, one indigo. Plus Jakarta Sans.\n\nTrade-off: the most familiar and the easiest to build on iOS; also the least distinctive.",
+      "w": 360,
+      "x": 1410,
+      "y": 1240
+    },
+    "r4noteQ": {
+      "fill": "gray",
+      "page": "round4",
+      "text": "Idea: a grid of tiles, one answer per tile: spent, came in, left to spend, today, top category, days left.\n\nClear parts: the yellow tile is the headline number; white tiles hold the details; tiles that open show an arrow or ›.\n\nMotion: tiles pop in one by one, a highlighter marks the amounts it heard, and the days ring fills.\n\nColour & font: warm grey, white and one yellow. Bricolage Grotesque.\n\nTrade-off: the most glanceable; a fixed grid holds fewer list items.",
+      "w": 360,
+      "x": 1410,
+      "y": 2480
+    },
+    "r4noteR": {
+      "fill": "gray",
+      "page": "round4",
+      "text": "Idea: a bank statement you can actually read: an In/Out box, filter pills, and a table grouped by day.\n\nClear parts: a line under every row, columns for time, item and amount, and labelled form fields when you edit.\n\nMotion: totals tick over, new rows flash yellow then fade, and a ‘What changes’ table shows before and after.\n\nColour & font: white and one cobalt. IBM Plex Sans, with Plex Mono for numbers.\n\nTrade-off: the most precise and scannable; also the most serious.",
+      "w": 360,
+      "x": 1410,
+      "y": 3720
+    },
+    "r4noteS": {
+      "fill": "gray",
+      "page": "round4",
+      "text": "Idea: your day on a line, with a Now marker, cards at the time they happened, and dashed gaps for quiet hours.\n\nClear parts: summary card on top, entries as cards on the line, AI tips in a tinted box.\n\nSmart: new entries land at their time, and it asks when one looks like a repeat (‘Is this a second lunch?’).\n\nMotion: the line draws down, dots pop in, and the time knob slides to the guessed time.\n\nColour & font: off-white and one violet. Outfit.\n\nTrade-off: the best feel for a day; the month view needs its own design.",
+      "w": 360,
+      "x": 1410,
+      "y": 4960
+    },
+    "r4noteT": {
+      "fill": "gray",
+      "page": "round4",
+      "text": "Idea: the summary sits in a dark header, and everything else lives in a white sheet you can pull up.\n\nClear parts: dark is for reading numbers, white is for doing things; tabs switch Today, This month and Categories.\n\nMotion: the sheet springs up, the total rolls, and live captions fill the dark area while you talk.\n\nColour & font: navy, white and one coral; money in is mint on dark. Manrope.\n\nTrade-off: the clearest split between summary and detail; the header takes a third of the screen.",
+      "w": 360,
+      "x": 1410,
+      "y": 6200
+    },
+    "r4rowP": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round4",
+      "text": "P · Stack — every section is a titled card",
+      "w": 240,
+      "x": 0,
+      "y": 980
+    },
+    "r4rowQ": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round4",
+      "text": "Q · Bento — one tile, one answer",
+      "w": 240,
+      "x": 0,
+      "y": 2220
+    },
+    "r4rowR": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round4",
+      "text": "R · Ledger — a statement you can read at a glance",
+      "w": 240,
+      "x": 0,
+      "y": 3460
+    },
+    "r4rowS": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round4",
+      "text": "S · Timeline — your day on a line",
+      "w": 240,
+      "x": 0,
+      "y": 4700
+    },
+    "r4rowT": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round4",
+      "text": "T · Sheet — summary on top, details in a sheet",
+      "w": 240,
+      "x": 0,
+      "y": 5940
+    },
+    "r4title": {
+      "kind": "title1",
+      "maxW": 1368,
+      "page": "round4",
+      "text": "Round 4 — clear sections, obvious buttons",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "r5note1": {
+      "fill": "gray",
+      "page": "round5",
+      "text": "Today shows three things: September’s Spent and Came in, today’s entries on the timeline, and one Add button.\n\nAdd is iOS 27’s ‘prominent tab’. It opens a glass sheet: hold to talk, type, screenshot, or log a regular again.\n\nListening shows words and entries appearing as you speak. Review places them on the timeline and asks if a lunch looks like a repeat.\n\nSheets use Apple’s × and ✓ buttons. Edit keeps the time ruler from S.",
+      "w": 360,
+      "x": 2350,
+      "y": 1240
+    },
+    "r5note2": {
+      "fill": "gray",
+      "page": "round5",
+      "text": "Month holds what left Today: the 41% bar, a daily chart, the AI tip and categories.\n\nFood compares September with August, then lists entries by day.\n\nSearch answers questions (‘9 Grab rides, RM 146.60’) and keeps the search field at the bottom, the iOS way.\n\nScreenshots: it reads every row, skips one already logged, and leaves a wallet reload out of spending.",
+      "w": 360,
+      "x": 1880,
+      "y": 2480
+    },
+    "r5note3": {
+      "fill": "gray",
+      "page": "round5",
+      "text": "Log without opening the app: a Lock Screen control, Lock Screen widgets, Home Screen widgets with ‘Log again’ buttons, a Control Center control and the Action button.\n\nAll of them open the same listening screen. A notification confirms what was saved.",
+      "w": 360,
+      "x": 940,
+      "y": 3720
+    },
+    "r5row1": {
+      "kind": "title1",
+      "maxW": 2270,
+      "page": "round5",
+      "text": "Today — calmer home, one Add button, glass sheets",
+      "w": 240,
+      "x": 0,
+      "y": 980
+    },
+    "r5row2": {
+      "kind": "title1",
+      "maxW": 1800,
+      "page": "round5",
+      "text": "Month, categories, search and screenshots",
+      "w": 240,
+      "x": 0,
+      "y": 2220
+    },
+    "r5row3": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round5",
+      "text": "Outside the app — Lock Screen, widgets, controls",
+      "w": 240,
+      "x": 0,
+      "y": 3460
+    },
+    "r5title": {
+      "kind": "title1",
+      "maxW": 2270,
+      "page": "round5",
+      "text": "Round 5 — S, refined for iOS 27",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "rowA": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "A · Mono — two numbers, one button",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "rowB": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "B · Chat — just tell it",
+      "w": 240,
+      "x": 0,
+      "y": 980
+    },
+    "rowC": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "C · Orbit — native iOS, log from anywhere",
+      "w": 240,
+      "x": 0,
+      "y": 2220
+    },
+    "rowD": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "D · Inbox — it finds them, you swipe",
+      "w": 240,
+      "x": 0,
+      "y": 3460
+    },
+    "rowE": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "E · Calendar — the month at a glance",
+      "w": 240,
+      "x": 0,
+      "y": 4700
+    },
+    "rowF": {
+      "kind": "title1",
+      "maxW": 1800,
+      "page": "round2",
+      "text": "F · Jar — every ringgit is a pebble",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "rowG": {
+      "kind": "title1",
+      "maxW": 1800,
+      "page": "round2",
+      "text": "G · Mochi — a buddy that listens",
+      "w": 240,
+      "x": 0,
+      "y": 980
+    },
+    "rowH": {
+      "kind": "title1",
+      "maxW": 1800,
+      "page": "round2",
+      "text": "H · Sentence — your money as one editable sentence",
+      "w": 240,
+      "x": 0,
+      "y": 2220
+    },
+    "rowI": {
+      "kind": "title1",
+      "maxW": 1800,
+      "page": "round2",
+      "text": "I · Flap — the departures board",
+      "w": 240,
+      "x": 0,
+      "y": 3460
+    },
+    "rowJ": {
+      "kind": "title1",
+      "maxW": 1800,
+      "page": "round2",
+      "text": "J · Quilt — your month, woven",
+      "w": 240,
+      "x": 0,
+      "y": 4700
+    },
+    "rowK": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round3",
+      "text": "K · Weight — the more you spend, the bolder it gets",
+      "w": 240,
+      "x": 0,
+      "y": 980
+    },
+    "rowL": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round3",
+      "text": "L · Lyrics — your day, line by line",
+      "w": 240,
+      "x": 0,
+      "y": 2220
+    },
+    "rowM": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round3",
+      "text": "M · Edition — your money as front-page news",
+      "w": 240,
+      "x": 0,
+      "y": 3460
+    },
+    "rowN": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round3",
+      "text": "N · Roll — numbers that spin into place",
+      "w": 240,
+      "x": 0,
+      "y": 4700
+    },
+    "rowO": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round3",
+      "text": "O · Margin — the AI writes in the margins",
+      "w": 240,
+      "x": 0,
+      "y": 5940
+    },
+    "rowR": {
+      "kind": "title1",
+      "maxW": 1368,
+      "page": "round3",
+      "text": "Round 3 — study the best, then simplify",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "rowS": {
+      "kind": "title1",
+      "maxW": 3048,
+      "text": "Shared by every direction — capture & AI",
+      "w": 240,
+      "x": 0,
+      "y": 5940
+    },
+    "r6title": {
+      "kind": "title1",
+      "maxW": 2270,
+      "page": "round6",
+      "text": "Round 6 — light tangerine, type with personality",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "r6row1": {
+      "kind": "title1",
+      "maxW": 2270,
+      "page": "round6",
+      "text": "Today — same calm flow, warmer look",
+      "w": 240,
+      "x": 0,
+      "y": 980
+    },
+    "r6row2": {
+      "kind": "title1",
+      "maxW": 1800,
+      "page": "round6",
+      "text": "Month, categories, search and screenshots",
+      "w": 240,
+      "x": 0,
+      "y": 2220
+    },
+    "r6row3": {
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "round6",
+      "text": "Outside the app — Lock Screen, widgets, controls",
+      "w": 240,
+      "x": 0,
+      "y": 3460
+    },
+    "r6note1": {
+      "x": 2350,
+      "y": 1240,
+      "w": 360,
+      "fill": "gray",
+      "page": "round6",
+      "text": "Same flow as Round 5, re-skinned.\n\nTitles and money use Fraunces, a soft serif with a little wobble; everything else uses Figtree.\n\nThe Add tab, ✓ buttons, chips and the ‘Now’ marker are light tangerine with dark text. While you talk, your words appear in Fraunces italic."
+    },
+    "r6note2": {
+      "x": 1880,
+      "y": 2480,
+      "w": 360,
+      "fill": "gray",
+      "page": "round6",
+      "text": "Month’s chart marks today in deep tangerine and earlier days in pale tangerine.\n\nAI tips and guesses sit on a tangerine tint. Money in stays green, and the background is warm paper instead of iPhone grey."
+    },
+    "r6note3": {
+      "x": 940,
+      "y": 3720,
+      "w": 360,
+      "fill": "gray",
+      "page": "round6",
+      "text": "The Lock Screen clock stays in Apple’s font because it belongs to the system.\n\nKira’s own widgets, notification and controls carry the tangerine and Fraunces."
+    }
   },
   "order": [
     "Main.dc.html",
@@ -251,14 +1354,45 @@
     "TLSearch.dc.html",
     "TLScan.dc.html",
     "TLLock.dc.html",
-    "TLWidgets.dc.html"
+    "TLWidgets.dc.html",
+    "TGNotes.dc.html",
+    "TGToday.dc.html",
+    "TGAdd.dc.html",
+    "TGListen.dc.html",
+    "TGReview.dc.html",
+    "TGEdit.dc.html",
+    "TGMonth.dc.html",
+    "TGCategory.dc.html",
+    "TGSearch.dc.html",
+    "TGScan.dc.html",
+    "TGLock.dc.html",
+    "TGWidgets.dc.html"
   ],
   "pages": [
-    {"id": "round1", "name": "Round 1 · Calm"},
-    {"id": "round2", "name": "Round 2 · Fun"},
-    {"id": "round3", "name": "Round 3 · Type & motion"},
-    {"id": "round4", "name": "Round 4 · Clear & structured"},
-    {"id": "round5", "name": "Round 5 · Timeline for iOS 27"}
+    {
+      "id": "round1",
+      "name": "Round 1 · Calm"
+    },
+    {
+      "id": "round2",
+      "name": "Round 2 · Fun"
+    },
+    {
+      "id": "round3",
+      "name": "Round 3 · Type & motion"
+    },
+    {
+      "id": "round4",
+      "name": "Round 4 · Clear & structured"
+    },
+    {
+      "id": "round5",
+      "name": "Round 5 · Timeline for iOS 27"
+    },
+    {
+      "id": "round6",
+      "name": "Round 6 · Tangerine & personality"
+    }
   ],
   "title": "Spending App Mocks"
 }

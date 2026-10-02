@@ -3,7 +3,7 @@
 Live canvas (all mocks; most screens can be clicked through in Play mode):
 https://claude.ai/artifact/5Z3BHZQokKGWBKkCog9HL4
 
-The canvas has five pages: **Round 1 · Calm** (directions A–E), **Round 2 · Fun** (directions F–J), **Round 3 · Type & motion** (directions K–O, plus a research board), **Round 4 · Clear & structured** (directions P–T, plus a legend board) and **Round 5 · Timeline for iOS 27** (direction S built out into 11 screens, plus a notes board). It opens on Round 5.
+The canvas has six pages: **Round 1 · Calm** (directions A–E), **Round 2 · Fun** (directions F–J), **Round 3 · Type & motion** (directions K–O, plus a research board), **Round 4 · Clear & structured** (directions P–T, plus a legend board), **Round 5 · Timeline for iOS 27** (direction S built out into 11 screens, plus a notes board) and **Round 6 · Tangerine & personality** (the same 11 screens with a new font and colour). It opens on Round 6.
 
 `mocks/` holds a snapshot of the canvas source. The canvas is the live version.
 
@@ -117,6 +117,13 @@ What changed:
 
 iOS 27 references: [How Liquid Glass is changing in iOS 27 (MacRumors)](https://www.macrumors.com/2026/06/10/how-liquid-glass-is-changing-in-ios-27/), [iOS 27 streamlines Liquid Glass (9to5Mac)](https://9to5mac.com/2026/05/12/ios-27-to-make-key-design-changes-to-streamline-liquid-glass-report/), [iOS 27 notable UIKit additions (prominent tab)](https://swiftjectivec.com/ios-27-notable-uikit-additions), [Build a SwiftUI app with the new design (WWDC25)](https://wwdcnotes.com/documentation/wwdc25-323-build-a-swiftui-app-with-the-new-design/).
 
+## Round 6 · Tangerine & personality (Round 5, re-skinned)
+
+Feedback on Round 5: much cleaner, but the font felt too default, and the strong blue made it look like a stock iPhone app rather than its own product. Round 6 keeps all 11 screens, the calmer Today and the iOS 27 glass, and changes two things:
+
+- **Type with personality.** Titles, money amounts and the words you said use [Fraunces](https://fonts.google.com/specimen/Fraunces), a soft serif with a little wobble (its Soft and Wonky settings). Labels, lists and buttons use [Figtree](https://fonts.google.com/specimen/Figtree), which stays plain and readable at small sizes. The Lock Screen clock stays in Apple's font because it belongs to the system. The notes board also shows Bricolage Grotesque (playful) and Schibsted Grotesk (crisp, the font from N) as alternatives.
+- **Light tangerine.** `#FFA552` is the main colour, used for the Add tab, ✓ buttons, chips, the "Now" marker and progress bars, always with dark text on top. Small tangerine text and icons use a deeper `#A84A0C` so they stay readable. AI tips and guesses sit on a `#FFF1E4` tint. The background is warm paper (`#F7F3EE`) instead of iPhone grey, and money in stays green (`#1B6E30`). All text colours pass WCAG AA.
+
 ## Capture methods
 
 All of them call one App Intent (`LogTransactionIntent`), so behaviour is identical everywhere.
@@ -170,6 +177,6 @@ The canvas board **How the AI works** shows this as a diagram.
 
 ## Next steps
 
-1. Review Round 5 (S refined for iOS 27): confirm the accent and the calmer Today, then design the gaps (onboarding, the full categories list, settings, dark mode).
+1. Review Round 6 (S in light tangerine with Fraunces): confirm the font and colour, then design the gaps (onboarding, the full categories list, settings, dark mode).
 2. Prototype the parser on real utterances and screenshots (Manglish, DuitNow, e-wallet receipts) before polishing UI.
 3. Build the SwiftUI skeleton: SwiftData store, `LogTransactionIntent`, widget and control, then home + capture.
