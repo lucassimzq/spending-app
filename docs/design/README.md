@@ -7,6 +7,13 @@ The canvas has six pages: **Round 1 · Calm** (directions A–E), **Round 2 · F
 
 `mocks/` holds a snapshot of the canvas source. The canvas is the live version.
 
+**Start here.** The chosen design is **Round 6**: direction S (Timeline) with iOS 27 Liquid Glass controls, a light tangerine accent (`#FFA552`), Fraunces for titles and money, Figtree for interface text, and neutral backgrounds.
+
+- [`screenshots/`](screenshots/README.md) has PNGs of every board. Round 6 is at iPhone resolution (1170 × 2532).
+- `mocks/` has the HTML source of every board, with exact sizes, colours and copy.
+- [`tools/`](tools/README.md) has the scripts that generate the Round 5–6 boards and render the screenshots.
+- Still open: keep Fraunces or switch to one of the two alternatives on the Round 6 notes board, and design onboarding, the full category list, settings and dark mode.
+
 Working name in the mocks: **Kira** (Malay *kira*, "to count"). It's a placeholder.
 
 ## What we're optimising for

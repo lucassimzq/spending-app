@@ -1,0 +1,1140 @@
+[
+  {
+    "file": "Main.dc.html",
+    "page": "round1",
+    "title": "A1 · Mono — Home",
+    "png": "round1/a1-mono-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Archivo"
+    ]
+  },
+  {
+    "file": "MonoTalk.dc.html",
+    "page": "round1",
+    "title": "A2 · Mono — Hold to talk",
+    "png": "round1/a2-mono-hold-to-talk.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Archivo"
+    ]
+  },
+  {
+    "file": "MonoWhere.dc.html",
+    "page": "round1",
+    "title": "A3 · Mono — Where it went",
+    "png": "round1/a3-mono-where-it-went.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Archivo"
+    ]
+  },
+  {
+    "file": "ChatThread.dc.html",
+    "page": "round1",
+    "title": "B1 · Chat — Thread",
+    "png": "round1/b1-chat-thread.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Bricolage Grotesque",
+      "Onest"
+    ]
+  },
+  {
+    "file": "ChatScreenshot.dc.html",
+    "page": "round1",
+    "title": "B2 · Chat — Screenshot in",
+    "png": "round1/b2-chat-screenshot-in.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Bricolage Grotesque",
+      "Onest"
+    ]
+  },
+  {
+    "file": "ChatAsk.dc.html",
+    "page": "round1",
+    "title": "B3 · Chat — Ask anything",
+    "png": "round1/b3-chat-ask-anything.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Bricolage Grotesque",
+      "Onest"
+    ]
+  },
+  {
+    "file": "OrbitHome.dc.html",
+    "page": "round1",
+    "title": "C1 · Orbit — Home",
+    "png": "round1/c1-orbit-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Geist"
+    ]
+  },
+  {
+    "file": "OrbitListen.dc.html",
+    "page": "round1",
+    "title": "C2 · Orbit — Several at once",
+    "png": "round1/c2-orbit-several-at-once.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Geist"
+    ]
+  },
+  {
+    "file": "OrbitLock.dc.html",
+    "page": "round1",
+    "title": "C3 · Orbit — Lock Screen",
+    "png": "round1/c3-orbit-lock-screen.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Geist"
+    ]
+  },
+  {
+    "file": "InboxReview.dc.html",
+    "page": "round1",
+    "title": "D1 · Inbox — Swipe to add",
+    "png": "round1/d1-inbox-swipe-to-add.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "IBM Plex Mono",
+      "IBM Plex Sans"
+    ]
+  },
+  {
+    "file": "InboxScan.dc.html",
+    "page": "round1",
+    "title": "D2 · Inbox — Bank screenshot",
+    "png": "round1/d2-inbox-bank-screenshot.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "IBM Plex Mono",
+      "IBM Plex Sans"
+    ]
+  },
+  {
+    "file": "InboxMonth.dc.html",
+    "page": "round1",
+    "title": "D3 · Inbox — Month receipt",
+    "png": "round1/d3-inbox-month-receipt.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "IBM Plex Mono",
+      "IBM Plex Sans"
+    ]
+  },
+  {
+    "file": "CalendarMonth.dc.html",
+    "page": "round1",
+    "title": "E1 · Calendar — Month",
+    "png": "round1/e1-calendar-month.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Hanken Grotesk"
+    ]
+  },
+  {
+    "file": "CalendarDay.dc.html",
+    "page": "round1",
+    "title": "E2 · Calendar — Day & backfill",
+    "png": "round1/e2-calendar-day-backfill.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Hanken Grotesk"
+    ]
+  },
+  {
+    "file": "CalendarFlow.dc.html",
+    "page": "round1",
+    "title": "E3 · Calendar — Where it went",
+    "png": "round1/e3-calendar-where-it-went.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Hanken Grotesk"
+    ]
+  },
+  {
+    "file": "CaptureAnywhere.dc.html",
+    "page": "round1",
+    "title": "Capture anywhere",
+    "png": "round1/00-capture-anywhere.png",
+    "w": 1368,
+    "h": 1064,
+    "scale": 1,
+    "fonts": [
+      "Geist"
+    ]
+  },
+  {
+    "file": "AIPipeline.dc.html",
+    "page": "round1",
+    "title": "How the AI works",
+    "png": "round1/00-how-the-ai-works.png",
+    "w": 1600,
+    "h": 840,
+    "scale": 1,
+    "fonts": [
+      "Geist",
+      "Geist Mono"
+    ]
+  },
+  {
+    "file": "JarHome.dc.html",
+    "page": "round2",
+    "title": "F1 · Jar — Home",
+    "png": "round2/f1-jar-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Rubik"
+    ]
+  },
+  {
+    "file": "JarTalk.dc.html",
+    "page": "round2",
+    "title": "F2 · Jar — Three in one breath",
+    "png": "round2/f2-jar-three-in-one-breath.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Rubik"
+    ]
+  },
+  {
+    "file": "JarEdit.dc.html",
+    "page": "round2",
+    "title": "F3 · Jar — Edit a pebble",
+    "png": "round2/f3-jar-edit-a-pebble.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Rubik"
+    ]
+  },
+  {
+    "file": "JarSort.dc.html",
+    "page": "round2",
+    "title": "F4 · Jar — Sorted into tubes",
+    "png": "round2/f4-jar-sorted-into-tubes.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Rubik"
+    ]
+  },
+  {
+    "file": "MochiHome.dc.html",
+    "page": "round2",
+    "title": "G1 · Mochi — Home",
+    "png": "round2/g1-mochi-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Fredoka",
+      "Nunito"
+    ]
+  },
+  {
+    "file": "MochiSplit.dc.html",
+    "page": "round2",
+    "title": "G2 · Mochi — It splits",
+    "png": "round2/g2-mochi-it-splits.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Fredoka",
+      "Nunito"
+    ]
+  },
+  {
+    "file": "MochiEdit.dc.html",
+    "page": "round2",
+    "title": "G3 · Mochi — Edit",
+    "png": "round2/g3-mochi-edit.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Fredoka",
+      "Nunito"
+    ]
+  },
+  {
+    "file": "SentenceHome.dc.html",
+    "page": "round2",
+    "title": "H1 · Sentence — Home",
+    "png": "round2/h1-sentence-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Instrument Sans"
+    ]
+  },
+  {
+    "file": "SentenceSplit.dc.html",
+    "page": "round2",
+    "title": "H2 · Sentence — Cut into three",
+    "png": "round2/h2-sentence-cut-into-three.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Instrument Sans"
+    ]
+  },
+  {
+    "file": "SentenceEdit.dc.html",
+    "page": "round2",
+    "title": "H3 · Sentence — Tap a word to edit",
+    "png": "round2/h3-sentence-tap-a-word-to-edit.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Instrument Sans"
+    ]
+  },
+  {
+    "file": "FlapHome.dc.html",
+    "page": "round2",
+    "title": "I1 · Flap — Home",
+    "png": "round2/i1-flap-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Barlow",
+      "Barlow Condensed"
+    ]
+  },
+  {
+    "file": "FlapBoard.dc.html",
+    "page": "round2",
+    "title": "I2 · Flap — Now boarding",
+    "png": "round2/i2-flap-now-boarding.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Barlow",
+      "Barlow Condensed"
+    ]
+  },
+  {
+    "file": "FlapEdit.dc.html",
+    "page": "round2",
+    "title": "I3 · Flap — Roll the digits",
+    "png": "round2/i3-flap-roll-the-digits.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Barlow Condensed"
+    ]
+  },
+  {
+    "file": "QuiltHome.dc.html",
+    "page": "round2",
+    "title": "J1 · Quilt — Home",
+    "png": "round2/j1-quilt-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Manrope",
+      "Syne"
+    ]
+  },
+  {
+    "file": "QuiltWeave.dc.html",
+    "page": "round2",
+    "title": "J2 · Quilt — Weaving today",
+    "png": "round2/j2-quilt-weaving-today.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Manrope"
+    ]
+  },
+  {
+    "file": "QuiltEdit.dc.html",
+    "page": "round2",
+    "title": "J3 · Quilt — Edit a thread",
+    "png": "round2/j3-quilt-edit-a-thread.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Manrope",
+      "Syne"
+    ]
+  },
+  {
+    "file": "QuiltPoster.dc.html",
+    "page": "round2",
+    "title": "J4 · Quilt — Month poster",
+    "png": "round2/j4-quilt-month-poster.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Manrope",
+      "Syne"
+    ]
+  },
+  {
+    "file": "Research.dc.html",
+    "page": "round3",
+    "title": "What the best apps do",
+    "png": "round3/00-what-the-best-apps-do.png",
+    "w": 1368,
+    "h": 900,
+    "scale": 1,
+    "fonts": [
+      "Geist",
+      "Geist Mono",
+      "Instrument Serif"
+    ]
+  },
+  {
+    "file": "WeightHome.dc.html",
+    "page": "round3",
+    "title": "K1 · Weight — Home",
+    "png": "round3/k1-weight-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Anybody"
+    ]
+  },
+  {
+    "file": "WeightTalk.dc.html",
+    "page": "round3",
+    "title": "K2 · Weight — One sentence, three entries",
+    "png": "round3/k2-weight-one-sentence-three-entries.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Anybody"
+    ]
+  },
+  {
+    "file": "WeightEdit.dc.html",
+    "page": "round3",
+    "title": "K3 · Weight — Edit by hand",
+    "png": "round3/k3-weight-edit-by-hand.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Anybody"
+    ]
+  },
+  {
+    "file": "LyricsHome.dc.html",
+    "page": "round3",
+    "title": "L1 · Lyrics — Today",
+    "png": "round3/l1-lyrics-today.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Funnel Display",
+      "Funnel Sans"
+    ]
+  },
+  {
+    "file": "LyricsTalk.dc.html",
+    "page": "round3",
+    "title": "L2 · Lyrics — Captions to setlist",
+    "png": "round3/l2-lyrics-captions-to-setlist.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Funnel Display",
+      "Funnel Sans"
+    ]
+  },
+  {
+    "file": "LyricsEdit.dc.html",
+    "page": "round3",
+    "title": "L3 · Lyrics — Edit a line",
+    "png": "round3/l3-lyrics-edit-a-line.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Funnel Display",
+      "Funnel Sans"
+    ]
+  },
+  {
+    "file": "EditionHome.dc.html",
+    "page": "round3",
+    "title": "M1 · Edition — Front page",
+    "png": "round3/m1-edition-front-page.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Geist",
+      "Geist Mono",
+      "Instrument Serif"
+    ]
+  },
+  {
+    "file": "EditionTalk.dc.html",
+    "page": "round3",
+    "title": "M2 · Edition — Three new briefs",
+    "png": "round3/m2-edition-three-new-briefs.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Geist",
+      "Geist Mono",
+      "Instrument Serif"
+    ]
+  },
+  {
+    "file": "EditionEdit.dc.html",
+    "page": "round3",
+    "title": "M3 · Edition — Corrections",
+    "png": "round3/m3-edition-corrections.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Geist",
+      "Geist Mono",
+      "Instrument Serif"
+    ]
+  },
+  {
+    "file": "RollHome.dc.html",
+    "page": "round3",
+    "title": "N1 · Roll — Home",
+    "png": "round3/n1-roll-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Schibsted Grotesk"
+    ]
+  },
+  {
+    "file": "RollTalk.dc.html",
+    "page": "round3",
+    "title": "N2 · Roll — Chips spring out",
+    "png": "round3/n2-roll-chips-spring-out.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Schibsted Grotesk"
+    ]
+  },
+  {
+    "file": "RollEdit.dc.html",
+    "page": "round3",
+    "title": "N3 · Roll — Edit by hand",
+    "png": "round3/n3-roll-edit-by-hand.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Schibsted Grotesk"
+    ]
+  },
+  {
+    "file": "MarginHome.dc.html",
+    "page": "round3",
+    "title": "O1 · Margin — Home",
+    "png": "round3/o1-margin-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Figtree",
+      "Shantell Sans"
+    ]
+  },
+  {
+    "file": "MarginTalk.dc.html",
+    "page": "round3",
+    "title": "O2 · Margin — Marked-up sentence",
+    "png": "round3/o2-margin-marked-up-sentence.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Figtree",
+      "Shantell Sans"
+    ]
+  },
+  {
+    "file": "MarginEdit.dc.html",
+    "page": "round3",
+    "title": "O3 · Margin — Edit by hand",
+    "png": "round3/o3-margin-edit-by-hand.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Figtree",
+      "Shantell Sans"
+    ]
+  },
+  {
+    "file": "Legend.dc.html",
+    "page": "round4",
+    "title": "How to read every screen",
+    "png": "round4/00-how-to-read-every-screen.png",
+    "w": 1368,
+    "h": 880,
+    "scale": 1,
+    "fonts": [
+      "Geist",
+      "Geist Mono",
+      "Instrument Serif"
+    ]
+  },
+  {
+    "file": "StackHome.dc.html",
+    "page": "round4",
+    "title": "P1 · Stack — Home",
+    "png": "round4/p1-stack-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Plus Jakarta Sans"
+    ]
+  },
+  {
+    "file": "StackTalk.dc.html",
+    "page": "round4",
+    "title": "P2 · Stack — One sentence, three entries",
+    "png": "round4/p2-stack-one-sentence-three-entries.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Plus Jakarta Sans"
+    ]
+  },
+  {
+    "file": "StackEdit.dc.html",
+    "page": "round4",
+    "title": "P3 · Stack — Edit by hand",
+    "png": "round4/p3-stack-edit-by-hand.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Plus Jakarta Sans"
+    ]
+  },
+  {
+    "file": "BentoHome.dc.html",
+    "page": "round4",
+    "title": "Q1 · Bento — Home",
+    "png": "round4/q1-bento-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Bricolage Grotesque"
+    ]
+  },
+  {
+    "file": "BentoTalk.dc.html",
+    "page": "round4",
+    "title": "Q2 · Bento — Three new tiles",
+    "png": "round4/q2-bento-three-new-tiles.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Bricolage Grotesque"
+    ]
+  },
+  {
+    "file": "BentoEdit.dc.html",
+    "page": "round4",
+    "title": "Q3 · Bento — Edit by hand",
+    "png": "round4/q3-bento-edit-by-hand.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Bricolage Grotesque"
+    ]
+  },
+  {
+    "file": "LedgerHome.dc.html",
+    "page": "round4",
+    "title": "R1 · Ledger — Statement",
+    "png": "round4/r1-ledger-statement.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "IBM Plex Mono",
+      "IBM Plex Sans"
+    ]
+  },
+  {
+    "file": "LedgerTalk.dc.html",
+    "page": "round4",
+    "title": "R2 · Ledger — Review new rows",
+    "png": "round4/r2-ledger-review-new-rows.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "IBM Plex Mono",
+      "IBM Plex Sans"
+    ]
+  },
+  {
+    "file": "LedgerEdit.dc.html",
+    "page": "round4",
+    "title": "R3 · Ledger — Edit a row",
+    "png": "round4/r3-ledger-edit-a-row.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "IBM Plex Mono",
+      "IBM Plex Sans"
+    ]
+  },
+  {
+    "file": "TimelineHome.dc.html",
+    "page": "round4",
+    "title": "S1 · Timeline — Today",
+    "png": "round4/s1-timeline-today.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TimelineTalk.dc.html",
+    "page": "round4",
+    "title": "S2 · Timeline — Placing entries",
+    "png": "round4/s2-timeline-placing-entries.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TimelineEdit.dc.html",
+    "page": "round4",
+    "title": "S3 · Timeline — Edit by hand",
+    "png": "round4/s3-timeline-edit-by-hand.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Outfit"
+    ]
+  },
+  {
+    "file": "SheetHome.dc.html",
+    "page": "round4",
+    "title": "T1 · Sheet — Home",
+    "png": "round4/t1-sheet-home.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Manrope"
+    ]
+  },
+  {
+    "file": "SheetTalk.dc.html",
+    "page": "round4",
+    "title": "T2 · Sheet — Listening",
+    "png": "round4/t2-sheet-listening.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Manrope"
+    ]
+  },
+  {
+    "file": "SheetEdit.dc.html",
+    "page": "round4",
+    "title": "T3 · Sheet — Edit by hand",
+    "png": "round4/t3-sheet-edit-by-hand.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Manrope"
+    ]
+  },
+  {
+    "file": "TLNotes.dc.html",
+    "page": "round5",
+    "title": "What changed from S",
+    "png": "round5/00-what-changed-from-s.png",
+    "w": 1368,
+    "h": 900,
+    "scale": 1,
+    "fonts": [
+      "Inter"
+    ]
+  },
+  {
+    "file": "TLToday.dc.html",
+    "page": "round5",
+    "title": "1 · Today",
+    "png": "round5/01-today.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLAdd.dc.html",
+    "page": "round5",
+    "title": "2 · Add",
+    "png": "round5/02-add.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLListen.dc.html",
+    "page": "round5",
+    "title": "3 · Listening",
+    "png": "round5/03-listening.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLReview.dc.html",
+    "page": "round5",
+    "title": "4 · Review 3 entries",
+    "png": "round5/04-review-3-entries.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLEdit.dc.html",
+    "page": "round5",
+    "title": "5 · Edit entry",
+    "png": "round5/05-edit-entry.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLMonth.dc.html",
+    "page": "round5",
+    "title": "6 · Month",
+    "png": "round5/06-month.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLCategory.dc.html",
+    "page": "round5",
+    "title": "7 · Category: Food",
+    "png": "round5/07-category-food.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLSearch.dc.html",
+    "page": "round5",
+    "title": "8 · Search",
+    "png": "round5/08-search.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter"
+    ]
+  },
+  {
+    "file": "TLScan.dc.html",
+    "page": "round5",
+    "title": "9 · From a screenshot",
+    "png": "round5/09-from-a-screenshot.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLLock.dc.html",
+    "page": "round5",
+    "title": "10 · Lock Screen",
+    "png": "round5/10-lock-screen.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TLWidgets.dc.html",
+    "page": "round5",
+    "title": "11 · Widgets, Control Center, Action button",
+    "png": "round5/11-widgets-control-center-action-button.png",
+    "w": 390,
+    "h": 844,
+    "scale": 1,
+    "fonts": [
+      "Inter",
+      "Outfit"
+    ]
+  },
+  {
+    "file": "TGNotes.dc.html",
+    "page": "round6",
+    "title": "What changed from Round 5",
+    "png": "round6/00-what-changed-from-round-5.png",
+    "w": 1368,
+    "h": 900,
+    "scale": 2,
+    "fonts": [
+      "Bricolage Grotesque",
+      "Figtree",
+      "Fraunces",
+      "Schibsted Grotesk"
+    ]
+  },
+  {
+    "file": "TGToday.dc.html",
+    "page": "round6",
+    "title": "1 · Today",
+    "png": "round6/01-today.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGAdd.dc.html",
+    "page": "round6",
+    "title": "2 · Add",
+    "png": "round6/02-add.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGListen.dc.html",
+    "page": "round6",
+    "title": "3 · Listening",
+    "png": "round6/03-listening.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGReview.dc.html",
+    "page": "round6",
+    "title": "4 · Review 3 entries",
+    "png": "round6/04-review-3-entries.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGEdit.dc.html",
+    "page": "round6",
+    "title": "5 · Edit entry",
+    "png": "round6/05-edit-entry.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGMonth.dc.html",
+    "page": "round6",
+    "title": "6 · Month",
+    "png": "round6/06-month.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGCategory.dc.html",
+    "page": "round6",
+    "title": "7 · Category: Food",
+    "png": "round6/07-category-food.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGSearch.dc.html",
+    "page": "round6",
+    "title": "8 · Search",
+    "png": "round6/08-search.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGScan.dc.html",
+    "page": "round6",
+    "title": "9 · From a screenshot",
+    "png": "round6/09-from-a-screenshot.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGLock.dc.html",
+    "page": "round6",
+    "title": "10 · Lock Screen",
+    "png": "round6/10-lock-screen.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  },
+  {
+    "file": "TGWidgets.dc.html",
+    "page": "round6",
+    "title": "11 · Widgets, Control Center, Action button",
+    "png": "round6/11-widgets-control-center-action-button.png",
+    "w": 390,
+    "h": 844,
+    "scale": 3,
+    "fonts": [
+      "Figtree",
+      "Fraunces"
+    ]
+  }
+]
