@@ -7,6 +7,8 @@ The canvas has six pages: **Round 1 · Calm** (directions A–E), **Round 2 · F
 
 `mocks/` holds a snapshot of the canvas source. The canvas is the live version.
 
+**The app.** The iPhone app built from Round 6 is in [`ios/`](../../ios/README.md).
+
 **Start here.** The chosen design is **Round 6**: direction S (Timeline) with iOS 27 Liquid Glass controls, a light tangerine accent (`#FFA552`), Fraunces for titles and money, Figtree for interface text, and neutral backgrounds.
 
 - [`screenshots/`](screenshots/README.md) has PNGs of every board. Round 6 is at iPhone resolution (1170 × 2532).
@@ -186,4 +188,4 @@ The canvas board **How the AI works** shows this as a diagram.
 
 1. Review Round 6 (S in light tangerine with Fraunces): confirm the font and colour, then design the gaps (onboarding, the full categories list, settings, dark mode).
 2. Prototype the parser on real utterances and screenshots (Manglish, DuitNow, e-wallet receipts) before polishing UI.
-3. Build the SwiftUI skeleton: SwiftData store, `LogTransactionIntent`, widget and control, then home + capture.
+3. Build the SwiftUI app. This has started in [`ios/`](../../ios/README.md): every Round 6 screen, the widgets and the Siri intents are written, and the next step is getting the first build to pass on GitHub.

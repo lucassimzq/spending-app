@@ -1,6 +1,6 @@
 # Kira
 
-A spending tracker for iPhone, built from the Round 6 design: the Timeline direction with iOS 27 Liquid Glass controls, a light tangerine accent, Fraunces for titles and money, and Figtree for everything else. The design (all six rounds, screenshots and HTML mocks) lives in the `spending-app` repo under `docs/design`.
+A spending tracker for iPhone, built from the Round 6 design: the Timeline direction with iOS 27 Liquid Glass controls, a light tangerine accent, Fraunces for titles and money, and Figtree for everything else. The design (all six rounds, screenshots and HTML mocks) is in [`docs/design`](../docs/design/README.md) in this repo.
 
 It's iPhone only for now: there's no iPad layout, and it isn't offered on Mac or Apple Vision Pro.
 
@@ -26,6 +26,7 @@ You need a Mac with Xcode 26 or newer (iOS 26 SDK), because Apple's iOS build to
 
 ```sh
 brew install xcodegen
+cd ios
 xcodegen generate
 open Kira.xcodeproj
 ```
@@ -42,16 +43,18 @@ The app and its widgets share entries through that App Group. A build without it
 
 **Sample data.** To look around with the month from the design, use **… → Load a sample month** on Today. You can also turn on the `-KiraSampleData YES` launch argument in the scheme (Edit Scheme → Run → Arguments), which loads it on launch when the app is empty. The sample is placed relative to today, so it only matches the design's exact numbers when today is the 18th. The KiraCore tests check those numbers against a fixed date.
 
-**Tests.** The logic is a Swift package with its own tests, run on an iPhone simulator. Open `Packages/KiraCore` in Xcode and press ⌘U, or from Terminal:
+**Tests.** The logic is a Swift package with its own tests, run on an iPhone simulator. Open `ios/Packages/KiraCore` in Xcode and press ⌘U, or from Terminal:
 
 ```sh
-cd Packages/KiraCore
+cd ios/Packages/KiraCore
 xcodebuild test -scheme KiraCore -destination 'platform=iOS Simulator,name=iPhone 17'
 ```
 
 Use any iPhone simulator you have installed (`xcrun simctl list devices`).
 
 ## How it's put together
+
+Paths are inside `ios/`.
 
 ```
 Kira/
@@ -74,8 +77,9 @@ Packages/KiraCore/
                  Plain Swift with no UI: the sentence and screenshot parsers, month summaries, search
                  answers, duplicate checks, regulars, money formatting and the sample month. Unit-tested.
 project.yml      XcodeGen spec for the app and widget targets
-.github/         CI: KiraCore tests and a full build, both on the iOS Simulator, on every push
 ```
+
+The build check lives at the repo root, in `.github/workflows/ios.yml`. It runs on every push that changes `ios/`.
 
 **How text becomes entries.** KiraCore's rules run first. They're instant, work offline on every iPhone, and understand ringgit amounts in many shapes ("RM12.90", "eight fifty", "1.5k", "12 ringgit 50"), Manglish ("tapau nasi ayam 8"), money in ("salary", "paid me back"), and times from meal words ("lunch" means about 1 PM). Apple's on-device model (Foundation Models) steps in only when the rules find nothing, or can't place an entry in a category. It chooses from Kira's own category list, so it can't invent one. On iPhones without Apple Intelligence the rules do everything.
 
@@ -91,7 +95,7 @@ This first version was written without a Mac. No Swift compiler was available, s
 - The parser logic was first written and tested as a Python prototype, then ported to Swift with unit tests.
 - Calls to the app's own views were checked mechanically for argument labels and their order.
 
-The CI workflow is the first real compile. On every push it runs the KiraCore tests and builds the app and widgets, both on the iOS Simulator. Expect a few fixes on the first run, most likely around the newest iOS 26 APIs: the Liquid Glass modifiers (`glassEffect`, `GlassEffectContainer`) and Foundation Models.
+The build check on GitHub is the first real compile. On every push that changes `ios/`, it runs the KiraCore tests and builds the app and widgets, both on the iOS Simulator. Expect a few fixes on the first run, most likely around the newest iOS 26 APIs: the Liquid Glass modifiers (`glassEffect`, `GlassEffectContainer`) and Foundation Models.
 
 ## Differences from the design
 
@@ -102,4 +106,4 @@ The CI workflow is the first real compile. On every push it runs the KiraCore te
 
 ## Licences
 
-Fraunces and Figtree are used under the SIL Open Font License 1.1. The licence files are in `Kira/Resources/Fonts`.
+Fraunces and Figtree are used under the SIL Open Font License 1.1. The licence files are in `ios/Kira/Resources/Fonts`.

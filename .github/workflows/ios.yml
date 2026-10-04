@@ -1,9 +1,24 @@
-name: CI
+name: iOS
 
-# Kira is iPhone only. GitHub's macOS machines are used because Apple's iOS build tools only run on macOS.
+# The iPhone app in ios/. GitHub's macOS machines are used because Apple's iOS build tools only run on macOS.
 on:
   push:
+    paths:
+      - "ios/**"
+      - ".github/workflows/ios.yml"
   pull_request:
+    paths:
+      - "ios/**"
+      - ".github/workflows/ios.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: ios
 
 jobs:
   core:
@@ -30,7 +45,7 @@ jobs:
           echo "Using simulator $udid"
           echo "SIMULATOR_ID=$udid" >> "$GITHUB_ENV"
       - name: Run the tests
-        working-directory: Packages/KiraCore
+        working-directory: ios/Packages/KiraCore
         run: |
           set -o pipefail
           xcodebuild test -scheme KiraCore -destination "id=$SIMULATOR_ID" | tee "$GITHUB_WORKSPACE/test.log"
@@ -64,7 +79,7 @@ jobs:
             -destination 'generic/platform=iOS Simulator' \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
-            | tee build.log
+            | tee "$GITHUB_WORKSPACE/build.log"
       - name: Upload the build log
         if: failure()
         uses: actions/upload-artifact@v4
