@@ -80,6 +80,14 @@ jobs:
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
             | tee "$GITHUB_WORKSPACE/build.log"
+      - name: List compiler warnings
+        if: always()
+        run: |
+          log="$GITHUB_WORKSPACE/build.log"
+          [ -f "$log" ] || exit 0
+          grep -E ": warning: " "$log" | grep -v "^ " | sed "s|$GITHUB_WORKSPACE/||" | sort -u > "$GITHUB_WORKSPACE/warnings.txt" || true
+          echo "$(wc -l < "$GITHUB_WORKSPACE/warnings.txt" | tr -d ' ') unique compiler warnings"
+          cat "$GITHUB_WORKSPACE/warnings.txt"
       - name: Upload the build log
         if: failure()
         uses: actions/upload-artifact@v4
