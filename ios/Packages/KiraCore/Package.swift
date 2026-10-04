@@ -1,11 +1,11 @@
 // swift-tools-version:5.9
 import PackageDescription
 
-// Platform-independent logic: parsing what people say, categories, totals and screenshot reading.
-// It only depends on Foundation, so `swift test` runs it without a simulator.
+// Kira's logic with no UI: parsing what people say, categories, totals and screenshot reading.
+// iOS only for now. It only depends on Foundation; the tests run on the iOS Simulator.
 let package = Package(
     name: "KiraCore",
-    platforms: [.iOS(.v17), .macOS(.v14)],
+    platforms: [.iOS(.v17)],
     products: [
         .library(name: "KiraCore", targets: ["KiraCore"]),
     ],

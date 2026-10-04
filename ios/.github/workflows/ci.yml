@@ -1,12 +1,13 @@
 name: CI
 
+# Kira is iPhone only. GitHub's macOS machines are used because Apple's iOS build tools only run on macOS.
 on:
   push:
   pull_request:
 
 jobs:
   core:
-    name: KiraCore tests
+    name: KiraCore tests on the iOS Simulator
     runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
@@ -15,8 +16,30 @@ jobs:
           xcode=$(ls -d /Applications/Xcode_*.app 2>/dev/null | grep -vi beta | sort -V | tail -n 1 || true)
           if [ -n "$xcode" ]; then sudo xcode-select -s "$xcode"; fi
           xcodebuild -version
+      - name: Pick an iPhone simulator
+        run: |
+          udid=$(xcrun simctl list devices available --json | python3 -c '
+          import json, sys
+          runtimes = json.load(sys.stdin)["devices"]
+          for runtime in sorted(runtimes, reverse=True):
+              if ".iOS-" in runtime:
+                  for device in runtimes[runtime]:
+                      if device["name"].startswith("iPhone"):
+                          print(device["udid"]); sys.exit()
+          ')
+          echo "Using simulator $udid"
+          echo "SIMULATOR_ID=$udid" >> "$GITHUB_ENV"
       - name: Run the tests
-        run: swift test --package-path Packages/KiraCore
+        working-directory: Packages/KiraCore
+        run: |
+          set -o pipefail
+          xcodebuild test -scheme KiraCore -destination "id=$SIMULATOR_ID" | tee "$GITHUB_WORKSPACE/test.log"
+      - name: Upload the test log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-log
+          path: test.log
 
   app:
     name: Build the app and widgets
